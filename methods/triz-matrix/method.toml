@@ -1,0 +1,58 @@
+id = "triz-matrix"
+name = "TRIZ Contradiction Matrix"
+version = "0.1.0"
+family = "soviet"
+status = "beta"               # spec | beta | stable | reference
+summary = "Given a parameter you want to improve and one that gets worse, return Altshuller's inventive principles with software examples; every cell is checked against the 1973 table."
+
+[python]
+module = "clarent_triz"       # importable package inside this folder; exposes register(subparsers) and main(argv)
+
+[surfaces]
+cli = true
+skill = true
+agent = false
+hook = false
+mcp = false
+action = false
+
+# verification: read = opened and read | exists = confirmed to exist | blocked = exists, server blocks scripts | unverified = from memory
+[[sources]]
+title = "G.S. Altshuller Foundation: table of principles for technical contradictions (cites Altshuller, Algorithm of Invention, Moscow, 1973, Appendix 1). Parsed cell by cell for verification only."
+url = "https://www.altshuller.ru/triz/technique2.asp"
+verification = "read"
+
+[[sources]]
+title = "Altshuller, Creativity as an Exact Science (Gordon and Breach, 1984), ISBN 0-677-21230-5"
+url = "https://searchworks.stanford.edu/view/1223823"
+verification = "exists"
+
+[[sources]]
+title = "Voting transcription A: Antropocosmist/triz-engineering-solver (MIT)"
+url = "https://github.com/Antropocosmist/triz-engineering-solver/tree/251084f171508e774507c36140af55096213ad30"
+verification = "read"
+
+[[sources]]
+title = "Voting transcription B: SharathSPhD/triz-engine (MIT)"
+url = "https://github.com/SharathSPhD/triz-engine/tree/17d48dc0273c23bc8456e7369f2a298bd44131a3"
+verification = "read"
+
+[[sources]]
+title = "Voting transcription C: seogineer/triz-solver (MIT)"
+url = "https://github.com/seogineer/triz-solver/tree/32c8278eb7ded45a6f2a19eadc0ea9bb4144711d"
+verification = "read"
+
+[[sources]]
+title = "Voting transcription D: magery-ai/triz-skill (MIT)"
+url = "https://github.com/magery-ai/triz-skill/tree/ba773ce3785ddd8b12f2f2af3b9537c4aaf13549"
+verification = "read"
+
+[[sources]]
+title = "Voting transcription E: luchi2333/triz-worker-innovation-research (MIT)"
+url = "https://github.com/luchi2333/triz-worker-innovation-research/tree/ba796e2b06b941bb6e970e9a472de9ab29e69bfb"
+verification = "read"
+
+[novelty]
+checked_on = "2026-11-24"
+status = "exists-but-weak"    # none | exists-but-weak | exists-but-abandoned | well-covered
+evidence = "At least 8 small repos (mostly MIT) ship a TRIZ matrix lookup as an agent skill or tool; the most-starred are ironyjk/strategy-frameworks (47 stars, TRIZ among 30 frameworks) and Antropocosmist/triz-engineering-solver (24). None found with a stdlib engine, tests, per-cell verification against the 1973 table, or software readings of the parameters. The space is crowded: this method is not novel in itself."

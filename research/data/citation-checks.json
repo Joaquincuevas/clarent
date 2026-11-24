@@ -1,0 +1,418 @@
+{
+ "checked_on": "2026-11-24",
+ "results": [
+  {
+   "key": "mitchell-russo-pennington-1989",
+   "status": "MATCH",
+   "doi": "10.1002/bdm.3960020103",
+   "title": "Back to the future: Temporal perspective in the explanation of events",
+   "year": 1989,
+   "authors": [
+    "Mitchell",
+    "Edward Russo",
+    "Pennington"
+   ],
+   "journal": "Journal of Behavioral Decision Making"
+  },
+  {
+   "key": "kantorovich-1960",
+   "status": "MATCH",
+   "doi": "10.1287/mnsc.6.4.366",
+   "title": "Mathematical Methods of Organizing and Planning Production",
+   "year": 1960,
+   "authors": [
+    "Kantorovich"
+   ],
+   "journal": "Management Science"
+  },
+  {
+   "key": "flyvbjerg-2006",
+   "status": "MATCH",
+   "doi": "10.1177/875697280603700302",
+   "title": "From Nobel Prize to Project Management: Getting Risks Right",
+   "year": 2006,
+   "authors": [
+    "Flyvbjerg"
+   ],
+   "journal": "Project Management Journal"
+  },
+  {
+   "key": "mellers-2014",
+   "status": "MATCH",
+   "doi": "10.1177/0956797614524255",
+   "title": "Psychological Strategies for Winning a Geopolitical Forecasting Tournament",
+   "year": 2014,
+   "authors": [
+    "Mellers",
+    "Ungar",
+    "Baron",
+    "Ramos"
+   ],
+   "journal": "Psychological Science"
+  },
+  {
+   "key": "steward-1981",
+   "status": "MATCH",
+   "doi": "10.1109/TEM.1981.6448589",
+   "title": "The design structure system: A method for managing the design of complex systems",
+   "year": 1981,
+   "authors": [
+    "Steward"
+   ],
+   "journal": "IEEE Transactions on Engineering Management"
+  },
+  {
+   "key": "dalkey-helmer-1963",
+   "status": "MATCH",
+   "doi": "10.1287/mnsc.9.3.458",
+   "title": "An Experimental Application of the DELPHI Method to the Use of Experts",
+   "year": 1963,
+   "authors": [
+    "Dalkey",
+    "Helmer"
+   ],
+   "journal": "Management Science"
+  },
+  {
+   "key": "perla-art-of-wargaming",
+   "status": "MATCH",
+   "title": "The art of wargaming",
+   "authors": [
+    "Peter P. Perla"
+   ],
+   "first_publish_year": 1990,
+   "expected_year": 1990,
+   "record": "https://openlibrary.org/works/OL4792470W",
+   "isbn_sample": "9780870210501",
+   "exact_title": true
+  },
+  {
+   "key": "imai-kaizen",
+   "status": "YEAR-DIFFERS",
+   "title": "Kaizen",
+   "authors": [
+    "Masaaki Imai"
+   ],
+   "first_publish_year": 1970,
+   "expected_year": 1986,
+   "record": "https://openlibrary.org/works/OL3357414W",
+   "isbn_sample": "9785551271970",
+   "exact_title": true
+  },
+  {
+   "key": "liker-toyota-way",
+   "status": "MATCH",
+   "title": "The Toyota Way",
+   "authors": [
+    "Jeffrey K. Liker"
+   ],
+   "first_publish_year": 2004,
+   "expected_year": 2004,
+   "record": "https://openlibrary.org/works/OL5756030W",
+   "isbn_sample": "9781932378702",
+   "exact_title": true
+  },
+  {
+   "key": "ishikawa-guide-qc",
+   "status": "YEAR-DIFFERS",
+   "title": "Guide to quality control",
+   "authors": [
+    "Kaoru Ishikawa"
+   ],
+   "first_publish_year": 1972,
+   "expected_year": 1976,
+   "record": "https://openlibrary.org/works/OL120949W",
+   "isbn_sample": "089059046X",
+   "exact_title": true
+  },
+  {
+   "key": "sobek-smalley-a3",
+   "status": "MATCH",
+   "title": "Understanding A3 thinking",
+   "authors": [
+    "Durward K. Sobek"
+   ],
+   "first_publish_year": 2008,
+   "expected_year": 2008,
+   "record": "https://openlibrary.org/works/OL11919386W",
+   "isbn_sample": "1563273608",
+   "exact_title": true
+  },
+  {
+   "key": "akao-hoshin-kanri",
+   "status": "MATCH",
+   "title": "Hoshin kanri",
+   "authors": [
+    "Yoji Akao"
+   ],
+   "first_publish_year": 1991,
+   "expected_year": 1991,
+   "record": "https://openlibrary.org/works/OL13632581W",
+   "isbn_sample": "0915299577",
+   "exact_title": true
+  },
+  {
+   "key": "shingo-smed",
+   "status": "MATCH",
+   "title": "A revolution in manufacturing",
+   "authors": [
+    "Shigeo Shingō"
+   ],
+   "first_publish_year": 1985,
+   "expected_year": 1985,
+   "record": "https://openlibrary.org/works/OL4111560W",
+   "isbn_sample": "9780915299034",
+   "exact_title": true
+  },
+  {
+   "key": "shewhart-1931",
+   "status": "MATCH",
+   "title": "Economic control of quality of manufactured product",
+   "authors": [
+    "Walter A. Shewhart"
+   ],
+   "first_publish_year": 1931,
+   "expected_year": 1931,
+   "record": "https://openlibrary.org/works/OL4216561W",
+   "isbn_sample": "9780873890762",
+   "exact_title": true
+  },
+  {
+   "key": "shewhart-1939",
+   "status": "MATCH",
+   "title": "Statistical method from the viewpoint of quality control",
+   "authors": [
+    "Walter A. Shewhart"
+   ],
+   "first_publish_year": 1939,
+   "expected_year": 1939,
+   "record": "https://openlibrary.org/works/OL4216562W",
+   "isbn_sample": "0486652327",
+   "exact_title": true
+  },
+  {
+   "key": "weinstein-adam-guesstimation",
+   "status": "YEAR-DIFFERS",
+   "title": "Guesstimation 2. 0",
+   "authors": [
+    "Lawrence Weinstein",
+    "Patricia Edwards"
+   ],
+   "first_publish_year": 2012,
+   "expected_year": 2008,
+   "record": "https://openlibrary.org/works/OL21495449W",
+   "isbn_sample": "128354993X",
+   "exact_title": false
+  },
+  {
+   "key": "tetlock-superforecasting",
+   "status": "MATCH",
+   "title": "Superforecasting",
+   "authors": [
+    "Philip E. Tetlock",
+    "Dan Gardner"
+   ],
+   "first_publish_year": 2015,
+   "expected_year": 2015,
+   "record": "https://openlibrary.org/works/OL18233878W",
+   "isbn_sample": "1448166594",
+   "exact_title": true
+  },
+  {
+   "key": "debono-six-hats",
+   "status": "YEAR-DIFFERS",
+   "title": "Six thinking hats for schools",
+   "authors": [
+    "Edward de Bono"
+   ],
+   "first_publish_year": 1991,
+   "expected_year": 1985,
+   "record": "https://openlibrary.org/works/OL675413W",
+   "isbn_sample": "1563120976",
+   "exact_title": false
+  },
+  {
+   "key": "zwicky-morphological",
+   "status": "MATCH",
+   "title": "Discovery, invention, research through the morphological approach.",
+   "authors": [
+    "F. Zwicky"
+   ],
+   "first_publish_year": 1969,
+   "expected_year": 1969,
+   "record": "https://openlibrary.org/works/OL16459320W",
+   "isbn_sample": null,
+   "exact_title": true
+  },
+  {
+   "key": "beer-brain-of-the-firm",
+   "status": "MATCH",
+   "title": "Brain of the firm",
+   "authors": [
+    "Stafford Beer"
+   ],
+   "first_publish_year": 1972,
+   "expected_year": 1972,
+   "record": "https://openlibrary.org/works/OL3054939W",
+   "isbn_sample": "9780713902198",
+   "exact_title": true
+  },
+  {
+   "key": "suh-principles-of-design",
+   "status": "MATCH",
+   "title": "The principles of design",
+   "authors": [
+    "Nam P. Suh"
+   ],
+   "first_publish_year": 1990,
+   "expected_year": 1990,
+   "record": "https://openlibrary.org/works/OL4631457W",
+   "isbn_sample": "0195043456",
+   "exact_title": true
+  },
+  {
+   "key": "pugh-total-design",
+   "status": "YEAR-DIFFERS",
+   "title": "Total design",
+   "authors": [
+    "Stuart Pugh"
+   ],
+   "first_publish_year": 1988,
+   "expected_year": 1990,
+   "record": "https://openlibrary.org/works/OL2939982W",
+   "isbn_sample": "9780201416398",
+   "exact_title": true
+  },
+  {
+   "key": "gano-apollo-rca",
+   "status": "MATCH",
+   "title": "Apollo root cause analysis",
+   "authors": [
+    "Dean L. Gano"
+   ],
+   "first_publish_year": 1999,
+   "expected_year": 1999,
+   "record": "https://openlibrary.org/works/OL5755835W",
+   "isbn_sample": "1883677017",
+   "exact_title": true
+  },
+  {
+   "key": "goldratt-critical-chain",
+   "status": "MATCH",
+   "title": "Critical Chain",
+   "authors": [
+    "Eliyahu M. Goldratt"
+   ],
+   "first_publish_year": 1997,
+   "expected_year": 1997,
+   "record": "https://openlibrary.org/works/OL8384933W",
+   "isbn_sample": "0566080389",
+   "exact_title": true
+  },
+  {
+   "key": "forrester-industrial-dynamics",
+   "status": "MATCH",
+   "title": "Industrial dynamics",
+   "authors": [
+    "Jay Wright Forrester"
+   ],
+   "first_publish_year": 1961,
+   "expected_year": 1961,
+   "record": "https://openlibrary.org/works/OL4504423W",
+   "isbn_sample": "9780262060035",
+   "exact_title": true
+  },
+  {
+   "key": "akao-qfd",
+   "status": "MATCH",
+   "title": "Quality function deployment",
+   "authors": [
+    "Yōji Akao"
+   ],
+   "first_publish_year": 1990,
+   "expected_year": 1990,
+   "record": "https://openlibrary.org/works/OL4088512W",
+   "isbn_sample": "0915299410",
+   "exact_title": true
+  },
+  {
+   "key": "rother-shook-learning-to-see",
+   "status": "YEAR-DIFFERS",
+   "title": "Learning to see",
+   "authors": [
+    "Mike Rother"
+   ],
+   "first_publish_year": 2003,
+   "expected_year": 1999,
+   "record": "https://openlibrary.org/works/OL8820703W",
+   "isbn_sample": "9780966784305",
+   "exact_title": true
+  },
+  {
+   "key": "taguchi-intro-quality-engineering",
+   "status": "MATCH",
+   "title": "Introduction to quality engineering",
+   "authors": [
+    "Genʼichi Taguchi"
+   ],
+   "first_publish_year": 1986,
+   "expected_year": 1986,
+   "record": "https://openlibrary.org/works/OL4302874W",
+   "isbn_sample": "9283310837",
+   "exact_title": true
+  },
+  {
+   "key": "ohno-tps",
+   "status": "MATCH",
+   "title": "Toyota Production System",
+   "authors": [
+    "Taiichi Ohno"
+   ],
+   "first_publish_year": 1988,
+   "expected_year": 1988,
+   "record": "https://openlibrary.org/works/OL8681881W",
+   "isbn_sample": "1000056481",
+   "exact_title": true
+  },
+  {
+   "key": "shingo-zero-qc",
+   "status": "MATCH",
+   "title": "Zero quality control",
+   "authors": [
+    "Shigeo Shingō"
+   ],
+   "first_publish_year": 1986,
+   "expected_year": 1986,
+   "record": "https://openlibrary.org/works/OL4111564W",
+   "isbn_sample": "0915299070",
+   "exact_title": true
+  },
+  {
+   "key": "heuer-pherson-sat",
+   "status": "MATCH",
+   "title": "Structured Analytic Techniques for Intelligence Analysis;",
+   "authors": [
+    "Randolph H. Pherson",
+    "Heuer, Richards J., Jr."
+   ],
+   "first_publish_year": 2010,
+   "expected_year": 2010,
+   "record": "https://openlibrary.org/works/OL21076070W",
+   "isbn_sample": "9781452277233",
+   "exact_title": true
+  },
+  {
+   "key": "altshuller-creativity",
+   "status": "MATCH",
+   "title": "Creativity As an Exact Science",
+   "authors": [
+    "Altshuller"
+   ],
+   "first_publish_year": 1984,
+   "expected_year": 1984,
+   "record": "https://openlibrary.org/works/OL25180171W",
+   "isbn_sample": "9780429073793",
+   "exact_title": true
+  }
+ ]
+}

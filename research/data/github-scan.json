@@ -1,0 +1,3428 @@
+{
+ "scanned_at": "2026-11-24",
+ "results": {
+  "ooda": {
+   "OODA loop": {
+    "items": [
+     {
+      "repo": "irraz/vulnerator-ai",
+      "stars": 295,
+      "pushed": "2026-11-24",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Autonomous OODA-loop pentesting agent. Hermes brain, Kali + Playwright tools over MCP, ATT&CK as the Orient language."
+     },
+     {
+      "repo": "al3rez/ooda-subagents",
+      "stars": 176,
+      "pushed": "2025-07-25",
+      "archived": false,
+      "lang": null,
+      "desc": "OODA Loop AI Agents - Observe, Orient, Decide, Act framework for systematic problem-solving. Built by AstroMVP to help startups ship AI prod"
+     },
+     {
+      "repo": "beneater/ooda-loop",
+      "stars": 87,
+      "pushed": "2022-12-10",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "OODA loop demo"
+     },
+     {
+      "repo": "joelparkerhenderson/ooda-loop",
+      "stars": 63,
+      "pushed": "2025-07-27",
+      "archived": false,
+      "lang": null,
+      "desc": "OODA loop: notes on John Boyd, strategy, tactics, planning, and paradigms"
+     },
+     {
+      "repo": "qicesun/SRE-Agent-App",
+      "stars": 61,
+      "pushed": "2026-03-07",
+      "archived": false,
+      "lang": "Java",
+      "desc": "An Autonomous AI SRE Agent for Kubernetes, built with Java Spring Boot & LangChain4j. Implements OODA loop for self-healing."
+     }
+    ]
+   },
+   "OODA loop claude agent": {
+    "items": [
+     {
+      "repo": "kazuhitonakayama/dex",
+      "stars": 0,
+      "pushed": "2026-03-31",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "Your autonomous right hand. An OODA loop agent powered by Claude Code."
+     }
+    ]
+   }
+  },
+  "mission-command": {
+   "\"mission command\" auftragstaktik": {
+    "items": [
+     {
+      "repo": "sa6mwa/prokope",
+      "stars": 0,
+      "pushed": "2024-01-07",
+      "archived": false,
+      "lang": null,
+      "desc": "Führen mit Auftrag (Auftragstaktik, Mission Command, mission-based leadership) for teams in the civilian world, specifically in the field of"
+     }
+    ]
+   },
+   "commander intent agent prompt": {
+    "items": []
+   }
+  },
+  "mdmp": {
+   "\"military decision making process\"": {
+    "items": [
+     {
+      "repo": "skiratsoudis/ES-MADM-Military-Decision-Making-Process-",
+      "stars": 0,
+      "pushed": "2024-03-20",
+      "archived": false,
+      "lang": null,
+      "desc": "S-MADM (Military Decision Making Process) Model and Data"
+     },
+     {
+      "repo": "unicornlaunching/AssemblyAIHackathonCaptainsLog",
+      "stars": 0,
+      "pushed": "2022-12-11",
+      "archived": false,
+      "lang": null,
+      "desc": "This github repository contains some of the sample pieces of code used to create the prototype Captain's Log, an app that 10x's the performa"
+     }
+    ]
+   },
+   "MDMP planning llm": {
+    "items": [
+     {
+      "repo": "Abduallah-Aldabibi/military-COA-generator",
+      "stars": 0,
+      "pushed": "2026-06-13",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Built a military planning tool that uses AI to walk through the MDMP process, from mission analysis all the way to generating an operations "
+     }
+    ]
+   }
+  },
+  "aar": {
+   "\"after action review\"": {
+    "items": [
+     {
+      "repo": "coopersimson96/aar-loop",
+      "stars": 125,
+      "pushed": "2026-07-26",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Run an After Action Review after any AI session and write concrete lessons so your agent stops repeating mistakes. A manual Reflexion loop, "
+     },
+     {
+      "repo": "OCAP2/OCAP",
+      "stars": 69,
+      "pushed": "2026-06-08",
+      "archived": false,
+      "lang": "Python",
+      "desc": "OCAP is an Arma 3 mission recording suite. It consists of a serverside addon and a packaged web server executable that allows for after-acti"
+     },
+     {
+      "repo": "Ultra-Smashed/reflexion-skill",
+      "stars": 8,
+      "pushed": "2026-11-16",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Claude-Skill für die Nachbesprechung nach jeder Aufgabe: /reflexion stellt die vier Fragen des After Action Review, zieht prüfbare Lektionen"
+     },
+     {
+      "repo": "OCAP2/web",
+      "stars": 7,
+      "pushed": "2026-11-22",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "OCAP2 web server for Arma 3 after-action review and mission replay"
+     },
+     {
+      "repo": "zvukoper/Arma2AAR",
+      "stars": 2,
+      "pushed": "2021-05-15",
+      "archived": false,
+      "lang": "SQF",
+      "desc": "Arma2 After Action Review - Recording and Playing your battles."
+     }
+    ]
+   },
+   "after action review postmortem generator": {
+    "items": []
+   }
+  },
+  "red-team-ufmcs": {
+   "\"red teaming\" design review llm agent": {
+    "items": [
+     {
+      "repo": "Cashcoin123/Cashcoin123",
+      "stars": 8,
+      "pushed": "2026-10-05",
+      "archived": false,
+      "lang": null,
+      "desc": "# Application card: GitHub Copilot Chat  Learn how to use GitHub Copilot Chat responsibly by understanding its purposes, capabilities, and l"
+     }
+    ]
+   },
+   "red team agent claude code": {
+    "items": [
+     {
+      "repo": "Socialpranker/deepdive",
+      "stars": 258,
+      "pushed": "2026-11-22",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Deepdive skill for Claude Code — 12-phase research pipeline: plan-review gate, parallel sub-agent search, claims-ledger triangulation with d"
+     },
+     {
+      "repo": "ADScanPro/Claude-AD",
+      "stars": 225,
+      "pushed": "2026-08-24",
+      "archived": false,
+      "lang": null,
+      "desc": "Active Directory pentest methodology for Claude Code: skills, agents and slash commands for internal AD red-team work (Kerberoasting, ADCS E"
+     },
+     {
+      "repo": "gaasher/Agent-Loop-Skills",
+      "stars": 185,
+      "pushed": "2026-06-30",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Loop until it's better — drop-in agentic loops (autoresearch, scientific writing, data analysis, code/SQL/prompt optimization, red-teaming) "
+     },
+     {
+      "repo": "NeoTheCapt/RedteamAgent",
+      "stars": 165,
+      "pushed": "2026-08-02",
+      "archived": false,
+      "lang": "Python",
+      "desc": "An AI red-team agent for authorized labs and web app pentesting workflows. Turns Claude Code / OpenCode / Codex into a structured recon → te"
+     },
+     {
+      "repo": "26zl/cybersec-toolkit",
+      "stars": 105,
+      "pushed": "2026-11-23",
+      "archived": false,
+      "lang": "Python",
+      "desc": "One command installs 670+ security tools on Debian/Ubuntu/Kali, Fedora, Arch, openSUSE and Termux. Its authorization-gated MCP server runs t"
+     }
+    ]
+   }
+  },
+  "premortem": {
+   "premortem": {
+    "items": [
+     {
+      "repo": "Hi1talib1World/Premortem",
+      "stars": 88,
+      "pushed": "2026-06-09",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "Premortem"
+     },
+     {
+      "repo": "AndyShaman/premortem",
+      "stars": 61,
+      "pushed": "2026-05-09",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Premortem skill for Claude Code — finds the concrete ways a plan could fail before commitment. Multi-agent silent scan, mitigation triplets,"
+     },
+     {
+      "repo": "MADEVAL/Pre-Mortem-Skill",
+      "stars": 59,
+      "pushed": "2026-06-30",
+      "archived": false,
+      "lang": null,
+      "desc": "A structured failure-analysis workflow that assumes your plan already failed and works backward to find every reason why. Based on Gary Klei"
+     },
+     {
+      "repo": "PabloNAX/premortem-skill",
+      "stars": 34,
+      "pushed": "2026-06-16",
+      "archived": false,
+      "lang": "Shell",
+      "desc": "Portable AI skill that runs a Klein-style premortem on your plan. Assumes it already failed, then explains how. Parallel agents per failure "
+     },
+     {
+      "repo": "b1rdmania/claude-premortem-skill",
+      "stars": 30,
+      "pushed": "2026-08-29",
+      "archived": false,
+      "lang": null,
+      "desc": "Claude Code skill: Klein-method premortem. Imagine the plan failed 6 months from now, work backward, find every reason why."
+     }
+    ]
+   },
+   "pre-mortem claude skill": {
+    "items": [
+     {
+      "repo": "aniganti/pm-superpowers",
+      "stars": 49,
+      "pushed": "2026-10-20",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "Find your product's moat in minutes. Product strategy skills (moats, VRIO, pre-mortem) for Claude Code and Cursor."
+     },
+     {
+      "repo": "Hainrixz/abogado-del-diablo",
+      "stars": 43,
+      "pushed": "2026-10-25",
+      "archived": false,
+      "lang": null,
+      "desc": "Devil's advocate skill/plugin for Claude Code and Cowork: turns Claude against you to harshly critique an idea or whole project across 8 ang"
+     },
+     {
+      "repo": "execbbbr/project-kickoff-interrogation",
+      "stars": 9,
+      "pushed": "2026-06-07",
+      "archived": false,
+      "lang": null,
+      "desc": "A 9-step pre-mortem skill that interrogates you before you build. Grounded in 《置身钉内》(DingTalk ONE post-mortem). Works with Claude Code, Herm"
+     },
+     {
+      "repo": "MrBinnacle/azimuth",
+      "stars": 9,
+      "pushed": "2026-11-12",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "Decision-quality pre-commitment analysis. Hosted at azimuth-testbed.netlify.app — no install required. Claude Code skill for permanent workf"
+     },
+     {
+      "repo": "carlkibler/agent-skills",
+      "stars": 6,
+      "pushed": "2026-10-28",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Reusable Claude Code skills — multi-agent pre-mortems, risk analysis, and more"
+     }
+    ]
+   }
+  },
+  "carver": {
+   "CARVER target analysis": {
+    "items": [
+     {
+      "repo": "Aryia-Behroziuan/References",
+      "stars": 79,
+      "pushed": "2022-09-02",
+      "archived": false,
+      "lang": null,
+      "desc": " Poole, Mackworth & Goebel 1998, p. 1.  Russell & Norvig 2003, p. 55.  Definition of AI as the study of intelligent agents: Poole, Mackworth"
+     }
+    ]
+   },
+   "CARVER threat prioritization": {
+    "items": []
+   }
+  },
+  "wargaming": {
+   "wargame decision simulation llm": {
+    "items": []
+   },
+   "wargaming agents": {
+    "items": [
+     {
+      "repo": "Panopticon-AI-team/panopticon",
+      "stars": 125,
+      "pushed": "2025-09-09",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "A wargaming platform compatible with reinforcement learning agents "
+     },
+     {
+      "repo": "Friesduck/reverse-flow-skill",
+      "stars": 17,
+      "pushed": "2026-07-01",
+      "archived": false,
+      "lang": null,
+      "desc": "面向 AI Agent / Codex 的本地 CTF 逆向工程流程技能。加载后通过“真心为你”进入逆向模式，默认在本地沙盒、CTF、crackme、wargame 或训练靶场环境中工作，按“分析 → 报告 → 逆向 → 深度逆向 → 漏洞研判 → 用户选择下一步”的流程推进。"
+     },
+     {
+      "repo": "sakurayl9377-ai/reverse-flow-skill",
+      "stars": 4,
+      "pushed": "2026-06-30",
+      "archived": false,
+      "lang": null,
+      "desc": "面向 AI Agent / Codex 的本地 CTF 逆向工程流程技能。加载后通过“真心为你”进入逆向模式，默认在本地沙盒、CTF、crackme、wargame 或训练靶场环境中工作，按“分析 → 报告 → 逆向 → 深度逆向 → 漏洞研判 → 用户选择下一步”的流程推进。"
+     },
+     {
+      "repo": "Michaelliu1017/Reflexion-Wargame-Agent",
+      "stars": 4,
+      "pushed": "2026-04-18",
+      "archived": false,
+      "lang": "Java",
+      "desc": "A self-evolving wargame AI agent built on LLMs with RAG-based rule retrieval, Reflexion memory, and external tool integration. Achieves inte"
+     },
+     {
+      "repo": "Mutlaq124/wargame_multi-agent",
+      "stars": 3,
+      "pushed": "2026-07-15",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Architected hierarchical multi-agent wargame simulation with strategic planning, tactical agents orchestration, real-time spatial reasoning,"
+     }
+    ]
+   }
+  },
+  "center-of-gravity": {
+   "\"center of gravity\" strategy analysis": {
+    "items": []
+   },
+   "critical vulnerabilities analysis": {
+    "items": [
+     {
+      "repo": "Nate0634034090/bug-free-memory",
+      "stars": 38,
+      "pushed": "2022-03-04",
+      "archived": false,
+      "lang": null,
+      "desc": "   ​![​logo​](https://github.com/curated-intel/Ukraine-Cyber-Operations/blob/main/ci-logo.png)      ​#​ ​Ukraine-Cyber-Operations   ​Curated"
+     },
+     {
+      "repo": "kiddoCodex/MacOs-Investigation-Cheatsheet",
+      "stars": 9,
+      "pushed": "2025-01-08",
+      "archived": false,
+      "lang": null,
+      "desc": "This macOS Investigation Cheatsheet is designed to help red teamers and penetration testers perform thorough investigations and gather criti"
+     },
+     {
+      "repo": "Cashcoin123/Cashcoin123",
+      "stars": 8,
+      "pushed": "2026-10-05",
+      "archived": false,
+      "lang": null,
+      "desc": "# Application card: GitHub Copilot Chat  Learn how to use GitHub Copilot Chat responsibly by understanding its purposes, capabilities, and l"
+     },
+     {
+      "repo": "sassoftware/tika",
+      "stars": 6,
+      "pushed": "2025-12-16",
+      "archived": false,
+      "lang": "Java",
+      "desc": "This repository provides complete security fixes with comprehensive vulnerability analysis, extensive test coverage (11 security tests), and"
+     },
+     {
+      "repo": "kaotickj/Apache-Service-XAMPP-WindowsPrivEsc-Disclosure",
+      "stars": 6,
+      "pushed": "2026-06-22",
+      "archived": false,
+      "lang": null,
+      "desc": "A critical vulnerability in XAMPP's default Apache service settings on Windows systems jeopardizes integrity, confidentiality, and availabil"
+     }
+    ]
+   }
+  },
+  "ipb": {
+   "intelligence preparation battlefield": {
+    "items": [
+     {
+      "repo": "HishanIndrajith/IPB",
+      "stars": 8,
+      "pushed": "2021-02-28",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "Intelligence Preparation of Battlefield or IPB as it is more commonly known is a Command and staff tool that allows systematic, continuous a"
+     },
+     {
+      "repo": "gjoncay/cyber-planning-web-app",
+      "stars": 0,
+      "pushed": "2026-07-11",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "An OAKOC-based Cyber Threat Intelligence planning and modeling surface. It applies US Army intelligence-preparation-of-the-battlefield conce"
+     }
+    ]
+   },
+   "IPB threat modeling": {
+    "items": []
+   }
+  },
+  "jidoka-poka-yoke": {
+   "poka-yoke software": {
+    "items": [
+     {
+      "repo": "rainmanjam/poka-yoke",
+      "stars": 26,
+      "pushed": "2026-10-27",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Mistake-proofing for software. Shigeo Shingo's poka-yoke method as a Claude Code plugin: audit code for footguns, design APIs that resist mi"
+     },
+     {
+      "repo": "berrzebb/consensus-loop",
+      "stars": 16,
+      "pushed": "2026-03-22",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "Claude Code plugin — structural guardrails for multi-agent software development. RTM-based evidence, cross-model adversarial audit, 7 MCP to"
+     },
+     {
+      "repo": "shivammudgil2k14/Poka-yoke",
+      "stars": 0,
+      "pushed": "2026-04-16",
+      "archived": false,
+      "lang": null,
+      "desc": "Poka yoke software designing in industry 4.0"
+     },
+     {
+      "repo": "Jakkalin44/SmartCut-Digital-Poka-Yoke",
+      "stars": 0,
+      "pushed": "2026-11-08",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Low-cost QR-based CNC job identification and software automation prototype using Python."
+     },
+     {
+      "repo": "frankyml/khoros",
+      "stars": 0,
+      "pushed": "2026-10-31",
+      "archived": false,
+      "lang": "Python",
+      "desc": "A self-improving agentic software factory and microkernel for multi-agent squads. Features event-sourced DAG scheduling, in-station Poka-Yok"
+     }
+    ]
+   },
+   "jidoka andon software": {
+    "items": []
+   }
+  },
+  "andon": {
+   "andon cord ci": {
+    "items": []
+   },
+   "andon board devops": {
+    "items": []
+   }
+  },
+  "kaizen": {
+   "kaizen retrospective tool": {
+    "items": [
+     {
+      "repo": "agileramblings/kaizen",
+      "stars": 0,
+      "pushed": "2023-01-04",
+      "archived": false,
+      "lang": "C#",
+      "desc": "A hackathon project to create a retrospective tool"
+     },
+     {
+      "repo": "pedropb/kaizen",
+      "stars": 0,
+      "pushed": "2022-05-20",
+      "archived": true,
+      "lang": "Java",
+      "desc": "A retrospective tool to help agile teams improve iteratively."
+     }
+    ]
+   },
+   "kaizen engineering": {
+    "items": [
+     {
+      "repo": "theislampill/IMPLEMENTAUDIT.md",
+      "stars": 16,
+      "pushed": "2026-11-24",
+      "archived": false,
+      "lang": "Python",
+      "desc": "A self-correcting system of nested engineering loops: plan & execute repo work; safely implement audit findings; design greenfield & improve"
+     },
+     {
+      "repo": "zEuS0390/kaizen-faculty-eval",
+      "stars": 6,
+      "pushed": "2022-11-08",
+      "archived": true,
+      "lang": "HTML",
+      "desc": "A faculty evaluation web application that is intended for computer engineering department of Technological Institute of the Philippines Quez"
+     },
+     {
+      "repo": "KaizenEngineering/blog",
+      "stars": 1,
+      "pushed": "2024-02-18",
+      "archived": false,
+      "lang": null,
+      "desc": "Kaizen Engineering Blog"
+     },
+     {
+      "repo": "profalexandretolentino/project-kaizen-homelab",
+      "stars": 1,
+      "pushed": "2026-08-13",
+      "archived": false,
+      "lang": "Shell",
+      "desc": "A production-inspired homelab focused on infrastructure, DevOps, cloud, automation, documentation, and continuous engineering practices"
+     },
+     {
+      "repo": "hashim212-cs/Kaizen_Hive_Internship",
+      "stars": 1,
+      "pushed": "2026-09-07",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Generative & Agentic AI Internship Kaizen Hive — 45 Python tasks across 9 modules: prompt engineering, NLP & chatbot architecture, vector em"
+     }
+    ]
+   }
+  },
+  "five-whys": {
+   "\"5 whys\" root cause": {
+    "items": [
+     {
+      "repo": "awesome-skills/5-whys-skill",
+      "stars": 66,
+      "pushed": "2025-12-03",
+      "archived": false,
+      "lang": null,
+      "desc": "A Claude Code skill for systematic 5-Whys root cause analysis - trace problems to fundamental causes, based on Toyota Production System meth"
+     },
+     {
+      "repo": "alfredang/5whys",
+      "stars": 2,
+      "pushed": "2026-03-30",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "Interactive learning game to practice the 5 Whys root cause analysis technique with AI-guided facilitation"
+     },
+     {
+      "repo": "neviarrawlinson/rca-builder",
+      "stars": 1,
+      "pushed": "2025-08-18",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Guided toolkit for Root Cause Analysis (5 Whys, Fishbone, Postmortem)"
+     },
+     {
+      "repo": "matthewnewell/the-fixer",
+      "stars": 1,
+      "pushed": "2026-09-25",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "Root cause analysis (5 Whys) and CAPA, guided as you work"
+     },
+     {
+      "repo": "yoned0609/Jidoka.ai",
+      "stars": 1,
+      "pushed": "2026-04-12",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "AI Factory Manager — Agent production management with Toyota Jidoka principles. Monitoring, auto-stop, schema inspection, and 5-Whys root ca"
+     }
+    ]
+   },
+   "5 whys llm agent": {
+    "items": [
+     {
+      "repo": "atpepslte8-eng/semantic-agent",
+      "stars": 0,
+      "pushed": "2026-02-05",
+      "archived": false,
+      "lang": "Python",
+      "desc": "An AI agent framework that actually learns - persistent memory, 5 WHYs diagnosis, reasoning escalation, pluggable LLM brains"
+     },
+     {
+      "repo": "developerbaha/BGTS_Case",
+      "stars": 0,
+      "pushed": "2026-06-04",
+      "archived": false,
+      "lang": "Python",
+      "desc": "ITSM RCA Agent — MCP ile ticket çeken, offline LLM (vLLM/Qwen3.6-35B) ile analiz eden, 10 KB üzerinde RAG sorgulayan ve LangGraph agent ile "
+     },
+     {
+      "repo": "SherryLi-vc/socratic-coach",
+      "stars": 0,
+      "pushed": "2026-10-31",
+      "archived": false,
+      "lang": null,
+      "desc": "Cross-agent Socratic coaching skill: clarify vague goals with 5 Whys + Golden Circle before solutions. For any AI agent that supports custom"
+     }
+    ]
+   }
+  },
+  "ishikawa": {
+   "ishikawa fishbone diagram": {
+    "items": [
+     {
+      "repo": "hophiphip/react-fishbone",
+      "stars": 9,
+      "pushed": "2025-02-05",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "React fishbone (Ishikawa) diagram component."
+     },
+     {
+      "repo": "JetBrains-Research/fishbone",
+      "stars": 4,
+      "pushed": "2026-07-23",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "Fishbone Ishikawa diagrams construction and visualising"
+     },
+     {
+      "repo": "umitgunduz/d3-fishbone-angular",
+      "stars": 3,
+      "pushed": "2016-06-21",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "This is a Fishbone or Ishikawa diagram Angular directive, which shows contributions of different levels of a hierarchy to a main concept."
+     },
+     {
+      "repo": "alfredang/fishbone",
+      "stars": 1,
+      "pushed": "2026-03-30",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "Interactive Fishbone (Ishikawa) Diagram tool for practicing Root Cause Analysis — built for Six Sigma learners"
+     },
+     {
+      "repo": "abhi735284/Ishikawa-Fishbone-App-",
+      "stars": 1,
+      "pushed": "2025-10-13",
+      "archived": false,
+      "lang": "Python",
+      "desc": "A Python-based interactive desktop application to visualize **Ishikawa (Fishbone) Diagrams** using Excel data. The app combines **data analy"
+     }
+    ]
+   },
+   "fishbone root cause tool": {
+    "items": [
+     {
+      "repo": "alfredang/fishbone",
+      "stars": 1,
+      "pushed": "2026-03-30",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "Interactive Fishbone (Ishikawa) Diagram tool for practicing Root Cause Analysis — built for Six Sigma learners"
+     },
+     {
+      "repo": "MarkNwilliam/root-cause-analysis-tool",
+      "stars": 0,
+      "pushed": "2026-09-11",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "Fishbone 6M classifier, 5 Whys and CAPA report generator for deviation and root cause analysis."
+     },
+     {
+      "repo": "Pakawat-Dev/Root_Cause_Analysis_Langgraph",
+      "stars": 0,
+      "pushed": "2025-09-15",
+      "archived": false,
+      "lang": "Python",
+      "desc": "A beginner-friendly tool for systematic problem analysis using AI-powered Fishbone Diagrams (also known as Ishikawa Diagrams)."
+     },
+     {
+      "repo": "fjgonzalezmgt/ishikawa",
+      "stars": 0,
+      "pushed": "2026-04-13",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Ishikawa/fishbone diagram tools for root-cause analysis and quality improvement."
+     },
+     {
+      "repo": "Pakawat-Dev/AI_Engineer_103",
+      "stars": 0,
+      "pushed": "2025-11-07",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Automated tool that performs automated root cause analysis using the Fishbone Diagram method (also known as Ishikawa Diagram). This tool use"
+     }
+    ]
+   }
+  },
+  "a3": {
+   "A3 problem solving toyota": {
+    "items": []
+   },
+   "A3 thinking template": {
+    "items": []
+   }
+  },
+  "hoshin-kanri": {
+   "hoshin kanri": {
+    "items": [
+     {
+      "repo": "jack-at-someai/hoshin-kanri-toolkit",
+      "stars": 2,
+      "pushed": "2026-02-07",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "Interactive playground for Hoshin Kanri, X-Matrix, Kaizen, PDCA, A3 Thinking, Bowling Charts — strategy deployment methodologies"
+     },
+     {
+      "repo": "dvynsh3/Hoshin-Kanri",
+      "stars": 1,
+      "pushed": "2026-11-24",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "A single-file, offline-friendly web tool for running a Hoshin Kanri X-Matrix session live. Edit the matrix on the page and every view update"
+     },
+     {
+      "repo": "shibi-004/x-matrix",
+      "stars": 0,
+      "pushed": "2026-01-25",
+      "archived": false,
+      "lang": null,
+      "desc": "hoshin kanri matrix"
+     },
+     {
+      "repo": "tsiemers01/Hoshin-Kanri-Map",
+      "stars": 0,
+      "pushed": "2026-05-10",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "Hoshin Kanri Map simulation "
+     },
+     {
+      "repo": "aaronp/Hoshin-Kanri",
+      "stars": 0,
+      "pushed": "2026-11-24",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "A Hoshin Kanri X matrix"
+     }
+    ]
+   },
+   "hoshin kanri okr": {
+    "items": [
+     {
+      "repo": "wellknownmcp/hoshin-kanri",
+      "stars": 0,
+      "pushed": "2026-11-24",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "Hoshin Kanri X-Matrix for AI agents: an MCP server (hosted, or local JSON mode where the strategy never leaves your machine) and agent skill"
+     }
+    ]
+   }
+  },
+  "smed": {
+   "SMED single minute exchange of die": {
+    "items": [
+     {
+      "repo": "ElectronIQIT/SMED",
+      "stars": 0,
+      "pushed": "2026-10-30",
+      "archived": false,
+      "lang": null,
+      "desc": "Single Minute Exchange of Die"
+     },
+     {
+      "repo": "vhurtado-star/OPTIMIZACI-N-DE-UNA-L-NEA-DE-ENSAMBLE-MEDIANTE-EL-USO-DE-HERRAMIENTAS-DE-LEAN-MANUFACTURING",
+      "stars": 0,
+      "pushed": "2026-10-06",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "Value Stream Map (VSM), diagrama de Espagueti y Single Minute Exchange of Die (SMED)"
+     }
+    ]
+   },
+   "SMED software deploy": {
+    "items": []
+   }
+  },
+  "pdca": {
+   "PDCA plan do check act": {
+    "items": [
+     {
+      "repo": "kenjudy/pdca-agentic-coding-framework",
+      "stars": 46,
+      "pushed": "2026-11-16",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Human-supervised AI code generation using Plan-Do-Check-Act methodology with TDD and refactoring. Works as Claude Code skill or standalone p"
+     },
+     {
+      "repo": "billqbwen/pdclaw",
+      "stars": 2,
+      "pushed": "2026-07-26",
+      "archived": false,
+      "lang": "Python",
+      "desc": "PDClaw brings the PDCA (Plan-Do-Check-Act) continuous improvement methodology to software development"
+     },
+     {
+      "repo": "m-sulecki/PDCA",
+      "stars": 1,
+      "pushed": "2020-09-06",
+      "archived": false,
+      "lang": "Python",
+      "desc": "PDCA (Plan-Do-Check-Act)"
+     },
+     {
+      "repo": "billqbwen/pdca-kit",
+      "stars": 0,
+      "pushed": "2026-11-11",
+      "archived": false,
+      "lang": "Python",
+      "desc": "An open source toolkit that applies the PDCA (Plan-Do-Check-Act) continuous improvement methodology to AI-powered software development."
+     },
+     {
+      "repo": "eduralph/pdca.dev",
+      "stars": 0,
+      "pushed": "2026-11-22",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "A Plan-Do-Check-Act Lifecycle Framework Website"
+     }
+    ]
+   },
+   "PDCA claude": {
+    "items": [
+     {
+      "repo": "ww-w-ai/bkit-claude-code",
+      "stars": 606,
+      "pushed": "2026-11-19",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "bkit Vibecoding Kit - PDCA methodology + Claude Code mastery for AI-native development"
+     },
+     {
+      "repo": "kenjudy/pdca-agentic-coding-framework",
+      "stars": 46,
+      "pushed": "2026-11-16",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Human-supervised AI code generation using Plan-Do-Check-Act methodology with TDD and refactoring. Works as Claude Code skill or standalone p"
+     },
+     {
+      "repo": "ChantillyAn/homework-grader",
+      "stars": 8,
+      "pushed": "2026-02-22",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Rubric-driven AI homework grading system built as a Claude Code Skill. Score student submissions with CoT reasoning, bias mitigation, and PD"
+     },
+     {
+      "repo": "gyeorye/pdca-llm-wiki",
+      "stars": 8,
+      "pushed": "2026-05-12",
+      "archived": false,
+      "lang": null,
+      "desc": "Obsidian vault + Claude Code agent that ingests raw notes, compiles a self-organized wiki, and runs weekly/monthly PDCA   retrospectives. An"
+     },
+     {
+      "repo": "RohitBind123/claude-setup",
+      "stars": 3,
+      "pushed": "2026-04-20",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "ECC kit: CLAUDE.md, ECC-USAGE-GUIDE.md, HOW-TO-START-ANY-PROJECT.md (global rules). settings.json ($HOME portable). agents/ (16), commands/ "
+     }
+    ]
+   }
+  },
+  "spc": {
+   "statistical process control charts": {
+    "items": [
+     {
+      "repo": "carlosqsilva/pyspc",
+      "stars": 244,
+      "pushed": "2023-01-12",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Statistical Process Control Charts Library for Humans"
+     },
+     {
+      "repo": "AUS-DOH-Safety-and-Quality/PowerBI-SPC",
+      "stars": 76,
+      "pushed": "2026-11-12",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "A free and open-source PowerBI custom visual for SPC charts"
+     },
+     {
+      "repo": "huft-jonathan/pyshewhart",
+      "stars": 34,
+      "pushed": "2026-07-20",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Python module for creating Shewhart statistical process control charts"
+     },
+     {
+      "repo": "carlosqsilva/ccharts-online",
+      "stars": 28,
+      "pushed": "2018-06-26",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "Plot Statistical Process Control Charts on browser"
+     },
+     {
+      "repo": "CBICA/niCHART",
+      "stars": 20,
+      "pushed": "2024-01-22",
+      "archived": false,
+      "lang": "Python",
+      "desc": "The neuro-imaging brain aging chart [niCHART] is a comprehensive solution to analyze standard structural and functional brain MRI data acros"
+     }
+    ]
+   },
+   "SPC control chart ci metrics": {
+    "items": []
+   }
+  },
+  "triz": {
+   "TRIZ": {
+    "items": [
+     {
+      "repo": "trizen/trizen",
+      "stars": 820,
+      "pushed": "2026-11-19",
+      "archived": false,
+      "lang": "Perl",
+      "desc": "Lightweight AUR Package Manager"
+     },
+     {
+      "repo": "smixs/creative-director-skill",
+      "stars": 322,
+      "pushed": "2026-08-08",
+      "archived": false,
+      "lang": "Python",
+      "desc": "World-class creative director in a skill. Methodology-driven ideation (SIT, TRIZ, Lateral Thinking, bisociation) + a Cannes Lions evaluation"
+     },
+     {
+      "repo": "JasonLautzenheiser/trizbort",
+      "stars": 149,
+      "pushed": "2023-11-08",
+      "archived": false,
+      "lang": "C#",
+      "desc": "Trizbort, the Interactive Fiction Mapper"
+     },
+     {
+      "repo": "sunnylife42/docs",
+      "stars": 123,
+      "pushed": "2025-06-13",
+      "archived": false,
+      "lang": "MDX",
+      "desc": "战略管理越扎实，理想生活越可达。配备这组「人生战略管理帮手」，一起有思路有行动，灵活兼顾「爱与成就」 😋"
+     },
+     {
+      "repo": "heshenxian1/awesome-triz",
+      "stars": 75,
+      "pushed": "2019-05-29",
+      "archived": false,
+      "lang": null,
+      "desc": "TRIZ resources，Innovation Algorithm；创新算法奇妙清单，系统创造，问题解决理论"
+     }
+    ]
+   },
+   "TRIZ llm": {
+    "items": [
+     {
+      "repo": "jenson500/triz-prompt-engineering",
+      "stars": 41,
+      "pushed": "2026-10-23",
+      "archived": false,
+      "lang": null,
+      "desc": "Structured TRIZ prompt engineering for LLMs in an open, portable XML format – MIT licensed."
+     },
+     {
+      "repo": "kamil-szczepanik/TRIZ-Agents",
+      "stars": 14,
+      "pushed": "2025-09-23",
+      "archived": false,
+      "lang": "Jupyter Notebook",
+      "desc": "Multi-agent TRIZ workflow (LangGraph+LangChain) with TRIZ tools, RAG, and evaluation — from our ICAART 2025 paper \"TRIZ Agents: A Multi-Agen"
+     },
+     {
+      "repo": "flyersworder/lens",
+      "stars": 11,
+      "pushed": "2026-11-23",
+      "archived": false,
+      "lang": "Python",
+      "desc": "LENS: LLM Engineering Navigation System — discover solution patterns from arxiv papers, inspired by TRIZ"
+     },
+     {
+      "repo": "PatentTRIZbasedAI20260226110030/Patent-GPT",
+      "stars": 5,
+      "pushed": "2026-04-13",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Patent-GPT is an Agentic RAG-based invention copilot combining TRIZ methodology with LLMs. It generates patent ideas, verifies similarities "
+     },
+     {
+      "repo": "BettyJk/triz",
+      "stars": 3,
+      "pushed": "2025-05-25",
+      "archived": false,
+      "lang": "Python",
+      "desc": "INTEGRATING LLM WITH TRIZ METHOD FOR SOLVING ENGINEERING CONTRADICTIONS "
+     }
+    ]
+   },
+   "TRIZ claude skill": {
+    "items": [
+     {
+      "repo": "ironyjk/strategy-frameworks",
+      "stars": 47,
+      "pushed": "2026-04-20",
+      "archived": false,
+      "lang": "Shell",
+      "desc": "30 classic strategy & management frameworks as Claude Code skills — /think auto-selects from TOC, TRIZ, Wardley, OODA, Systems Thinking, Blu"
+     },
+     {
+      "repo": "Antropocosmist/triz-engineering-solver",
+      "stars": 24,
+      "pushed": "2026-05-16",
+      "archived": false,
+      "lang": null,
+      "desc": "Claude / AI-agent skill for solving engineering contradictions with Altshuller's TRIZ — full 39×39 matrix, 40 principles, Su-Field analysis "
+     },
+     {
+      "repo": "truinorva/triz-skills",
+      "stars": 19,
+      "pushed": "2026-11-04",
+      "archived": false,
+      "lang": "Python",
+      "desc": "A growing curated library of systematic innovation with TRIZ methodology Skills for Anthropic's Claude environment. Covers technical and bus"
+     },
+     {
+      "repo": "peterfei/forge-skill",
+      "stars": 19,
+      "pushed": "2026-06-26",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "锻造任何领域的思维工具 — 不是角色扮演一个智者，而是锻造一把可执行的思维工具。基于 Agent Skills 开放协议，可在 Claude Code、Cursor 等 50+ runtime 中运行。"
+     },
+     {
+      "repo": "Robert-Adunka/triz-skills",
+      "stars": 18,
+      "pushed": "2026-11-12",
+      "archived": false,
+      "lang": null,
+      "desc": "TRIZ Skills for Claude MCP Server"
+     }
+    ]
+   }
+  },
+  "ariz": {
+   "ARIZ altshuller": {
+    "items": [
+     {
+      "repo": "Antropocosmist/triz-engineering-solver",
+      "stars": 24,
+      "pushed": "2026-05-16",
+      "archived": false,
+      "lang": null,
+      "desc": "Claude / AI-agent skill for solving engineering contradictions with Altshuller's TRIZ — full 39×39 matrix, 40 principles, Su-Field analysis "
+     },
+     {
+      "repo": "ironyjk/triz-agents",
+      "stars": 5,
+      "pushed": "2026-04-14",
+      "archived": false,
+      "lang": null,
+      "desc": "TRIZ (Altshuller) as 9 Claude Code AI agents — IFR, 40 Principles, ARIZ, Contradiction Matrix, Su-Field, Resources, Trimming, Evolution. Sys"
+     },
+     {
+      "repo": "lyderisaz/ariz85v-pwa",
+      "stars": 0,
+      "pushed": "2026-10-25",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "Offline ARIZ-85C worksheet (Genrikh Altshuller) as an installable PWA"
+     }
+    ]
+   },
+   "ARIZ-85 algorithm inventive problem solving": {
+    "items": []
+   }
+  },
+  "su-field": {
+   "su-field analysis TRIZ": {
+    "items": [
+     {
+      "repo": "Antropocosmist/triz-engineering-solver",
+      "stars": 24,
+      "pushed": "2026-05-16",
+      "archived": false,
+      "lang": null,
+      "desc": "Claude / AI-agent skill for solving engineering contradictions with Altshuller's TRIZ — full 39×39 matrix, 40 principles, Su-Field analysis "
+     },
+     {
+      "repo": "RamKishor94/TRIZ-and-Axiomatic-Design",
+      "stars": 0,
+      "pushed": "2024-09-02",
+      "archived": false,
+      "lang": null,
+      "desc": "Compatibility of TRIZ and Axiomatic Design using the Substance Field (Su-field) Analysis of TRIZ"
+     }
+    ]
+   },
+   "substance field TRIZ": {
+    "items": [
+     {
+      "repo": "RamKishor94/TRIZ-and-Axiomatic-Design",
+      "stars": 0,
+      "pushed": "2024-09-02",
+      "archived": false,
+      "lang": null,
+      "desc": "Compatibility of TRIZ and Axiomatic Design using the Substance Field (Su-field) Analysis of TRIZ"
+     }
+    ]
+   }
+  },
+  "evolution-laws": {
+   "laws of technical systems evolution TRIZ": {
+    "items": []
+   },
+   "trends of engineering system evolution": {
+    "items": [
+     {
+      "repo": "waqarhassan102/Digital-Re-imagination-of-Software-and-Systems-Processes-for-Quality-Engineering-iSPIN-Approach",
+      "stars": 0,
+      "pushed": "2020-09-09",
+      "archived": false,
+      "lang": null,
+      "desc": "Software quality has become the lever of differentiation in today’s competitive marketplace. Quality at speed is the customer demand and aut"
+     }
+    ]
+   }
+  },
+  "otsm-triz": {
+   "OTSM-TRIZ": {
+    "items": [
+     {
+      "repo": "thuatngu/creativity",
+      "stars": 0,
+      "pushed": "2019-03-11",
+      "archived": false,
+      "lang": null,
+      "desc": "Thuật ngữ về sáng tạo, TRIZ, OTSM"
+     }
+    ]
+   },
+   "OTSM TRIZ thinking": {
+    "items": []
+   }
+  },
+  "tectology": {
+   "bogdanov tectology": {
+    "items": []
+   },
+   "tektology": {
+    "items": [
+     {
+      "repo": "winstonlin01/Bogdanov-Tektology-Chinese-Translation",
+      "stars": 1,
+      "pushed": "2025-12-22",
+      "archived": false,
+      "lang": null,
+      "desc": "波格丹诺夫组织学中文翻译/系统论/组织形态学 Bogdanov Tektology 中文翻译"
+     },
+     {
+      "repo": "tektology/Tektology",
+      "stars": 0,
+      "pushed": "2014-03-08",
+      "archived": false,
+      "lang": null,
+      "desc": ""
+     },
+     {
+      "repo": "ACCELUM/Tektology",
+      "stars": 0,
+      "pushed": "2015-11-13",
+      "archived": false,
+      "lang": null,
+      "desc": ""
+     }
+    ]
+   }
+  },
+  "fmea": {
+   "FMEA failure mode effects analysis": {
+    "items": [
+     {
+      "repo": "cowboy2718/FMEA",
+      "stars": 22,
+      "pushed": "2018-09-25",
+      "archived": false,
+      "lang": "R",
+      "desc": "Failure Mode Effects Analysis with R"
+     },
+     {
+      "repo": "esanmar/fmea",
+      "stars": 20,
+      "pushed": "2024-11-18",
+      "archived": false,
+      "lang": "PHP",
+      "desc": "Failure mode and effects analysis is the process of reviewing as many components, assemblies, and subsystems as possible to identify potenti"
+     },
+     {
+      "repo": "TallPaul67/MachineLearningFMEA",
+      "stars": 18,
+      "pushed": "2025-04-03",
+      "archived": false,
+      "lang": null,
+      "desc": "Repository for the Machine Learning Failure Mode and Effects Analysis (ML FMEA) Template.  The ML FMEA is detailed within the SAE World Cong"
+     },
+     {
+      "repo": "qTools4All/openfmea",
+      "stars": 2,
+      "pushed": "2020-04-15",
+      "archived": false,
+      "lang": null,
+      "desc": "Open FMEA (Failure Mode and Effects Analysis) tool to make this method available for small companies. "
+     },
+     {
+      "repo": "candelakechkian/AI-FMEA",
+      "stars": 2,
+      "pushed": "2025-03-05",
+      "archived": false,
+      "lang": null,
+      "desc": "This repository provides an AI-specific Failure Mode and Effects Analysis (FMEA) template to identify, assess, and mitigate risks in AI/ML s"
+     }
+    ]
+   },
+   "FMEA software llm": {
+    "items": []
+   }
+  },
+  "fta": {
+   "fault tree analysis": {
+    "items": [
+     {
+      "repo": "rakhimov/scram",
+      "stars": 168,
+      "pushed": "2023-09-19",
+      "archived": false,
+      "lang": "C++",
+      "desc": "Probabilistic Risk Analysis Tool (fault tree analysis, event tree analysis, etc.)"
+     },
+     {
+      "repo": "idaholab/EMRALD",
+      "stars": 37,
+      "pushed": "2026-11-16",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "Event Modeling Risk Assessment using Linked Diagrams (EMRALD) is a software tool developed at INL for researching the capabilities of dynami"
+     },
+     {
+      "repo": "DatanoiseTV/practical-reverse-engineering",
+      "stars": 31,
+      "pushed": "2026-05-18",
+      "archived": false,
+      "lang": "Shell",
+      "desc": "A practical handbook on reverse engineering. Covers embedded firmware (ARM Cortex-M, Xtensa/ESP32, RISC-V, 8051, MIPS), Linux userland, kern"
+     },
+     {
+      "repo": "afalko/fta-kafka",
+      "stars": 22,
+      "pushed": "2021-09-12",
+      "archived": false,
+      "lang": "Shell",
+      "desc": "Images and links to references for Kafka Fault Tree Analysis talks by Andrey Falko"
+     },
+     {
+      "repo": "public-fta/pfta",
+      "stars": 15,
+      "pushed": "2026-06-10",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Public Fault Tree Analyser (PFTA): free and open-source fault tree analysis"
+     }
+    ]
+   },
+   "fault tree analysis llm": {
+    "items": [
+     {
+      "repo": "winter114514/fta-system",
+      "stars": 0,
+      "pushed": "2026-09-13",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "Fault Tree Analysis system powered by LLM + knowledge graph + RAG (FastAPI + React + TypeScript + DeepSeek)"
+     }
+    ]
+   }
+  },
+  "nasa-se": {
+   "NASA systems engineering handbook": {
+    "items": [
+     {
+      "repo": "vabhishekprakash/trust-aware-agent",
+      "stars": 3,
+      "pushed": "2026-11-09",
+      "archived": false,
+      "lang": "Python",
+      "desc": "A small local QA agent over the NASA Systems Engineering Handbook that outputs a calibrated confidence and acts on it. Preregistered held-ou"
+     },
+     {
+      "repo": "Qi-XM/NASA-SYSTEMS-ENGINEERING-HANDBOOK",
+      "stars": 2,
+      "pushed": "2022-02-14",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "《 NASA 系统工程手册（NASA System Engineering Handbook）》中文翻译版。"
+     },
+     {
+      "repo": "Ritviksingh-cyber/NASA-Systems-Engineering-Handbook-QA-System",
+      "stars": 0,
+      "pushed": "2026-04-26",
+      "archived": false,
+      "lang": "Jupyter Notebook",
+      "desc": ""
+     },
+     {
+      "repo": "martin1210235/graph-rag-engineering-handbook",
+      "stars": 0,
+      "pushed": "2026-10-30",
+      "archived": false,
+      "lang": "Python",
+      "desc": "A small Neo4j GraphRAG demo over NASA Systems Engineering Handbook excerpts"
+     },
+     {
+      "repo": "likithayn/nasa_handbook",
+      "stars": 0,
+      "pushed": "2026-03-28",
+      "archived": false,
+      "lang": "Jupyter Notebook",
+      "desc": "Advanced RAG Chatbot for the NASA Systems Engineering Handbook (SP-2016-6105 Rev2)  A robust Question-Answering system designed specifically"
+     }
+    ]
+   },
+   "systems engineering requirements verification llm": {
+    "items": [
+     {
+      "repo": "fisallllll280-code/VX-runtime",
+      "stars": 0,
+      "pushed": "2026-11-21",
+      "archived": false,
+      "lang": "Python",
+      "desc": "VX # 🔥 VX — MULTI-MIND INTELLIGENCE FABRIC ## من شبكة الوكلاء إلى هندسة الذكاء الجماعي القابل للإثبات  أرى أن هذا التصميم يمثل اتجاهًا معمار"
+     }
+    ]
+   }
+  },
+  "stpa": {
+   "STPA Leveson": {
+    "items": []
+   },
+   "STPA hazard analysis tool": {
+    "items": [
+     {
+      "repo": "geovani-ribeiro/stpa-capella-afcs",
+      "stars": 0,
+      "pushed": "2025-12-13",
+      "archived": false,
+      "lang": null,
+      "desc": "This project presents a System-Theoretic Process Analysis (STPA) applied to an Automatic Flight Control System (AFCS) using the Capella mode"
+     }
+    ]
+   }
+  },
+  "toc": {
+   "theory of constraints": {
+    "items": [
+     {
+      "repo": "Newbeeer/V-information",
+      "stars": 31,
+      "pushed": "2020-07-08",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Code for the ICLR 2020 Paper, \"A Theory of Usable Information under Computational Constraints\""
+     },
+     {
+      "repo": "pnfernandes/Python-Code-for-Stress-Constrained-Topology-Optimization-in-ABAQUS",
+      "stars": 25,
+      "pushed": "2023-12-02",
+      "archived": false,
+      "lang": "Python",
+      "desc": "This repository contains a Python code with five implementations of topology optimization approaches suitable for 2D and 3D problems, all co"
+     },
+     {
+      "repo": "ryanfreckleton/thinkgraph",
+      "stars": 9,
+      "pushed": "2022-03-25",
+      "archived": false,
+      "lang": "Python",
+      "desc": "A mini-language for making diagrams for use in the theory of constraints thinking processes."
+     },
+     {
+      "repo": "VAIXLNS/VAIXLNS",
+      "stars": 8,
+      "pushed": "2026-09-02",
+      "archived": false,
+      "lang": "Python",
+      "desc": "╔════════════════════════════════════أرى أن هذا أصبح أقرب إلى Blueprint سيادي وليس مجرد مخطط نظام. ومع ذلك، إذا كان الهدف أن يكون هذا الرسم "
+     },
+     {
+      "repo": "wevbarker/HiGGS",
+      "stars": 7,
+      "pushed": "2026-01-04",
+      "archived": false,
+      "lang": "Mathematica",
+      "desc": "Hamiltonian Gauge Gravity Surveyor (HiGGS). Tools for Hamiltonian constraint, canonical and Dirac-Bergmann analysis of gravity theories with"
+     }
+    ]
+   },
+   "drum buffer rope": {
+    "items": [
+     {
+      "repo": "lymingtonprecision/work-to-list",
+      "stars": 1,
+      "pushed": "2017-08-03",
+      "archived": false,
+      "lang": "Clojure",
+      "desc": "Web service that displays our Drum Buffer Rope prioritized production queues"
+     },
+     {
+      "repo": "admm67/TOC_DBR_Belt",
+      "stars": 1,
+      "pushed": "2025-08-10",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "Theory of constraints Drum Buffer Rope Stimulation in Belt Manufacturing https://admm67.github.io/TOC_DBR_Belt/"
+     },
+     {
+      "repo": "gacnik1994/DrumBufferRope",
+      "stars": 0,
+      "pushed": "2023-06-01",
+      "archived": false,
+      "lang": "C++",
+      "desc": "Simulation of a production and improvement with Drum Buffer Rope principle"
+     },
+     {
+      "repo": "rnwolf/dbr",
+      "stars": 0,
+      "pushed": "2025-08-08",
+      "archived": false,
+      "lang": "Roff",
+      "desc": "Drum Buffer and Rope Application"
+     },
+     {
+      "repo": "jkmasny/PlanerProdukcyjny",
+      "stars": 0,
+      "pushed": "2019-02-25",
+      "archived": false,
+      "lang": "SQLPL",
+      "desc": "Narzędzie do wspomagania planowania produkcji z algorytmem DBR Drum-Buffer-Rope"
+     }
+    ]
+   },
+   "theory of constraints ci bottleneck": {
+    "items": []
+   }
+  },
+  "kepner-tregoe": {
+   "kepner tregoe": {
+    "items": [
+     {
+      "repo": "yousrariouch146/KepnerTregoe-wizard",
+      "stars": 0,
+      "pushed": "2026-09-01",
+      "archived": false,
+      "lang": "Python",
+      "desc": ""
+     },
+     {
+      "repo": "rlowrance/extending-kepner-tregoe",
+      "stars": 0,
+      "pushed": "2022-07-29",
+      "archived": false,
+      "lang": "Python",
+      "desc": ""
+     },
+     {
+      "repo": "KingaBurnejko/Kepner-Tregoe_Method_Calculator",
+      "stars": 0,
+      "pushed": "2023-02-04",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "Calculator for Kepner-Tregoe decision making method"
+     },
+     {
+      "repo": "KacicnikJan/Programiranje-KT-metod",
+      "stars": 0,
+      "pushed": "2021-01-06",
+      "archived": false,
+      "lang": "C#",
+      "desc": "WPF aplikacija metodo večkriterijskega odločanja Kepner Tregoe (K-T metoda)"
+     },
+     {
+      "repo": "MajorIncident/incidentmapping",
+      "stars": 0,
+      "pushed": "2026-08-19",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "A Visual Drag and Drop Incident Mapping Tool for Kepner-Tregoe"
+     }
+    ]
+   },
+   "kepner-tregoe decision analysis": {
+    "items": []
+   }
+  },
+  "cynefin": {
+   "cynefin framework": {
+    "items": [
+     {
+      "repo": "cynefin-community/awesome-cynefin",
+      "stars": 31,
+      "pushed": "2021-02-18",
+      "archived": false,
+      "lang": null,
+      "desc": "Useful Cynefin framework resources"
+     },
+     {
+      "repo": "l4ci/latticework",
+      "stars": 6,
+      "pushed": "2026-08-23",
+      "archived": true,
+      "lang": null,
+      "desc": "A latticework of thinking, strategy, and analysis frameworks packaged as model- and harness-agnostic agent skills (SWOT, Porter's Five Force"
+     },
+     {
+      "repo": "nctrnm/life_systems",
+      "stars": 3,
+      "pushed": "2026-09-11",
+      "archived": false,
+      "lang": "Python",
+      "desc": "A general methodology for everyday decision architecture: diagnose friction, map complexity, choose responses, execute within limits, and au"
+     },
+     {
+      "repo": "hyperthunk/Cynefin",
+      "stars": 1,
+      "pushed": "2010-08-22",
+      "archived": false,
+      "lang": null,
+      "desc": "An agile delivery reference framework and supporting toolkit."
+     },
+     {
+      "repo": "fernandofatech/ref-architect-frameworks-hub",
+      "stars": 1,
+      "pushed": "2026-11-01",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "Reference hub for AWS Well-Architected, TOGAF, C4, ArchiMate, DDD, 12-Factor and Cynefin."
+     }
+    ]
+   },
+   "cynefin tool": {
+    "items": [
+     {
+      "repo": "gagharutyunyan1993/methodology-toolkit",
+      "stars": 1,
+      "pushed": "2026-11-04",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "Structured decision-making for Claude Code: a /method command, an auto-triggering methodology-driven-thinking skill, and a red-team-critic s"
+     },
+     {
+      "repo": "MinThirt-Ti/antigravity-toolkit",
+      "stars": 0,
+      "pushed": "2026-11-23",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Curated engineering toolkit featuring call-graph topology mapping, C4 architecture telemetry, symbol indexing, and a Wardley/Cynefin/Kano ro"
+     },
+     {
+      "repo": "thewarroom-ag/analytical-frameworks",
+      "stars": 0,
+      "pushed": "2026-08-28",
+      "archived": false,
+      "lang": null,
+      "desc": "Four decision frameworks rebuilt as isolated multi-agent debates: Cynefin, Disney Creative Strategy, Pre-Mortem, and Inversion. A skill pack"
+     }
+    ]
+   }
+  },
+  "wardley": {
+   "wardley maps": {
+    "items": [
+     {
+      "repo": "wardley-maps-community/awesome-wardley-maps",
+      "stars": 837,
+      "pushed": "2026-03-06",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "Wardley maps community hub. Useful Wardley mapping resources"
+     },
+     {
+      "repo": "damonsk/onlinewardleymaps",
+      "stars": 311,
+      "pushed": "2026-10-08",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "OnlineWardleyMaps.com - Draw Wardley Maps in seconds using this free online tool"
+     },
+     {
+      "repo": "andrewharmellaw/wardley-maps-book",
+      "stars": 309,
+      "pushed": "2025-11-15",
+      "archived": false,
+      "lang": null,
+      "desc": "You know Simon Wardley's medium posts on his Wardley Mapping technique? This is an AsciiDoc of them."
+     },
+     {
+      "repo": "swardley/WARDLEY-MAP-REPOSITORY",
+      "stars": 229,
+      "pushed": "2025-03-14",
+      "archived": false,
+      "lang": null,
+      "desc": "Maps from the 2022 AND BEYOND research projects"
+     },
+     {
+      "repo": "damonsk/vscode-wardley-maps",
+      "stars": 80,
+      "pushed": "2026-02-15",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "A Wardley Maps for Visual Studio Code extension supporting rendering and editing maps-as-code."
+     }
+    ]
+   },
+   "wardley map llm": {
+    "items": [
+     {
+      "repo": "alechenninger/map-minder",
+      "stars": 1,
+      "pushed": "2024-05-17",
+      "archived": false,
+      "lang": "Dart",
+      "desc": "LLM-assisted, mediating assessments for Wardley Map component evolution"
+     },
+     {
+      "repo": "rhizomatic-preset/wardley-mapping-value-chains",
+      "stars": 0,
+      "pushed": "2026-06-06",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "A terminal-based conversational tool for building and refining [Wardley value chains](https://wardleymaps.com) with a local LLM."
+     }
+    ]
+   }
+  },
+  "delphi": {
+   "delphi method estimation": {
+    "items": [
+     {
+      "repo": "Bosiks910/Planning-Poker",
+      "stars": 0,
+      "pushed": "2013-02-28",
+      "archived": false,
+      "lang": null,
+      "desc": "A system/application for remote/distributed project estimations using ideas from [Planning Poker|http://en.wikipedia.org/wiki/Planning_poker"
+     }
+    ]
+   },
+   "delphi method llm": {
+    "items": []
+   }
+  },
+  "fermi": {
+   "fermi estimation": {
+    "items": [
+     {
+      "repo": "rsnemmen/Fermi-LAT-tutorial",
+      "stars": 16,
+      "pushed": "2026-09-22",
+      "archived": false,
+      "lang": "Jupyter Notebook",
+      "desc": "Lectures on maximum likelihood estimation for astroparticle physics"
+     },
+     {
+      "repo": "black-hole-group/fermipy-tutorial",
+      "stars": 9,
+      "pushed": "2019-08-14",
+      "archived": false,
+      "lang": "Jupyter Notebook",
+      "desc": "Gamma-ray data analysis and maximum likelihood estimation hands-on lesson with FermiPy"
+     },
+     {
+      "repo": "SidathPeiris/estimation-gym-omarchy",
+      "stars": 1,
+      "pushed": "2026-09-17",
+      "archived": true,
+      "lang": "JavaScript",
+      "desc": "Daily Fermi-estimation puzzle Omarchy shell plugin"
+     },
+     {
+      "repo": "sanzgiri/fermi",
+      "stars": 1,
+      "pushed": "2026-07-05",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "Fermi-problem trainer: generate estimation problems and score the reasoning chain factor-by-factor. Zero-build static SPA."
+     },
+     {
+      "repo": "SidathPeiris/estimation-gym-app",
+      "stars": 1,
+      "pushed": "2026-09-20",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "Daily Fermi-estimation puzzle as an installable web app, sharing scoring and questions with the Omarchy bar widget"
+     }
+    ]
+   },
+   "fermi estimation llm": {
+    "items": []
+   }
+  },
+  "superforecasting": {
+   "superforecasting forecasting": {
+    "items": [
+     {
+      "repo": "deusyu/superforecasting-skill",
+      "stars": 13,
+      "pushed": "2026-06-26",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Turn vague concerns into resolvable, updatable, scoreable probabilistic forecasts. A Claude Code / Codex skill."
+     },
+     {
+      "repo": "DukeYu65ss/presage",
+      "stars": 4,
+      "pushed": "2026-08-13",
+      "archived": false,
+      "lang": "Python",
+      "desc": "The Everything Prediction Engine — five AI analyst personas debate, 10,000 Monte Carlo worldlines unfold, and superforecasting calibration c"
+     },
+     {
+      "repo": "eltociear/metaculus-forecast-bot",
+      "stars": 2,
+      "pushed": "2026-08-28",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Stdlib-only forecasting bot for the Metaculus AI Benchmark tournaments, plus the non-obvious API facts that cost a day to find"
+     },
+     {
+      "repo": "GeiserX/metaculus-forecasting-bot",
+      "stars": 2,
+      "pushed": "2026-11-23",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Forecasting bot for the Metaculus FutureEval tournaments and MiniBench, running on Claude Code headless"
+     },
+     {
+      "repo": "Hostu404/SAGE",
+      "stars": 1,
+      "pushed": "2026-11-24",
+      "archived": false,
+      "lang": "Python",
+      "desc": "The defense techniques of tomorrow had to be discovered today. New concepts, new tools, new weapons. By analyzing the past, SAGE can project"
+     }
+    ]
+   },
+   "forecasting llm calibration": {
+    "items": [
+     {
+      "repo": "NiharJani2002/nexus-forecasting",
+      "stars": 6,
+      "pushed": "2026-05-20",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Multi-agent LLM framework for time series forecasting with macro/micro reasoning and calibration."
+     },
+     {
+      "repo": "danilushin/asktheboard",
+      "stars": 5,
+      "pushed": "2026-08-24",
+      "archived": false,
+      "lang": "Python",
+      "desc": "A board of expert personas whose every decision is a pre-registered, time-anchored, reality-graded bet. BYOK; the board that keeps score, be"
+     },
+     {
+      "repo": "DukeYu65ss/presage",
+      "stars": 4,
+      "pushed": "2026-08-13",
+      "archived": false,
+      "lang": "Python",
+      "desc": "The Everything Prediction Engine — five AI analyst personas debate, 10,000 Monte Carlo worldlines unfold, and superforecasting calibration c"
+     },
+     {
+      "repo": "JeremyGracey-AI/prime-radiant",
+      "stars": 2,
+      "pushed": "2026-11-23",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Calibrated forecasting: CDC FluSight quantile forecaster (LightGBM + baseline replica, WIS-scored, vintage-honest) with a live dashboard; Me"
+     },
+     {
+      "repo": "eltociear/metaculus-forecast-bot",
+      "stars": 2,
+      "pushed": "2026-08-28",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Stdlib-only forecasting bot for the Metaculus AI Benchmark tournaments, plus the non-obvious API facts that cost a day to find"
+     }
+    ]
+   }
+  },
+  "ach": {
+   "\"analysis of competing hypotheses\"": {
+    "items": [
+     {
+      "repo": "Burton/Analysis-of-Competing-Hypotheses",
+      "stars": 112,
+      "pushed": "2012-01-08",
+      "archived": false,
+      "lang": "PHP",
+      "desc": "An analytic technique created at the CIA, ACH helps you analyze complex situations with multiple hypotheses and countless pieces of evidence"
+     },
+     {
+      "repo": "suprathermal/ACH-Grounding",
+      "stars": 2,
+      "pushed": "2026-03-29",
+      "archived": false,
+      "lang": "Python",
+      "desc": "A demo of using Analysis of Competing Hypotheses + RAG for AI grounding"
+     },
+     {
+      "repo": "lightcaptainguy/bayesian-ach-reasoning-prototype",
+      "stars": 2,
+      "pushed": "2026-04-03",
+      "archived": false,
+      "lang": "C++",
+      "desc": "Prototype Implementation of Heuer's ACH ( Analysis of Competing Hypotheses ) + simple Bayesian updating"
+     },
+     {
+      "repo": "ApartsinProjects/EMR-ACH",
+      "stars": 1,
+      "pushed": "2026-05-25",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Evidence Matrix Reasoning via Analysis of Competing Hypotheses: LLM-based geopolitical event forecasting"
+     },
+     {
+      "repo": "vasquezbrandon205/achix",
+      "stars": 1,
+      "pushed": "2026-10-11",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Analysis of Competing Hypotheses for science — Heuer-style disconfirmatory adjudication plus hard-gated cross-domain transfer reasoning"
+     }
+    ]
+   },
+   "ACH competing hypotheses debugging": {
+    "items": []
+   }
+  },
+  "key-assumptions-check": {
+   "\"key assumptions check\" structured analytic techniques": {
+    "items": [
+     {
+      "repo": "itsok4u/intel-exploitation-framework",
+      "stars": 0,
+      "pushed": "2026-05-22",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Structured Analytic Techniques (SATs) Toolkit for red-string thinkers & intelligence exploitation. ACH, Key Assumptions Check, Evidence-Inte"
+     }
+    ]
+   },
+   "structured analytic techniques": {
+    "items": [
+     {
+      "repo": "Aryia-Behroziuan/neurons",
+      "stars": 99,
+      "pushed": "2023-11-15",
+      "archived": false,
+      "lang": null,
+      "desc": "An ANN is a model based on a collection of connected units or nodes called \"artificial neurons\", which loosely model the neurons in a biolog"
+     },
+     {
+      "repo": "assafkip/investigators-copilot",
+      "stars": 77,
+      "pushed": "2026-11-02",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Free open-source OSINT and investigation toolkit for Claude Code: case management, 54 OSINT enrichment adapters, structured analytic techniq"
+     },
+     {
+      "repo": "aarora79/my-ai-assets",
+      "stars": 24,
+      "pushed": "2026-11-18",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "A curated collection of advanced prompt templates for Claude and other LLMs, featuring systematic analysis    frameworks like Feynman Techni"
+     },
+     {
+      "repo": "davidljohnson/cti-sat-prompts",
+      "stars": 13,
+      "pushed": "2026-01-05",
+      "archived": false,
+      "lang": null,
+      "desc": "Collection of prompts for helping conduct structured analytic techniques to help with threat intelligence assessments"
+     },
+     {
+      "repo": "JoyceQuinn/Best-Advertising-And-Marketing-Management",
+      "stars": 13,
+      "pushed": "2020-11-09",
+      "archived": false,
+      "lang": null,
+      "desc": "As a digital marketing company, we have actually driven numerous web site hits, millions of leads as well as also millions of sales. So if y"
+     }
+    ]
+   }
+  },
+  "six-hats": {
+   "six thinking hats": {
+    "items": [
+     {
+      "repo": "danderfer/Comp_Sci_Sem_2",
+      "stars": 229,
+      "pushed": "2023-04-03",
+      "archived": false,
+      "lang": "Python",
+      "desc": "According to all known laws of aviation, there is no way that a bee should be able to fly. Its wings are too small to get its fat little bod"
+     },
+     {
+      "repo": "MarkipTheMudkip/in-class-project-2",
+      "stars": 98,
+      "pushed": "2022-06-04",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "According to all known laws of aviation,     there is no way a bee should be able to fly.     Its wings are too small to get its fat little "
+     },
+     {
+      "repo": "S4ltster/Beemovie",
+      "stars": 53,
+      "pushed": "2023-07-05",
+      "archived": false,
+      "lang": "CSS",
+      "desc": "Bee Movie script for educational purposes only, anyways According to all known laws of aviation, there is no way a bee should be able to fly"
+     },
+     {
+      "repo": "landonasato/Function",
+      "stars": 39,
+      "pushed": "2020-10-03",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off"
+     },
+     {
+      "repo": "bjcoombs/ai-native-toolkit",
+      "stars": 34,
+      "pushed": "2026-11-24",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Claude Code plugin & Agent Skills for AI-native development: codebase readiness scoring (/assess), Six Thinking Hats deliberation (/huddle),"
+     }
+    ]
+   },
+   "six thinking hats llm": {
+    "items": [
+     {
+      "repo": "bjcoombs/ai-native-toolkit",
+      "stars": 34,
+      "pushed": "2026-11-24",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Claude Code plugin & Agent Skills for AI-native development: codebase readiness scoring (/assess), Six Thinking Hats deliberation (/huddle),"
+     },
+     {
+      "repo": "georgekobaidze/neuralhats",
+      "stars": 8,
+      "pushed": "2026-06-19",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "Six AI personas debate any topic using Edward de Bono's Six Thinking Hats framework. Powered by Gemma 4 via Ollama. Runs fully local."
+     },
+     {
+      "repo": "Halomix/out-the-box-thinking",
+      "stars": 1,
+      "pushed": "2026-07-03",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "MCP server for structured lateral thinking (Six Thinking Hats) with a convergent, actionable synthesis stage"
+     },
+     {
+      "repo": "xuxiaodizzz-blip/hexmind",
+      "stars": 1,
+      "pushed": "2026-04-27",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Multi-expert AI decision engine with persona orchestration, Six Thinking Hats, FastAPI, and React."
+     },
+     {
+      "repo": "umervc/thinking-hats-dialogue-analyzer",
+      "stars": 0,
+      "pushed": "2026-07-03",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Python tool that uses LLMs to classify dialogue with the Six Thinking Hats framework and visualize reasoning patterns."
+     }
+    ]
+   }
+  },
+  "morphological": {
+   "morphological analysis zwicky": {
+    "items": [
+     {
+      "repo": "JohannesBuchner/zwicky-morphological-analysis",
+      "stars": 16,
+      "pushed": "2019-01-29",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Zwickys Morphological Analysis implemented in Python"
+     },
+     {
+      "repo": "javarool/zwicky",
+      "stars": 2,
+      "pushed": "2026-10-20",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "Fritz Zwicky's morphological analysis as a CLI and an AI-agent skill"
+     },
+     {
+      "repo": "jpfaraco/zwicky",
+      "stars": 2,
+      "pushed": "2025-10-15",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "An AI-powered web application that helps you generate innovative ideas using the Zwicky Box (morphological analysis) method combined with AI"
+     },
+     {
+      "repo": "cybernagl/skill-zwicky-box",
+      "stars": 1,
+      "pushed": "2026-11-13",
+      "archived": false,
+      "lang": null,
+      "desc": "Claude skill: Zwicky box / morphological analysis (Morphologischer Kasten) creativity technique"
+     },
+     {
+      "repo": "expectedparrot/zwicky",
+      "stars": 0,
+      "pushed": "2026-07-25",
+      "archived": false,
+      "lang": "Python",
+      "desc": "MIT-licensed General Morphological Analysis CLI for product and feature design"
+     }
+    ]
+   },
+   "morphological box design space": {
+    "items": []
+   }
+  },
+  "pugh-matrix": {
+   "pugh matrix decision": {
+    "items": [
+     {
+      "repo": "abrandofbold/pugh-decide-engine",
+      "stars": 1,
+      "pushed": "2013-10-19",
+      "archived": false,
+      "lang": "Java",
+      "desc": "Java scoring engine for Pugh matrix decision making"
+     },
+     {
+      "repo": "dionjoshualobo/pughmatrix",
+      "stars": 0,
+      "pushed": "2026-11-11",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "Quickly create Pugh Matrix (aka Comparison Matrix, Decision Matrix etc)"
+     },
+     {
+      "repo": "rogeregm/Pugh-matrix-webapp",
+      "stars": 0,
+      "pushed": "2022-07-08",
+      "archived": false,
+      "lang": null,
+      "desc": "A web based tool for making better decisions"
+     },
+     {
+      "repo": "ef12/pugh_matrix",
+      "stars": 0,
+      "pushed": "2023-09-30",
+      "archived": false,
+      "lang": "Python",
+      "desc": "The pugh matrix is a decision making application that should help teams to decide"
+     }
+    ]
+   },
+   "pugh matrix tool": {
+    "items": [
+     {
+      "repo": "rogeregm/Pugh-matrix-webapp",
+      "stars": 0,
+      "pushed": "2022-07-08",
+      "archived": false,
+      "lang": null,
+      "desc": "A web based tool for making better decisions"
+     }
+    ]
+   }
+  },
+  "qfd": {
+   "quality function deployment house of quality": {
+    "items": [
+     {
+      "repo": "jettbrains/-L-",
+      "stars": 175,
+      "pushed": "2021-08-18",
+      "archived": false,
+      "lang": null,
+      "desc": "W3C Strategic Highlights  September 2019  This report was prepared for the September 2019 W3C Advisory Committee Meeting (W3C Member link). "
+     },
+     {
+      "repo": "bbitaghimire/quality-function-deployment-case-study",
+      "stars": 0,
+      "pushed": "2026-02-11",
+      "archived": false,
+      "lang": null,
+      "desc": "Applied QFD (House of Quality) methodology to convert customer requirements into measurable technical descriptors and prioritize product dev"
+     },
+     {
+      "repo": "Baziak/artihoq",
+      "stars": 0,
+      "pushed": "2025-08-14",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "ArtiHoQ is a custom Quality Function Deployment tool designed to simplify the process of creating and analyzing the House of Quality (HoQ) m"
+     }
+    ]
+   },
+   "QFD requirements": {
+    "items": [
+     {
+      "repo": "lawrence-iviani/qfd_webapp",
+      "stars": 0,
+      "pushed": "2021-01-02",
+      "archived": false,
+      "lang": "Python",
+      "desc": "A simple quality function deployment application to manage a product development in terms of cutomer and technical requirements"
+     },
+     {
+      "repo": "bbitaghimire/quality-function-deployment-case-study",
+      "stars": 0,
+      "pushed": "2026-02-11",
+      "archived": false,
+      "lang": null,
+      "desc": "Applied QFD (House of Quality) methodology to convert customer requirements into measurable technical descriptors and prioritize product dev"
+     },
+     {
+      "repo": "Adyamaa/Smart_cook-Product-Development-",
+      "stars": 0,
+      "pushed": "2022-01-27",
+      "archived": false,
+      "lang": null,
+      "desc": "We started our journey to help the amateur cooks to cook in an easier way by using our device, but we realized from the customer feedback th"
+     }
+    ]
+   }
+  },
+  "axiomatic-design": {
+   "axiomatic design nam suh": {
+    "items": []
+   },
+   "axiomatic design software": {
+    "items": [
+     {
+      "repo": "aehomay/axiomatic_design_calculator",
+      "stars": 2,
+      "pushed": "2025-11-28",
+      "archived": false,
+      "lang": "C",
+      "desc": "This repository is intended to present how axiomatic design can be employed during end-to-end design of software systems and it presents how"
+     },
+     {
+      "repo": "bmclean314/AxiomaticDesignSW",
+      "stars": 1,
+      "pushed": "2020-08-28",
+      "archived": false,
+      "lang": "Java",
+      "desc": "Software application for building axiomatic design decompositions"
+     },
+     {
+      "repo": "nonbinarysolo/TOADS",
+      "stars": 1,
+      "pushed": "2026-08-10",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Totally Open Axiomatic Design Software"
+     },
+     {
+      "repo": "mygn-l/axiomatic-theory-of-design",
+      "stars": 0,
+      "pushed": "2026-08-04",
+      "archived": false,
+      "lang": "Lean",
+      "desc": "Software and formalization based on Zeng's Axiomatic Theory of Design Modelling."
+     }
+    ]
+   }
+  },
+  "reference-class": {
+   "reference class forecasting": {
+    "items": [
+     {
+      "repo": "Sorghobrayan-dotcom/near-posterior",
+      "stars": 2,
+      "pushed": "2026-11-21",
+      "archived": false,
+      "lang": "Python",
+      "desc": "A NEAR investment thesis built on base rates: reference-class forecast, backtest and specification curve. NEAR HACKATHON, track thesis."
+     },
+     {
+      "repo": "Pcapp2727/PRISM",
+      "stars": 1,
+      "pushed": "2026-04-21",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "PRISM — AI-powered decision intelligence engine. Evidence-grounded analysis using reference class forecasting, convexity analysis, bias dete"
+     },
+     {
+      "repo": "sethmblack/skill-reference-class-forecasting",
+      "stars": 0,
+      "pushed": "2026-02-19",
+      "archived": false,
+      "lang": null,
+      "desc": "Paks skill: reference-class-forecasting"
+     },
+     {
+      "repo": "sebsenb123/Reference-Class-Forecasting",
+      "stars": 0,
+      "pushed": "2020-06-19",
+      "archived": false,
+      "lang": "Python",
+      "desc": ""
+     },
+     {
+      "repo": "KaraZajac/TOCSIN",
+      "stars": 0,
+      "pushed": "2026-11-20",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Conflict-forecasting system: UCDP reference-class base rates, self-resolving questions, calibration scoring vs the prior"
+     }
+    ]
+   },
+   "reference class forecasting estimation": {
+    "items": [
+     {
+      "repo": "manfromnowhere143/veritas-engine",
+      "stars": 0,
+      "pushed": "2026-08-01",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Staged probability estimation for prediction-market questions. Reference-class base rates, dampened Bayesian updating, calibration, conforma"
+     }
+    ]
+   }
+  },
+  "hazop": {
+   "HAZOP": {
+    "items": [
+     {
+      "repo": "TUDoAD/preHAZOP",
+      "stars": 21,
+      "pushed": "2023-05-28",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Automated Safety Assesments in an early development stage based on standardized DEXPI P&IDs and DWSIM process simulation. "
+     },
+     {
+      "repo": "paopaololo/Safeguard-Category-Prediction-for-HAZOP-records",
+      "stars": 16,
+      "pushed": "2026-04-21",
+      "archived": false,
+      "lang": "Jupyter Notebook",
+      "desc": "Using Naives Bayes Classifier to predict Safeguard Categories in Industrial Risk Study, like HAZOP and LOPA."
+     },
+     {
+      "repo": "MelkorBalrog/AutoML",
+      "stars": 7,
+      "pushed": "2026-08-01",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Ultimate Autonomous Driving Systems Safety Engineering free tool which covers UL 4600, ISO/TR 5083, ISO 26262, ISO 21448, ISO 21434 and ISO/"
+     },
+     {
+      "repo": "LLM-Mutation/multiplex",
+      "stars": 6,
+      "pushed": "2026-11-16",
+      "archived": false,
+      "lang": "Python",
+      "desc": "🪲 A Modular LLM-based Mutation Framework"
+     },
+     {
+      "repo": "arian-esmkhani/risk-management-with-hazop",
+      "stars": 5,
+      "pushed": "2026-07-28",
+      "archived": false,
+      "lang": "Python",
+      "desc": "End-to-end industrial HAZOP monitoring system with synthetic sensor data generation, machine learning risk prediction, and real-time visuali"
+     }
+    ]
+   },
+   "hazop software": {
+    "items": [
+     {
+      "repo": "SafetyMP/Agentic-Process-Safety",
+      "stars": 0,
+      "pushed": "2026-11-22",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "A research sandbox for studying how software agents coordinate and what can go wrong when they act. Explore hazard analysis, policy checks, "
+     }
+    ]
+   }
+  },
+  "vsm-beer": {
+   "viable system model stafford beer": {
+    "items": [
+     {
+      "repo": "simonvanlaak/CyberneticAgents",
+      "stars": 8,
+      "pushed": "2026-09-07",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Agentic multi-agent runtime inspired by cybernetics, Stafford Beer’s Viable Systems Model, and systems theory."
+     },
+     {
+      "repo": "hyperpolymath/ViableSystems.jl",
+      "stars": 4,
+      "pushed": "2026-11-21",
+      "archived": false,
+      "lang": "Julia",
+      "desc": "A Julia modelling toolkit for Stafford Beer’s Viable System Model and Checkland’s Soft Systems Methodology, with constructs for recursive or"
+     },
+     {
+      "repo": "viable-systems/vsm-core",
+      "stars": 3,
+      "pushed": "2026-03-25",
+      "archived": false,
+      "lang": "Elixir",
+      "desc": "VSM Core: Production-ready implementation of Stafford Beer's Viable System Model in Elixir - The first practical VSM Protocol for cybernetic"
+     },
+     {
+      "repo": "minim23/Reflex",
+      "stars": 2,
+      "pushed": "2025-06-05",
+      "archived": false,
+      "lang": "Max",
+      "desc": "Interactive Music System based on Stafford Beer's Viable System Model"
+     },
+     {
+      "repo": "smalik-25/viable-agents",
+      "stars": 2,
+      "pushed": "2026-09-01",
+      "archived": false,
+      "lang": "Python",
+      "desc": "A multi-agent LLM orchestrator structured as Stafford Beer's Viable System Model, with an algedonic escalation bypass and a POSIWID auditor."
+     }
+    ]
+   },
+   "viable system model": {
+    "items": [
+     {
+      "repo": "harshilpatel1799/IoT-Network-Intrusion-Detection-and-Classification-using-Explainable-XAI-Machine-Learning",
+      "stars": 61,
+      "pushed": "2021-04-30",
+      "archived": false,
+      "lang": "Jupyter Notebook",
+      "desc": "The continuing  increase of Internet of Things (IoT) based networks have increased the need for Computer networks intrusion detection system"
+     },
+     {
+      "repo": "idaholab/HYBRID",
+      "stars": 39,
+      "pushed": "2026-11-20",
+      "archived": false,
+      "lang": "C",
+      "desc": "HYBRID is a modeling toolset to assess the integration and economic viability of Integrated Energy Systems (IES)."
+     },
+     {
+      "repo": "idaholab/HERON",
+      "stars": 34,
+      "pushed": "2026-11-24",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Holistic Energy Resource Optimization Network (HERON) is a modeling toolset and plugin for RAVEN to accelerate stochastic technoeconomic ass"
+     },
+     {
+      "repo": "JNDreviews/est-Smartphones-under-Rs.15000-",
+      "stars": 15,
+      "pushed": "2021-09-06",
+      "archived": false,
+      "lang": null,
+      "desc": "WHICH ARE THE BEST SMARTPHONES UNDER 15000 . Best Smartphones under Rs.15000 models 2021  Step by step instructions to track down the best c"
+     },
+     {
+      "repo": "philipp-lm/ViableOS",
+      "stars": 14,
+      "pushed": "2026-03-02",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Organize your AI agent teams with the Viable System Model. The missing organizational layer for multi-agent systems."
+     }
+    ]
+   }
+  },
+  "requisite-variety": {
+   "ashby requisite variety": {
+    "items": [
+     {
+      "repo": "consigcody94/cybernetics-requisite-variety",
+      "stars": 1,
+      "pushed": "2026-07-18",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Ashby's Law of Requisite Variety and Stafford Beer's management cybernetics: an original working guide with runnable simulations"
+     },
+     {
+      "repo": "pbaretto/Fathoming-Ashby-s-Law-of-Requisite-Variety",
+      "stars": 0,
+      "pushed": "2025-10-11",
+      "archived": false,
+      "lang": null,
+      "desc": "Fathoming Ashby’s Law of Requisite Variety Disambiguating Quantum Information Theory Through a Management Cybernetics Lens"
+     },
+     {
+      "repo": "NicholasDZilva/D-Zilvas-Addition-To-Ashby-s-Law-of-Requisite-Variety",
+      "stars": 0,
+      "pushed": "2026-03-22",
+      "archived": false,
+      "lang": null,
+      "desc": "Formal extension of Ashby’s Law of Requisite Variety incorporating irreversibility accumulation (ΔI) and suppression load (S) in complex ada"
+     },
+     {
+      "repo": "NicholasDZilva/D-Zilva-s-2026-Addition-to-Ashby-s-law-of-requisite-variety",
+      "stars": 0,
+      "pushed": "2026-03-15",
+      "archived": false,
+      "lang": null,
+      "desc": "Formal statement of D’Zilva’s 2026 addition to Ashby’s Law of Requisite Variety, including a conceptual formula for effective systemic regul"
+     },
+     {
+      "repo": "bamicallef35-netizen/viable-system-model",
+      "stars": 0,
+      "pushed": "2026-11-09",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Stafford Beer's Viable System Model as a typed, tested Python library, with Ashby's requisite-variety arithmetic done exactly"
+     }
+    ]
+   },
+   "law of requisite variety": {
+    "items": [
+     {
+      "repo": "consigcody94/cybernetics-requisite-variety",
+      "stars": 1,
+      "pushed": "2026-07-18",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Ashby's Law of Requisite Variety and Stafford Beer's management cybernetics: an original working guide with runnable simulations"
+     },
+     {
+      "repo": "pbaretto/Fathoming-Ashby-s-Law-of-Requisite-Variety",
+      "stars": 0,
+      "pushed": "2025-10-11",
+      "archived": false,
+      "lang": null,
+      "desc": "Fathoming Ashby’s Law of Requisite Variety Disambiguating Quantum Information Theory Through a Management Cybernetics Lens"
+     },
+     {
+      "repo": "NicholasDZilva/D-Zilvas-Addition-To-Ashby-s-Law-of-Requisite-Variety",
+      "stars": 0,
+      "pushed": "2026-03-22",
+      "archived": false,
+      "lang": null,
+      "desc": "Formal extension of Ashby’s Law of Requisite Variety incorporating irreversibility accumulation (ΔI) and suppression load (S) in complex ada"
+     },
+     {
+      "repo": "NicholasDZilva/D-Zilva-s-2026-Addition-to-Ashby-s-law-of-requisite-variety",
+      "stars": 0,
+      "pushed": "2026-03-15",
+      "archived": false,
+      "lang": null,
+      "desc": "Formal statement of D’Zilva’s 2026 addition to Ashby’s Law of Requisite Variety, including a conceptual formula for effective systemic regul"
+     }
+    ]
+   }
+  },
+  "causal-loop": {
+   "causal loop diagram system dynamics": {
+    "items": [
+     {
+      "repo": "bear96/System-Dynamics-Bot",
+      "stars": 22,
+      "pushed": "2024-10-12",
+      "archived": false,
+      "lang": "Python",
+      "desc": "This repository contains the code for the paper \"From Text to Map: A System Dynamics Bot for Constructing Causal Loop Diagrams\"  "
+     },
+     {
+      "repo": "schucan/CLD",
+      "stars": 8,
+      "pushed": "2024-06-18",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "A super light-weight web app to create causal loop diagrams (CLD) online. This is useful in Systems Thinking and System Dynamics."
+     },
+     {
+      "repo": "scarygary89/SimpleHealthDataSharingSD",
+      "stars": 7,
+      "pushed": "2019-01-10",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "Supplement System Dynamics Model to From Causal Loop Diagrams to System Dynamics Models in a Data-rich Ecosystem"
+     },
+     {
+      "repo": "jerul/systemdynamics",
+      "stars": 2,
+      "pushed": "2026-04-09",
+      "archived": false,
+      "lang": "Jupyter Notebook",
+      "desc": "Converting causal loop diagrams into computational system dynamics models"
+     },
+     {
+      "repo": "hrauch/rough_cld",
+      "stars": 1,
+      "pushed": "2023-09-01",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "Causal Loop Diagram with roughjs"
+     }
+    ]
+   },
+   "system dynamics modeling tool": {
+    "items": [
+     {
+      "repo": "CURENT/andes",
+      "stars": 392,
+      "pushed": "2026-11-16",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Python toolbox / library for power system transient dynamics simulation with symbolic modeling and numerical analysis 🔥"
+     },
+     {
+      "repo": "Jonas-Nicodemus/PINNs-based-MPC",
+      "stars": 157,
+      "pushed": "2026-01-05",
+      "archived": false,
+      "lang": "Python",
+      "desc": "We discuss nonlinear model predictive control (NMPC) for multi-body dynamics via physics-informed machine learning methods. Physics-informed"
+     },
+     {
+      "repo": "qiskit-community/qiskit-dynamics",
+      "stars": 117,
+      "pushed": "2025-10-07",
+      "archived": true,
+      "lang": "Python",
+      "desc": "DEPRECATED - Tools for building and solving models of quantum systems in Qiskit"
+     },
+     {
+      "repo": "dvdarkin/reasoning-tools",
+      "stars": 30,
+      "pushed": "2025-12-29",
+      "archived": false,
+      "lang": null,
+      "desc": "500+ transferable reasoning primitives extracted from 32 domains. Mental models that survive beyond domain specifics. Bayesian statistics, s"
+     },
+     {
+      "repo": "degiacom/assemble",
+      "stars": 25,
+      "pushed": "2019-02-25",
+      "archived": false,
+      "lang": "Python",
+      "desc": "a tool for creating Molecular Dynamics-ready models of polymeric systems"
+     }
+    ]
+   }
+  },
+  "critical-chain": {
+   "critical chain project management": {
+    "items": [
+     {
+      "repo": "chrisneagu/FTC-Skystone-Dark-Angels-Romania-2020",
+      "stars": 325,
+      "pushed": "2024-04-12",
+      "archived": false,
+      "lang": "Java",
+      "desc": "NOTICE This repository contains the public FTC SDK for the SKYSTONE (2019-2020) competition season. If you are looking for the current seaso"
+     },
+     {
+      "repo": "jettbrains/-L-",
+      "stars": 175,
+      "pushed": "2021-08-18",
+      "archived": false,
+      "lang": null,
+      "desc": "W3C Strategic Highlights  September 2019  This report was prepared for the September 2019 W3C Advisory Committee Meeting (W3C Member link). "
+     },
+     {
+      "repo": "Cryptoaj-hack/DFDTOKEN",
+      "stars": 31,
+      "pushed": "2021-03-01",
+      "archived": false,
+      "lang": null,
+      "desc": "Decentralized Finance (DeFi) Development Services & Solutions Eliminate the role of a middleman by availing decentralized finance (DEFI) dev"
+     },
+     {
+      "repo": "verpseo/verp-erp-packages",
+      "stars": 7,
+      "pushed": "2017-08-29",
+      "archived": false,
+      "lang": null,
+      "desc": "Enterprise resource planning (ERP) is business packages software that allows an organization to use a system of vERP applications to manage "
+     },
+     {
+      "repo": "nmrmsys/X-Projects",
+      "stars": 5,
+      "pushed": "2015-05-19",
+      "archived": false,
+      "lang": "Visual Basic",
+      "desc": "Tools for CCPM (Critical Chain Project Management) using Redmine and Excel"
+     }
+    ]
+   },
+   "critical chain buffer": {
+    "items": [
+     {
+      "repo": "kirushik/critical_chain",
+      "stars": 3,
+      "pushed": "2026-11-24",
+      "archived": false,
+      "lang": "Ruby",
+      "desc": "Handy tool for calculation critical chain-based buffers for stuff:"
+     },
+     {
+      "repo": "SumRaw20/Enterprise-Supply-Chain-Risk-Dashboard",
+      "stars": 0,
+      "pushed": "2026-10-01",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "Monitored 11 maritime corridors and dwell times to safeguard 42 days of critical buffer stock. Modeled statutory DPCO price indexations to c"
+     },
+     {
+      "repo": "atesparilti1/asml-euv-supply-risk",
+      "stars": 0,
+      "pushed": "2026-10-22",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "Monte Carlo simulation of ASML's EUV supply chain: how much buffer stock of critical modules to hold, valued through a DCF"
+     }
+    ]
+   }
+  },
+  "heilmeier": {
+   "heilmeier catechism": {
+    "items": [
+     {
+      "repo": "RealZYZhang/paper-reader-heilmeier",
+      "stars": 93,
+      "pushed": "2026-04-20",
+      "archived": false,
+      "lang": null,
+      "desc": "Agent skill: read STEM papers that answers Heilmeier's Catechism, so you get the big picture in one minute."
+     },
+     {
+      "repo": "howardroark/coders-catechism",
+      "stars": 2,
+      "pushed": "2014-09-29",
+      "archived": false,
+      "lang": null,
+      "desc": "An open adaptation of Heilmeier's Catechism for building successful open-source projects."
+     },
+     {
+      "repo": "LafeLabs/heilmeier",
+      "stars": 0,
+      "pushed": "2021-08-30",
+      "archived": false,
+      "lang": "PHP",
+      "desc": "A scathing critique of the Heilmeir Catechism"
+     },
+     {
+      "repo": "instax-dutta/darpa-audit",
+      "stars": 0,
+      "pushed": "2026-11-17",
+      "archived": false,
+      "lang": null,
+      "desc": "DARPA-grade startup idea audit: Heilmeier Catechism 8-question gate with 5 forcing prompts, SURVIVES / DOES NOT SURVIVE verdict"
+     }
+    ]
+   },
+   "heilmeier catechism research": {
+    "items": []
+   }
+  },
+  "bowtie": {
+   "bowtie risk analysis": {
+    "items": [
+     {
+      "repo": "hyperpolymath/BowtieRisk.jl",
+      "stars": 3,
+      "pushed": "2026-11-24",
+      "archived": false,
+      "lang": "Julia",
+      "desc": "A Julia bow-tie risk-analysis toolkit for modelling hazards, threats, top events, preventive and mitigative barriers, escalation factors and"
+     },
+     {
+      "repo": "sr-dotcom/bowtie-risk-analytics-oilgas",
+      "stars": 1,
+      "pushed": "2026-07-29",
+      "archived": false,
+      "lang": "Python",
+      "desc": "ML-powered Bowtie risk analysis for oil and gas incidents. Barrier failure prediction with XGBoost and SHAP, hybrid RAG over investigation r"
+     },
+     {
+      "repo": "DurgaRamireddy/Crown-Jewel-Security-Analysis---Insider-Data-Theft-at-Tesla",
+      "stars": 1,
+      "pushed": "2026-03-16",
+      "archived": false,
+      "lang": null,
+      "desc": "Bowtie risk model analysis of insider data theft at Tesla - identifying crown jewel assets, mapping threat pathways, and evaluating preventi"
+     },
+     {
+      "repo": "pujitha08/bowtie-diagram-streamlit",
+      "stars": 0,
+      "pushed": "2025-11-20",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Interactive Bowtie Risk Analysis Tool"
+     },
+     {
+      "repo": "AllenLINNN/bowtie-model-app",
+      "stars": 0,
+      "pushed": "2026-11-13",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "A webapp prototype for Bowtie Analysis risk assessment."
+     }
+    ]
+   },
+   "bow-tie barrier analysis": {
+    "items": [
+     {
+      "repo": "hyperpolymath/BowtieRisk.jl",
+      "stars": 3,
+      "pushed": "2026-11-24",
+      "archived": false,
+      "lang": "Julia",
+      "desc": "A Julia bow-tie risk-analysis toolkit for modelling hazards, threats, top events, preventive and mitigative barriers, escalation factors and"
+     }
+    ]
+   }
+  },
+  "apollo-rca": {
+   "apollo root cause analysis": {
+    "items": [
+     {
+      "repo": "alirezaghavaminia/Reality-Chart-Editor",
+      "stars": 0,
+      "pushed": "2026-11-22",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "A simple web tool for making Reality Charts for Root Cause Analysis (RCA) using Apollo method."
+     },
+     {
+      "repo": "SUDIKSHASINGHVI/Apollo-Hospitals-No-Show-Data-Analysis",
+      "stars": 0,
+      "pushed": "2026-09-11",
+      "archived": false,
+      "lang": "Jupyter Notebook",
+      "desc": "An end-to-end Python data analysis project investigating the root causes of hospital appointment no-shows. Utilizing Pandas and Matplotlib, "
+     }
+    ]
+   },
+   "cause mapping root cause": {
+    "items": [
+     {
+      "repo": "chrisneagu/FTC-Skystone-Dark-Angels-Romania-2020",
+      "stars": 325,
+      "pushed": "2024-04-12",
+      "archived": false,
+      "lang": "Java",
+      "desc": "NOTICE This repository contains the public FTC SDK for the SKYSTONE (2019-2020) competition season. If you are looking for the current seaso"
+     },
+     {
+      "repo": "sayantann11/all-classification-templetes-for-ML",
+      "stars": 304,
+      "pushed": "2024-05-15",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Classification - Machine Learning This is ‘Classification’ tutorial which is a part of the Machine Learning course offered by Simplilearn. W"
+     },
+     {
+      "repo": "mercerheather476/turbo-garbanzo",
+      "stars": 40,
+      "pushed": "2022-08-07",
+      "archived": false,
+      "lang": null,
+      "desc": "![AppAuth for Android](https://rawgit.com/openid/AppAuth-Android/master/appauth_lockup.svg)  [![Download](https://img.shields.io/maven-centr"
+     },
+     {
+      "repo": "Root-Cause-Mapping-Working-Group/RCM-WG",
+      "stars": 17,
+      "pushed": "2025-01-29",
+      "archived": false,
+      "lang": null,
+      "desc": "This repository contains information related to the Root Cause Mapping Working Group and its activities. CVE Numbering Authority (CNA) repre"
+     },
+     {
+      "repo": "SamruddhiGoswami/LeanProcessImporovement",
+      "stars": 10,
+      "pushed": "2020-08-09",
+      "archived": false,
+      "lang": null,
+      "desc": "I improved customer experience at the Indian Market located in Milpitas using Lean Six Sigma techniques. The primary focus of this project w"
+     }
+    ]
+   }
+  },
+  "scamper": {
+   "SCAMPER creativity": {
+    "items": [
+     {
+      "repo": "yogsoth-ai/creative-ideation",
+      "stars": 3,
+      "pushed": "2026-06-16",
+      "archived": false,
+      "lang": null,
+      "desc": "Creative Generation Engine — transforms research hypotheses into diverse solution spaces via 10 parallel creativity campaigns spanning struc"
+     },
+     {
+      "repo": "javarool/zwicky",
+      "stars": 2,
+      "pushed": "2026-10-20",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "Fritz Zwicky's morphological analysis as a CLI and an AI-agent skill"
+     },
+     {
+      "repo": "devladpopov/not-obvious",
+      "stars": 1,
+      "pushed": "2026-11-19",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "See what every AI would say. Then go somewhere else. MCP server that maps the cliche cloud of LLM answers and measures originality with a Cl"
+     },
+     {
+      "repo": "ixtWuko/brain-boom",
+      "stars": 1,
+      "pushed": "2026-10-26",
+      "archived": false,
+      "lang": null,
+      "desc": "一个主动触发型的创意 Skill，专为用户迷茫与僵局时刻设计。用横向思维、SCAMPER 与 TRIZ 等技法，从非常规视角点燃新可能。An active-trigger creativity skill designed for your stuck moments. It f"
+     },
+     {
+      "repo": "fairyanna85/pantarhei-brainstorm",
+      "stars": 0,
+      "pushed": "2026-11-17",
+      "archived": false,
+      "lang": null,
+      "desc": "Brainstorming and idea-generation skill for Claude, Claude Code and Hermes: 31 creativity methods (SCAMPER, TRIZ, morphological analysis…) d"
+     }
+    ]
+   },
+   "scamper llm": {
+    "items": [
+     {
+      "repo": "devladpopov/not-obvious",
+      "stars": 1,
+      "pushed": "2026-11-19",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "See what every AI would say. Then go somewhere else. MCP server that maps the cliche cloud of LLM answers and measures originality with a Cl"
+     },
+     {
+      "repo": "nikitaraw2-cmd/thinkertoys-skill",
+      "stars": 1,
+      "pushed": "2026-04-09",
+      "archived": false,
+      "lang": null,
+      "desc": "Скилл брейншторминга на основе техник Майкла Микалко («Рисовый штурм»). 8 волн: SCAMPER, разрушение допущений, смена перспектив, провокации "
+     },
+     {
+      "repo": "joyboseroy/ideaforge",
+      "stars": 0,
+      "pushed": "2026-05-15",
+      "archived": false,
+      "lang": "Python",
+      "desc": "IdeaForge: A Knowledge Graph-Grounded Multi-Methodology Agent Framework for Innovation Analysis and Patent Claim Generation · arXiv:2605.133"
+     },
+     {
+      "repo": "akashmukherjee333/4eyes",
+      "stars": 0,
+      "pushed": "2026-06-29",
+      "archived": false,
+      "lang": "Python",
+      "desc": "11-pass pipeline for reverse-engineering vague/lossy user prompts into structured analysis. Steel-manned restatement, abductive OARS extract"
+     }
+    ]
+   }
+  },
+  "kantorovich-lp": {
+   "linear programming kantorovich": {
+    "items": []
+   },
+   "optimization planning llm": {
+    "items": [
+     {
+      "repo": "maitrix-org/PromptAgent",
+      "stars": 361,
+      "pushed": "2025-07-17",
+      "archived": false,
+      "lang": "Python",
+      "desc": "This is the official repo for \"PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization\". PromptAgent i"
+     },
+     {
+      "repo": "Sheltercosmo/jev4pg",
+      "stars": 262,
+      "pushed": "2026-10-26",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Established strong JEV based natural language to SQL performance and well-covered semantic operators for PostgreSQL with optimized cost and "
+     },
+     {
+      "repo": "WeiminXiong/MPO",
+      "stars": 82,
+      "pushed": "2025-08-20",
+      "archived": false,
+      "lang": "Python",
+      "desc": "MPO: Boosting LLM Agents with Meta Plan Optimization (EMNLP 2025 Findings)"
+     },
+     {
+      "repo": "BauplanLabs/DBPLANBENCH",
+      "stars": 34,
+      "pushed": "2026-06-06",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Repository hosting code to reproduce our paper (with Stanford, TogetherAI and Univ. Wisconsin-Madison), \"DBPLANBENCH: Test-Time Optimization"
+     },
+     {
+      "repo": "Kiwi-shijie/ComfyUI_MiniMaxH3_Smart_Director",
+      "stars": 20,
+      "pushed": "2026-08-27",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Chinese all-in-one Smart Director for MiniMax H3 in ComfyUI: storyboard planning, local LLM/API prompt optimization, long-video handoff, vis"
+     }
+    ]
+   }
+  },
+  "reflexive-control": {
+   "reflexive control lefebvre": {
+    "items": [
+     {
+      "repo": "peterCcw/infoops_reflexive_control_model",
+      "stars": 0,
+      "pushed": "2022-06-02",
+      "archived": false,
+      "lang": "Python",
+      "desc": "This app is written as a part of my Master of Engineering thesis. It is \"guess 2/3 of the average\" game modeled as a reflexive game accordin"
+     }
+    ]
+   },
+   "reflexive theory lefebvre": {
+    "items": [
+     {
+      "repo": "peterCcw/infoops_reflexive_control_model",
+      "stars": 0,
+      "pushed": "2022-06-02",
+      "archived": false,
+      "lang": "Python",
+      "desc": "This app is written as a part of my Master of Engineering thesis. It is \"guess 2/3 of the average\" game modeled as a reflexive game accordin"
+     }
+    ]
+   }
+  },
+  "deep-battle-operational-art": {
+   "soviet operational art deep battle": {
+    "items": []
+   },
+   "operational art planning": {
+    "items": [
+     {
+      "repo": "Advanz101System/Auto-proactive-Alerts-A-sales-person-s-field-Assistant",
+      "stars": 1,
+      "pushed": "2015-10-05",
+      "archived": false,
+      "lang": null,
+      "desc": "Sales force Automation and Fmcg software for salesis considered a key feature of the business process of a company as the benefits, direct a"
+     },
+     {
+      "repo": "mario3113/-ARTS-OPERATIONAL-DATA-MODEL",
+      "stars": 0,
+      "pushed": "2020-10-21",
+      "archived": false,
+      "lang": "VBA",
+      "desc": "A retail-specific roadmap for database design that allows a company to plan how it organizes and uses its transaction data."
+     },
+     {
+      "repo": "aksaayyy/article-forge",
+      "stars": 0,
+      "pushed": "2026-08-13",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "Autonomous AI content and publishing pipeline (topic planning to Sanity CMS publishing) with Telegram-based operational control"
+     }
+    ]
+   }
+  },
+  "dsm": {
+   "design structure matrix": {
+    "items": [
+     {
+      "repo": "chrisneagu/FTC-Skystone-Dark-Angels-Romania-2020",
+      "stars": 325,
+      "pushed": "2024-04-12",
+      "archived": false,
+      "lang": "Java",
+      "desc": "NOTICE This repository contains the public FTC SDK for the SKYSTONE (2019-2020) competition season. If you are looking for the current seaso"
+     },
+     {
+      "repo": "ajcarney/DSMEditor",
+      "stars": 44,
+      "pushed": "2025-06-21",
+      "archived": false,
+      "lang": "Java",
+      "desc": "Design Structure Matrix Editor - An application for editing and designing Design Structure Matrices (DSM)"
+     },
+     {
+      "repo": "Lyn-liyuan/ndarray-cuda-matmul",
+      "stars": 38,
+      "pushed": "2024-05-18",
+      "archived": false,
+      "lang": "Rust",
+      "desc": "a high-performance computing solution designed to accelerate matrix operations using Nvidia's CUDA technology with Rust's ndarray data struc"
+     },
+     {
+      "repo": "Saturnremabtc64/supreme-octo-roboticeyx",
+      "stars": 30,
+      "pushed": "2021-08-04",
+      "archived": false,
+      "lang": null,
+      "desc": " Gear61 / Random-Number-Generator Code Issues 5 Pull requests 0 Projects 0 Wiki Pulse projectFilesBackup/.idea/workspace.xml  <?xml version="
+     },
+     {
+      "repo": "NishkarshRaj/Design-and-Analysis-of-Algorithms",
+      "stars": 15,
+      "pushed": "2023-12-15",
+      "archived": false,
+      "lang": "C++",
+      "desc": "Algorithms and Data Structures."
+     }
+    ]
+   },
+   "design structure matrix dependency": {
+    "items": [
+     {
+      "repo": "Saturnremabtc64/supreme-octo-roboticeyx",
+      "stars": 30,
+      "pushed": "2021-08-04",
+      "archived": false,
+      "lang": null,
+      "desc": " Gear61 / Random-Number-Generator Code Issues 5 Pull requests 0 Projects 0 Wiki Pulse projectFilesBackup/.idea/workspace.xml  <?xml version="
+     },
+     {
+      "repo": "Prosper1030/birdman_project",
+      "stars": 1,
+      "pushed": "2026-09-05",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Design Structure Matrix and WBS dependency analysis with SCC detection, plus an interactive graph editor — built for a human-powered aircraf"
+     },
+     {
+      "repo": "dylan-leon/StructuraDSM",
+      "stars": 0,
+      "pushed": "2025-12-13",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "A professional Design Structure Matrix (DSM) tool for modeling system architectures and dependencies. Features automatic partitioning algori"
+     }
+    ]
+   }
+  },
+  "taguchi": {
+   "taguchi robust design": {
+    "items": [
+     {
+      "repo": "sauravkeshrii/TaguchiAi",
+      "stars": 4,
+      "pushed": "2026-01-30",
+      "archived": false,
+      "lang": "JavaScript",
+      "desc": "A research-grade backend engine for Taguchi Design of Experiments (DOE) and Robust Engineering Optimization, built for mechanical, aerospace"
+     },
+     {
+      "repo": "Alfarisi006/A-Robust-PSS-Taguchi-Method-",
+      "stars": 0,
+      "pushed": "2025-12-29",
+      "archived": false,
+      "lang": null,
+      "desc": "A Robust Product-Service System Design Method Based on Taguchi Method "
+     }
+    ]
+   },
+   "taguchi method": {
+    "items": [
+     {
+      "repo": "okayaa/MTSYS",
+      "stars": 6,
+      "pushed": "2021-03-11",
+      "archived": false,
+      "lang": "R",
+      "desc": "Methods in Mahalanobis-Taguchi (MT) System"
+     },
+     {
+      "repo": "NicoleRadziwill/easyMTS",
+      "stars": 5,
+      "pushed": "2019-10-14",
+      "archived": false,
+      "lang": "R",
+      "desc": "Create and evaluate diagnostics using the Mahalanobis-Taguchi System (MTS) to distinguish \"good\" observations from \"bad\" ones. Uses the appr"
+     },
+     {
+      "repo": "AbdullahKeteldijk/TaguchiGridSearch",
+      "stars": 3,
+      "pushed": "2020-01-02",
+      "archived": false,
+      "lang": "Python",
+      "desc": "A grid search method that uses orthogonal arrays for efficient hyperparameter selection"
+     },
+     {
+      "repo": "Ghorbanpoor/Taguchi-s-new-method-in-optimization-with-programming-in-MATLAB",
+      "stars": 3,
+      "pushed": "2023-06-06",
+      "archived": false,
+      "lang": "MATLAB",
+      "desc": "In this program, using a new optimization method based on the Taguchi method, the problem of soil improvement has been done according to the"
+     },
+     {
+      "repo": "ZECTBynmo/taguchi",
+      "stars": 1,
+      "pushed": "2025-02-06",
+      "archived": false,
+      "lang": "TypeScript",
+      "desc": "A TypeScript package for implementing Taguchi Method design of experiments"
+     }
+    ]
+   }
+  },
+  "rdm-rand": {
+   "robust decision making deep uncertainty": {
+    "items": [
+     {
+      "repo": "brodderickrodriguez/strategy_learning_system",
+      "stars": 2,
+      "pushed": "2020-05-21",
+      "archived": false,
+      "lang": "Python",
+      "desc": "The implementation of my M.S. Thesis titled: Learning Explanatory Models for Robust Decision-Making Under Deep Uncertainty."
+     },
+     {
+      "repo": "DeepanJayaraman/DeepanJayaraman",
+      "stars": 0,
+      "pushed": "2026-09-09",
+      "archived": false,
+      "lang": null,
+      "desc": "Profile README — data-driven decision making: uncertainty quantification, probabilistic risk and robust design."
+     },
+     {
+      "repo": "MarioPeraltaA/DICE",
+      "stars": 0,
+      "pushed": "2025-05-01",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Adaptive control and regulation strategies for Robust Decision-Making (RDM) under Deep Uncertainty (DMDU)."
+     },
+     {
+      "repo": "mdjahan/FoRDM",
+      "stars": 0,
+      "pushed": "2026-07-01",
+      "archived": false,
+      "lang": "R",
+      "desc": "Forest Many-Objective Robust Decision Making (FoRDM) is an R-based toolkit for supporting robust forest management under deep uncertainty. "
+     },
+     {
+      "repo": "murrayrudd/strategy-financing-rdm",
+      "stars": 0,
+      "pushed": "2026-10-20",
+      "archived": false,
+      "lang": "Python",
+      "desc": "Code and replication materials for Strategy financing under deep uncertainty: robust decision making, scenario discovery, and financing poli"
+     }
+    ]
+   },
+   "decision making under deep uncertainty": {
+    "items": [
+     {
+      "repo": "Aryia-Behroziuan/neurons",
+      "stars": 99,
+      "pushed": "2023-11-15",
+      "archived": false,
+      "lang": null,
+      "desc": "An ANN is a model based on a collection of connected units or nodes called \"artificial neurons\", which loosely model the neurons in a biolog"
+     },
+     {
+      "repo": "milocortes/python_course_summer_school_DMDU_2022",
+      "stars": 2,
+      "pushed": "2022-08-14",
+      "archived": false,
+      "lang": "Jupyter Notebook",
+      "desc": "Preparation course for the summer school of the annual  meeting of the Society for Decision Making under Deep Uncertainty 2022"
+     },
+     {
+      "repo": "jwrap/EPA1361-G21",
+      "stars": 2,
+      "pushed": "2020-06-20",
+      "archived": false,
+      "lang": "Jupyter Notebook",
+      "desc": "Understanding decision-making under deep uncertainty"
+     },
+     {
+      "repo": "brodderickrodriguez/strategy_learning_system",
+      "stars": 2,
+      "pushed": "2020-05-21",
+      "archived": false,
+      "lang": "Python",
+      "desc": "The implementation of my M.S. Thesis titled: Learning Explanatory Models for Robust Decision-Making Under Deep Uncertainty."
+     },
+     {
+      "repo": "Jesus-Gonzalez-Tec/DMDU",
+      "stars": 0,
+      "pushed": "2024-05-23",
+      "archived": false,
+      "lang": "Jupyter Notebook",
+      "desc": "Decision making Under Deep Uncertainty "
+     }
+    ]
+   }
+  },
+  "kill-chain-f3ead": {
+   "F3EAD find fix finish": {
+    "items": []
+   },
+   "kill chain analysis": {
+    "items": [
+     {
+      "repo": "Mario-Kart-Felix/solar-wind-hacker-book",
+      "stars": 24,
+      "pushed": "2022-03-26",
+      "archived": false,
+      "lang": null,
+      "desc": "2020 was a roller coaster of major, world-shaking events. We all couldn't wait for the year to end. But just as 2020 was about to close, it "
+     },
+     {
+      "repo": "Nate0634034090/nate158g-m-w-n-l-p-d-a-o-e",
+      "stars": 17,
+      "pushed": "2022-01-02",
+      "archived": false,
+      "lang": null,
+      "desc": "### This module requires Metasploit: https://metasploit.com/download# Current source: https://github.com/rapid7/metasploit-framework##class "
+     },
+     {
+      "repo": "9QIX/LetsDefend-SOCAnalystLearningPath",
+      "stars": 12,
+      "pushed": "2024-08-20",
+      "archived": false,
+      "lang": null,
+      "desc": "Learn the technical skills necessary for a career in Security Operations Center (SOC) analysis. This repository includes a comprehensive set"
+     },
+     {
+      "repo": "Nate0634034090/-nate158.res.codeRex.sleepsession.type.to_s.eql-shell-",
+      "stars": 7,
+      "pushed": "2024-04-06",
+      "archived": false,
+      "lang": null,
+      "desc": "## # This module requires Metasploit: https://metasploit.com/download # Current source: https://github.com/rapid7/metasploit-framework ##  c"
+     },
+     {
+      "repo": "mo0ogly/openclaw-killchain-analysis",
+      "stars": 5,
+      "pushed": "2026-04-28",
+      "archived": false,
+      "lang": "HTML",
+      "desc": "Kill Chain Analysis of an AI Agent-Driven Cyberattack — Operation OpenClaw"
+     }
+    ]
+   }
+  },
+  "value-stream-mapping": {
+   "value stream mapping": {
+    "items": [
+     {
+      "repo": "chrisneagu/FTC-Skystone-Dark-Angels-Romania-2020",
+      "stars": 325,
+      "pushed": "2024-04-12",
+      "archived": false,
+      "lang": "Java",
+      "desc": "NOTICE This repository contains the public FTC SDK for the SKYSTONE (2019-2020) competition season. If you are looking for the current seaso"
+     },
+     {
+      "repo": "joelparkerhenderson/value-stream-mapping",
+      "stars": 33,
+      "pushed": "2025-04-14",
+      "archived": false,
+      "lang": null,
+      "desc": "Value Stream Mapping (VSM) tutorial (work in progress)"
+     },
+     {
+      "repo": "tangcr/Redis-",
+      "stars": 26,
+      "pushed": "2017-01-17",
+      "archived": false,
+      "lang": null,
+      "desc": "Redis是什么 Redis是一个NOSQL，NOSQL有许多种，它们分为： 列存储，如：Hbase、Cassandra这种 文档存储，如：MongoDB（首推） key-value存储，如：Berkeley DB、MemcacheDB、Redis，其中Redis最强 图存储，这"
+     },
+     {
+      "repo": "MSDevOps/VSM",
+      "stars": 22,
+      "pushed": "2016-11-09",
+      "archived": false,
+      "lang": null,
+      "desc": "A Value Stream Mapping Training"
+     },
+     {
+      "repo": "heru299/script-copy",
+      "stars": 17,
+      "pushed": "2021-02-16",
+      "archived": false,
+      "lang": null,
+      "desc": "-?        Print this help message and exit    -alertnotify=<cmd>        Execute command when a relevant alert is received or we see a really"
+     }
+    ]
+   },
+   "value stream mapping software delivery": {
+    "items": [
+     {
+      "repo": "VarunKesarwani/VarunKesarwani",
+      "stars": 2,
+      "pushed": "2026-10-09",
+      "archived": false,
+      "lang": null,
+      "desc": "run Gupta  Senior Technical Lead · Enterprise Solution Architect  C# / .NET · Distributed Systems · Azure · Edge & Cloud Platforms · AI Syst"
+     }
+    ]
+   }
+  },
+  "gilb-evo": {
+   "Tom Gilb Planguage": {
+    "items": [
+     {
+      "repo": "raymyers/planguage-tools",
+      "stars": 2,
+      "pushed": "2026-03-11",
+      "archived": false,
+      "lang": "Rust",
+      "desc": "Tools for using Tom Gilb's Planguage, specifiy with clarity"
+     },
+     {
+      "repo": "HughG/sphinx-needs-planguage-play",
+      "stars": 0,
+      "pushed": "2023-05-21",
+      "archived": true,
+      "lang": "Python",
+      "desc": "Exploring implementing Tom Gilb's Planguage using Sphinx-Needs"
+     },
+     {
+      "repo": "HughG/rst-planguage",
+      "stars": 0,
+      "pushed": "2016-10-24",
+      "archived": true,
+      "lang": "JavaScript",
+      "desc": "Tools for using reStructuredText to manage documents in Tom Gilb's Planguage requirements format."
+     }
+    ]
+   },
+   "Evo evolutionary delivery gilb": {
+    "items": []
+   }
+  }
+ }
+}

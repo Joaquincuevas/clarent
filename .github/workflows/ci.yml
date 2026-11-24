@@ -1,0 +1,30 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ["3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Unit tests (core + every method)
+        run: python tools/test_all.py
+      - name: Method health (manifest, card, skill, sources)
+        run: python -m clarent doctor
+        env:
+          PYTHONPATH: src
+      - name: Claude Code plugin is up to date
+        run: python tools/build_plugin.py --check

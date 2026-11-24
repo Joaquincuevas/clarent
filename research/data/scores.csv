@@ -1,0 +1,64 @@
+id,familia,metodologia,N,U,E,V,C,estado,nota_novedad_del_angulo_clarent
+M01,Militar,OODA (Boyd),2,3,5,3,3,bien cubierto,irraz/vulnerator-ai 295* y al3rez/ooda-subagents 176* + thinking-ooda en cc-thinking-skills
+M02,Militar,Auftragstaktik / Mission Command,4,4,4,3,3,no existe,0 repos con 'mission command agent orchestration delegation'; se implementa junto a M07
+M03,Militar,MDMP,4,3,3,3,3,existe pero debil,solo 3 repos de 0-2* orientados a COA militar; nada para planificar software
+M04,Militar,After Action Review (AAR),3,4,4,3,4,existe pero debil,coopersimson96/aar-loop 125* (sesiones de IA); hueco = AAR de incidentes desde git/CI
+M05,Militar,Red Teaming (UFMCS),3,4,5,5,5,existe pero debil,thinking-red-team es de seguridad; drewmattie-code/red-team 3* aplica tecnicas del Tradecraft Primer de la CIA a ideas; nadie aplica el repertorio UFMCS a disenos o PRs
+M06,Militar,Pre-mortem (Klein),2,4,5,3,3,bien cubierto,3 skills dedicadas (59-88*) + 2 colecciones
+M07,Militar,Commander's Intent,4,5,4,4,3,no existe,0 repos con contrato de delegacion; usan el termino shagghiesuperstar/commanders-intent 5* (plantilla de bot) y ntholm86/ai-steward 0*
+M08,Militar,CARVER,4,3,4,3,3,no existe,solo ruido; ningun repo dev
+M09,Militar,Wargaming (COA analysis),3,3,3,4,3,existe pero debil,Panopticon 125* es plataforma de simulacion militar no dev
+M10,Militar,Center of Gravity (CG-CC-CR-CV),4,3,3,3,3,no existe,ningun repo dev
+M11,Militar,IPB,4,2,3,2,3,no existe,ningun repo dev
+L01,Lean,Jidoka,3,4,4,3,3,existe pero debil,consensus-loop 16*; hueco = stop-the-line para agentes via hooks
+L02,Lean,Poka-yoke,2,4,4,3,3,bien cubierto,rainmanjam/poka-yoke 26* plugin dedicado
+L03,Lean,Andon,4,3,4,3,3,no existe,0 resultados en 'andon cord ci' y 'andon board devops'
+L04,Lean,Kaizen,2,3,4,2,3,existe pero debil,solo repos genericos de 1-16*
+L05,Lean,Genchi Genbutsu,3,4,4,2,3,existe pero debil,no como skill; se subsume en disciplina de evidencia de ACH
+L06,Lean,5 Whys,2,4,5,2,2,bien cubierto,awesome-skills/5-whys-skill 66* + thinking-five-whys-plus
+L07,Lean,Ishikawa,3,3,4,3,3,existe pero debil,react-fishbone 9* solo libreria de dibujo
+L08,Lean,A3,4,3,4,3,4,no existe,0 resultados
+L09,Lean,Hoshin Kanri,3,2,3,2,2,existe pero debil,cubierto de facto por OKR
+L10,Lean,SMED,4,3,3,3,3,no existe,sin repos dev; hueco = separar setup interno/externo del deploy
+L11,Lean,PDCA,1,3,5,2,2,bien cubierto,ww-w-ai/bkit-claude-code 606* + kenjudy 46*
+L12,Lean,SPC (control charts),4,4,4,5,4,existe pero abandonado,pyspc 244* ultimo push 2023; CarlosZambonii/kaizenops 1* (SPC sobre GitHub Actions); sin integracion CI madura
+S01,Sovietica,TRIZ (matriz de contradicciones),2,3,3,4,4,existe pero debil,>=8 repos pequenos (mayoria MIT) con matriz como skill (el escaneo inicial subestimo esto); ninguno con motor stdlib; verificacion celda a celda contra la tabla de 1973; lecturas en software
+S02,Sovietica,ARIZ-85,4,3,2,4,3,existe pero debil,ariz85v-pwa 0* (hoja offline); nada con flujo con estado y compuertas
+S03,Sovietica,Su-Field,4,2,3,3,3,existe pero debil,solo dentro de repos TRIZ pequenos
+S04,Sovietica,Leyes de evolucion de sistemas tecnicos,4,3,2,4,3,no existe,sin repos
+S05,Sovietica,OTSM-TRIZ,5,2,2,3,2,no existe,sin repos
+S06,Sovietica,Tectologia (Bogdanov),5,1,1,2,1,no existe,mapeo especulativo; valor educativo
+E01,Ingenieria,FMEA/FMECA,3,4,4,3,4,existe pero debil,dromation/open-fmea 49*; LLMRiskAnalyzer 41* (FMEA con LLM); Quality-Engineering-Skills 57* (incluye FMEA AIAG-VDA); automotive-skills-suite 2879*; hueco = FMEA de modulos de software con datos de git y cobertura (correccion 2026-11-24)
+E02,Ingenieria,Fault Tree Analysis,4,4,3,4,3,existe pero debil,scram 168* (C++ confiabilidad; ultimo push 2023); nada para incidentes de software
+E03,Ingenieria,NASA SE Handbook (V&V/RTM),3,3,3,2,3,existe pero debil,sin herramientas dev
+E04,Ingenieria,STAMP/STPA,4,4,3,3,3,existe pero debil,kieler/pasta 38* (extension VS Code para STPA; academico); sin herramientas para agentes o microservicios; las consultas largas daban 0 (correccion 2026-11-24)
+E05,Ingenieria,Theory of Constraints / DBR,3,4,3,4,3,existe pero debil,solo prompt en colecciones; 0 repos con datos de CI/PR
+E06,Ingenieria,Kepner-Tregoe (IS/IS-NOT),3,5,4,4,3,existe pero debil,thinking-kepner-tregoe es prompt; hueco = diferencial automatico sobre corridas de CI
+E07,Ingenieria,Cynefin,2,4,5,3,3,existe pero debil,prompt en colecciones; awesome-cynefin 31*
+E08,Ingenieria,Wardley Maps,1,3,3,3,3,bien cubierto,awesome-wardley-maps 837* + onlinewardleymaps 311*
+D01,Decision,Delphi,4,3,4,3,3,no existe,0 resultados
+D02,Decision,Estimacion de Fermi,2,3,5,3,3,existe pero debil,sin referente dominante
+D03,Decision,Superforecasting / calibracion,3,4,4,4,3,existe pero debil,deusyu/superforecasting-skill 13*
+D04,Decision,ACH (Heuer),4,5,5,4,4,existe pero debil,Burton/ACH 112* PHP 2012 abandonado; prompt-only en thinking-framework-skills; adyacentes IncidentSutra-AI 4* y vigia-intent-analysis 18*; sin motor determinista
+D05,Decision,Key Assumptions Check,3,4,5,3,4,existe pero debil,dentro de investigators-copilot 77* (OSINT)
+D06,Decision,Seis sombreros,2,2,5,3,3,existe pero debil,aits-agents 14*
+D07,Decision,Analisis morfologico (Zwicky),4,3,3,3,3,existe pero debil,zwicky-morphological-analysis 16* ultimo push 2019
+X01,Extra,Reflexive Control (Lefebvre),5,2,2,3,2,no existe,sin repos
+X02,Extra,Arte operacional sovietico (Svechin/Isserson),4,2,3,3,2,no existe,conceptual
+X03,Extra,Programacion lineal (Kantorovich),2,3,3,2,2,bien cubierto,solvers LP maduros
+X04,Extra,Heilmeier Catechism,3,4,5,3,4,existe pero debil,paper-reader-heilmeier 93* (lectura de papers; no puerta de PR/RFC)
+X05,Extra,Requisite Variety / VSM (Ashby; Beer),4,2,2,2,2,no existe,solo repos de 0-1*
+X06,Extra,Reference Class Forecasting,4,4,4,5,3,no existe,0 repos 'estimar con historial de git'; existen herramientas comerciales de Monte Carlo para Kanban (sin verificar)
+X07,Extra,Design Structure Matrix,4,4,3,3,3,existe pero debil,DSMEditor 44* es editor no analizador de imports
+X08,Extra,Axiomatic Design (Suh),4,2,3,2,2,existe pero debil,repos de 0-2*
+X09,Extra,Matriz de Pugh,3,3,5,2,3,existe pero debil,repos de 0-1*
+X10,Extra,HAZOP (guidewords),4,3,4,3,4,existe pero debil,sin uso en APIs/flujos de datos
+X11,Extra,Bow-tie,4,3,3,3,3,existe pero debil,BowtieRisk.jl 3*
+X12,Extra,Robust Decision Making (RAND),4,2,2,2,2,no existe,solo cursos
+X13,Extra,Apollo Root Cause Analysis,3,3,4,2,3,existe pero debil,sin referente dev
+X14,Extra,Critical Chain,3,2,3,2,2,existe pero debil,sin referente dev
+X15,Extra,Causal Loop / System Dynamics,3,3,3,3,3,existe pero debil,herramientas de simulacion genericas
+X16,Extra,QFD (Casa de la calidad),3,2,3,2,2,existe pero debil,repos de 0-1*
+X17,Extra,Team A / Team B (CIA 1976),3,3,4,3,3,existe pero debil,cubierto parcialmente por devil's advocate skills (0-1*)
+X18,Extra,Value Stream Mapping,3,3,3,3,3,existe pero debil,joelparkerhenderson 33* tutorial
+X19,Extra,Taguchi (diseno robusto),3,2,2,2,2,existe pero debil,librerias estadisticas de 4-6*

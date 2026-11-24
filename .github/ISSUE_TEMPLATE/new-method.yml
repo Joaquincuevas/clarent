@@ -1,0 +1,40 @@
+name: Propose a new method
+description: Claim a methodology before you build it, so nobody duplicates the work.
+title: "method: <name>"
+labels: ["new-method"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Method and origin
+      description: Name, who created it, where and when.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Primary sources
+      description: Links or full citations. For each, say what you actually opened (read / exists / blocked / unverified).
+    validations:
+      required: true
+  - type: textarea
+    id: core
+    attributes:
+      label: Deterministic core
+      description: What will the code compute or reject without an LLM? If nothing, this probably belongs in a prompt collection.
+    validations:
+      required: true
+  - type: textarea
+    id: prior-art
+    attributes:
+      label: Prior art
+      description: Repos you found (stars, last push) and the gap you would fill.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Real example in three lines
+      description: A situation a developer meets weekly and what the tool would output.
+    validations:
+      required: true

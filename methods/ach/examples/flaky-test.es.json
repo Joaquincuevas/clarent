@@ -1,0 +1,156 @@
+{
+  "title": "test_checkout_total falla ~1 de cada 8 corridas de CI (EJEMPLO SINTÉTICO)",
+  "question": "¿Qué causa que test_checkout_total falle de forma intermitente en CI?",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "text": "Condición de carrera entre workers xdist sobre un fixture de scope=session"
+    },
+    {
+      "id": "H2",
+      "text": "Dependencia del reloj/zona horaria (datetime.now cerca de un borde de día)"
+    },
+    {
+      "id": "H3",
+      "text": "Llamada de red real no mockeada que a veces responde lento o con error"
+    },
+    {
+      "id": "H4",
+      "text": "Orden no determinista de set/dict (PYTHONHASHSEED) altera una suma de floats"
+    },
+    {
+      "id": "H5",
+      "text": "Estado residual en la BD dejado por otro test que corre antes en el mismo worker"
+    },
+    {
+      "id": "H6",
+      "text": "Otra causa que no estoy considerando",
+      "catch_all": true
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "text": "Con 'pytest -n 0' (serial) pasan 60/60 corridas; con '-n 4' falla 5/40",
+      "credibility": "high",
+      "relevance": "high",
+      "ref": "ci-runs.csv filas 1-100 (exportado de la UI de CI)",
+      "ratings": {
+        "H1": "CC",
+        "H2": "I",
+        "H3": "I",
+        "H4": "I",
+        "H5": "C",
+        "H6": "N"
+      }
+    },
+    {
+      "id": "E2",
+      "text": "Las 40 fallas están repartidas en las 24 horas del día, sin agruparse en un borde de día",
+      "credibility": "high",
+      "relevance": "medium",
+      "ref": "ci-runs.csv columna started_at",
+      "ratings": {
+        "H1": "N",
+        "H2": "II",
+        "H3": "N",
+        "H4": "N",
+        "H5": "N",
+        "H6": "N"
+      }
+    },
+    {
+      "id": "E3",
+      "text": "Con PYTHONHASHSEED=0 fijo y '-n 4' el test sigue fallando (3/40)",
+      "credibility": "high",
+      "relevance": "high",
+      "ref": "PYTHONHASHSEED=0 pytest -n 4 test_checkout.py (40 corridas)",
+      "ratings": {
+        "H1": "C",
+        "H2": "N",
+        "H3": "N",
+        "H4": "II",
+        "H5": "C",
+        "H6": "N"
+      }
+    },
+    {
+      "id": "E4",
+      "text": "Con red bloqueada (pytest-socket --disable-socket) y '-n 4' sigue fallando (4/40)",
+      "credibility": "high",
+      "relevance": "high",
+      "ref": "pytest --disable-socket -n 4 (40 corridas)",
+      "ratings": {
+        "H1": "C",
+        "H2": "N",
+        "H3": "II",
+        "H4": "N",
+        "H5": "C",
+        "H6": "N"
+      }
+    },
+    {
+      "id": "E5",
+      "text": "El assert falla porque order.items tiene 2 elementos en vez de 3 (falta uno), no por diferencia de centavos",
+      "credibility": "high",
+      "relevance": "medium",
+      "ref": "traceback de la falla del run #8812, línea 'assert total == 59.97'",
+      "ratings": {
+        "H1": "C",
+        "H2": "N",
+        "H3": "N",
+        "H4": "I",
+        "H5": "C",
+        "H6": "N"
+      }
+    },
+    {
+      "id": "T1",
+      "text": "Reproducir en serial con el mismo orden aleatorio de la falla (pytest-randomly --randomly-seed=<seed del run #8812>) también falla",
+      "status": "proposed",
+      "cost": "low",
+      "credibility": "high",
+      "relevance": "high",
+      "ratings": {
+        "H1": "II",
+        "H2": "N",
+        "H3": "N",
+        "H4": "N",
+        "H5": "CC",
+        "H6": "N"
+      }
+    },
+    {
+      "id": "T2",
+      "text": "Cambiar el fixture de scope=session a scope=function elimina las fallas en 200 corridas con '-n 4'",
+      "status": "proposed",
+      "cost": "medium",
+      "credibility": "high",
+      "relevance": "high",
+      "ratings": {
+        "H1": "CC",
+        "H2": "N",
+        "H3": "N",
+        "H4": "N",
+        "H5": "N",
+        "H6": "N"
+      }
+    },
+    {
+      "id": "T3",
+      "text": "Ejecutar el test 500 veces en serial dentro de un solo proceso falla al menos una vez",
+      "status": "proposed",
+      "cost": "low",
+      "credibility": "medium",
+      "relevance": "medium",
+      "ratings": {
+        "H1": "II",
+        "H2": "C",
+        "H3": "C",
+        "H4": "C",
+        "H5": "II",
+        "H6": "N"
+      }
+    }
+  ]
+}

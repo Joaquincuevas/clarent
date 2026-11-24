@@ -1,0 +1,21 @@
+name: novelty-freshness
+# Weekly: fail when a method's "no similar repo exists" claim is older than 90 days, so it gets re-checked.
+on:
+  schedule:
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  stale-claims:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: python -m clarent doctor --fail-on-stale
+        env:
+          PYTHONPATH: src

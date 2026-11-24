@@ -1,0 +1,9 @@
+{
+  "title": "Acelerar la API de búsqueda sin volverla más difícil de operar (EJEMPLO SINTÉTICO)",
+  "context": "La latencia p95 de /search es 900 ms y la meta es 300 ms. Cada arreglo que probamos (más cachés, más réplicas, más casos especiales) añade piezas móviles, perjudica la fiabilidad o vuelve rígido el sistema.",
+  "pairs": [
+    {"improving": "latencia", "worsening": "Complejidad del dispositivo", "note": "Respuestas más rápidas, pero cada aceleración añade componentes y rutas de código."},
+    {"improving": "Velocidad", "worsening": "Fiabilidad", "note": "El caché agresivo y los atajos hicieron más frecuentes los incidentes."},
+    {"improving": "Adaptabilidad o versatilidad", "worsening": "Complejidad del dispositivo", "note": "Producto quiere muchas variantes de ranking sin una maraña de casos especiales."}
+  ]
+}

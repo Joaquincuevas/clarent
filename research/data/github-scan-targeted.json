@@ -1,0 +1,331 @@
+{
+ "scanned_at": "2026-11-24",
+ "results": {
+  "analysis of competing hypotheses claude": {
+   "items": []
+  },
+  "analysis of competing hypotheses debugging": {
+   "items": []
+  },
+  "competing hypotheses root cause llm": {
+   "items": [
+    {
+     "repo": "Prince16203/Accenture_hackathon_PS3",
+     "stars": 2,
+     "pushed": "2026-08-30",
+     "archived": false,
+     "lang": "Python",
+     "desc": "A KPI root-cause model that tests competing hypotheses against real evidence and abstains when unsure. 100% deterministic diagnostic core — the LLM on"
+    },
+    {
+     "repo": "lohithpahuja03/CAUSORE",
+     "stars": 0,
+     "pushed": "2026-10-19",
+     "archived": false,
+     "lang": "TypeScript",
+     "desc": "CAUSORE does not simply ask an LLM to summarize an incident. It processes evidence, reconstructs the incident timeline, identifies anomalies, correlat"
+    }
+   ]
+  },
+  "STPA software llm": {
+   "items": []
+  },
+  "STPA unsafe control actions tool": {
+   "items": []
+  },
+  "system-theoretic process analysis claude": {
+   "items": []
+  },
+  "theory of constraints bottleneck ci pipeline": {
+   "items": []
+  },
+  "theory of constraints software delivery tool": {
+   "items": []
+  },
+  "drum buffer rope software": {
+   "items": []
+  },
+  "FMEA claude skill": {
+   "items": [
+    {
+     "repo": "jherrodthomas/automotive-skills-suite",
+     "stars": 2879,
+     "pushed": "2026-10-16",
+     "archived": false,
+     "lang": "Python",
+     "desc": "100+ installable Claude skills covering Engineering areas such as, ISO 26262 functional safety, ISO/SAE 21434 cybersecurity, ISO 21448 SOTIF, AIAG-VDA"
+    },
+    {
+     "repo": "chenxihuang1028-a11y/risk-management-specialist",
+     "stars": 6,
+     "pushed": "2026-07-28",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Claude Skill: ISO 14971:2019 medical device risk management — risk analysis, evaluation, control, FMEA tooling, post-production surveillance"
+    },
+    {
+     "repo": "008993368-yaz/expect-the-unexpected",
+     "stars": 1,
+     "pushed": "2026-09-26",
+     "archived": false,
+     "lang": "Shell",
+     "desc": "Scenario-driven failure-mode analysis skill for AI coding agents (Cursor, Claude Code, Copilot, Codex)"
+    },
+    {
+     "repo": "sweetscientist/systems-engineering-skill",
+     "stars": 0,
+     "pushed": "2026-10-28",
+     "archived": false,
+     "lang": null,
+     "desc": "Claude Code skill for systems engineering: requirements matrix, FFBD/N², VCRM, traceability, trade studies, FMEA, Mermaid diagrams"
+    },
+    {
+     "repo": "TechontaMD/stpa-scan-skill",
+     "stars": 0,
+     "pushed": "2026-07-22",
+     "archived": false,
+     "lang": null,
+     "desc": "STPA hazard-analysis skill for Claude Code — fixed-protocol scan, findings land in your FMEA-style risk register; calibrate before trusting"
+    }
+   ]
+  },
+  "FMEA source code analysis llm": {
+   "items": []
+  },
+  "failure mode effects analysis software module": {
+   "items": []
+  },
+  "fault tree analysis incident postmortem llm": {
+   "items": []
+  },
+  "fault tree minimal cut sets python": {
+   "items": [
+    {
+     "repo": "JunyiJ/Fault-Tree-Python",
+     "stars": 15,
+     "pushed": "2017-04-03",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Using Monte Carlo method to find a minimal cut set (MCS) for a fault tree."
+    },
+    {
+     "repo": "ussyverse/cutsetussy",
+     "stars": 0,
+     "pushed": "2026-05-01",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Python library for fault-tree minimal-cut-set analysis of household school-morning routine failures"
+    }
+   ]
+  },
+  "kepner tregoe problem analysis is is not": {
+   "items": []
+  },
+  "is/is not problem specification debugging": {
+   "items": []
+  },
+  "cynefin claude skill": {
+   "items": [
+    {
+     "repo": "l4ci/latticework",
+     "stars": 6,
+     "pushed": "2026-08-23",
+     "archived": true,
+     "lang": null,
+     "desc": "A latticework of thinking, strategy, and analysis frameworks packaged as model- and harness-agnostic agent skills (SWOT, Porter's Five Forces, OKR, Cy"
+    },
+    {
+     "repo": "gagharutyunyan1993/methodology-toolkit",
+     "stars": 1,
+     "pushed": "2026-11-04",
+     "archived": false,
+     "lang": "JavaScript",
+     "desc": "Structured decision-making for Claude Code: a /method command, an auto-triggering methodology-driven-thinking skill, and a red-team-critic subagent ov"
+    },
+    {
+     "repo": "fpizzuta/mental-models",
+     "stars": 0,
+     "pushed": "2026-05-13",
+     "archived": false,
+     "lang": null,
+     "desc": "A library of mental models as a Claude Skill. Premortem, WICS, Cynefin, Double-Loop Learning, and more."
+    },
+    {
+     "repo": "bkan-hq/smartthink",
+     "stars": 0,
+     "pushed": "2026-03-26",
+     "archived": false,
+     "lang": "Shell",
+     "desc": "Genius-level thinking engine for Claude Code — 9 frameworks, 81 mental models, 12 engines, TRIZ, Cynefin diagnosis"
+    },
+    {
+     "repo": "Micha1991/structured-decision",
+     "stars": 0,
+     "pushed": "2026-05-27",
+     "archived": false,
+     "lang": "PowerShell",
+     "desc": "A Claude skill that enforces transparent, evidence-based decision-making for problems in the Cynefin Complicated domain (Simon 1960 + QOC notation)."
+    }
+   ]
+  },
+  "cynefin router agent": {
+   "items": []
+  },
+  "commander's intent subagent prompt": {
+   "items": []
+  },
+  "mission command agent orchestration delegation": {
+   "items": []
+  },
+  "control chart ci build time western electric": {
+   "items": []
+  },
+  "statistical process control ci flaky tests": {
+   "items": []
+  },
+  "reference class forecasting git history estimate": {
+   "items": []
+  },
+  "estimate cycle time from git history monte carlo": {
+   "items": []
+  },
+  "red team design review claude skill": {
+   "items": [
+    {
+     "repo": "CharlescSturt/claude-red-team-skill",
+     "stars": 0,
+     "pushed": "2026-03-18",
+     "archived": false,
+     "lang": null,
+     "desc": "Dual-model adversarial review skill for Claude Code — dispatches Opus 4.6 and Codex GPT-5.3 in parallel to red-team design specs, architecture docs, a"
+    },
+    {
+     "repo": "pingteck/touchstone",
+     "stars": 0,
+     "pushed": "2026-10-14",
+     "archived": false,
+     "lang": "Shell",
+     "desc": "Claude Code review/reasoning skills that verify, don't assert — red-team (break a converged design), decision-panel (decide by principle), report-skil"
+    }
+   ]
+  },
+  "devil's advocate agent claude code skill": {
+   "items": [
+    {
+     "repo": "beeguy74/icm-agent",
+     "stars": 0,
+     "pushed": "2026-10-01",
+     "archived": false,
+     "lang": "Shell",
+     "desc": "Claude Code skill: ICM (Interpretable Context Methodology) workspaces for isolated reviewer subagents — test-suite review, devil's advocate, live-app "
+    },
+    {
+     "repo": "NHIZR/lobster-invest-thesis",
+     "stars": 0,
+     "pushed": "2026-03-24",
+     "archived": false,
+     "lang": "Python",
+     "desc": "📊 Structured investment research framework for AI agents. 6 lenses, Devil's Advocate debate, kill conditions. OpenClaw/Claude Code skill."
+    },
+    {
+     "repo": "kiancjy/early-stage-vc",
+     "stars": 0,
+     "pushed": "2026-05-07",
+     "archived": false,
+     "lang": "Shell",
+     "desc": "Sharp, devil's-advocate panel of legendary VCs evaluating pitches. Tuned for UK seed/Series A fintech & credit. A skill for Craft Agent and Claude Cod"
+    },
+    {
+     "repo": "whatsphone-creator/agent-javis",
+     "stars": 0,
+     "pushed": "2026-10-05",
+     "archived": false,
+     "lang": null,
+     "desc": "Claude Code skill: the current session orchestrates sub agents. Execution mode queues tasks, dispatches low-effort workers, verifies their work and re"
+    },
+    {
+     "repo": "ai-foundry-byu/deep-research-agent",
+     "stars": 0,
+     "pushed": "2026-11-17",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Iterative, multi-source, adversarially-verified deep research agent: knowledge-gap loop, 9 parallel sources, Firecrawl scraping, devil's-advocate pass"
+    }
+   ]
+  },
+  "ufmcs red teaming": {
+   "items": []
+  },
+  "ARIZ contradiction software architecture": {
+   "items": []
+  },
+  "TRIZ software architecture contradiction llm": {
+   "items": []
+  },
+  "after action review incident hook claude": {
+   "items": []
+  },
+  "postmortem generator from git incident": {
+   "items": []
+  },
+  "delphi method llm agents estimation": {
+   "items": []
+  },
+  "design structure matrix python import graph": {
+   "items": []
+  },
+  "wardley map generate from code": {
+   "items": []
+  },
+  "heilmeier catechism proposal rfc": {
+   "items": []
+  },
+  "hypothesis-driven debugging claude skill": {
+   "items": [
+    {
+     "repo": "doraemonkeys/claude-code-debug-mode",
+     "stars": 120,
+     "pushed": "2026-10-24",
+     "archived": false,
+     "lang": null,
+     "desc": "Cursor-style Debug Mode skill for coding agents. Hypothesis-driven debugging with runtime log instrumentation and autonomous verification, with human "
+    },
+    {
+     "repo": "franzenzenhofer/debug-mode-skill",
+     "stars": 6,
+     "pushed": "2026-02-23",
+     "archived": false,
+     "lang": null,
+     "desc": "Debug Mode for Claude Code — hypothesis-driven, instrumented debugging with automatic bug reproduction and mandatory regression tests"
+    },
+    {
+     "repo": "iamalisson/inquisitor",
+     "stars": 5,
+     "pushed": "2026-08-05",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Hypothesis-driven problem solving for AI agents: probe, falsify, escalate — never blind-retry. MCP server + agent skill built on Newton, Popper, and N"
+    },
+    {
+     "repo": "nicobailon/debug-mode",
+     "stars": 3,
+     "pushed": "2025-12-12",
+     "archived": false,
+     "lang": "TypeScript",
+     "desc": "Hypothesis-driven debugging with hybrid dual-track parallel execution (Claude + GPT 5.2) - A Claude Code skill"
+    },
+    {
+     "repo": "rgnicoara/debug-driven",
+     "stars": 2,
+     "pushed": "2026-03-22",
+     "archived": false,
+     "lang": "JavaScript",
+     "desc": "Hypothesis-driven debug mode for Claude Code, Codex, and other agent platforms. Instead of guessing fixes, the agent generates root cause hypotheses, "
+    }
+   ]
+  },
+  "scientific method debugging skill claude": {
+   "items": []
+  }
+ }
+}

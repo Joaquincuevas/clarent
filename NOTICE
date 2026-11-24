@@ -1,0 +1,12 @@
+Clarent
+Copyright 2026 Clarent contributors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Third-party material
+--------------------
+methods/triz-matrix/clarent_triz/data/matrix.json is derived from five MIT-licensed
+transcriptions of the Altshuller contradiction matrix. Their copyright notices, the MIT
+license text, the provenance of the data and what could not be verified about it are in
+methods/triz-matrix/clarent_triz/data/DATA_LICENSE.md. Keep that file with any copy of
+the data.

@@ -1,0 +1,9 @@
+{
+  "title": "Make the search API faster without making it harder to run (SYNTHETIC EXAMPLE)",
+  "context": "p95 latency of /search is 900 ms and the target is 300 ms. Every fix we tried (more caches, more replicas, more special cases) adds moving parts, hurts reliability, or makes the system rigid.",
+  "pairs": [
+    {"improving": "latency", "worsening": "Device complexity", "note": "Faster responses, but each speed-up adds components and code paths."},
+    {"improving": "Speed", "worsening": "Reliability", "note": "Aggressive caching and shortcuts made incidents more frequent."},
+    {"improving": "Adaptability or versatility", "worsening": "Device complexity", "note": "Product wants many ranking variants without a tangle of special cases."}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "clarent",
+  "description": "Classic decision and engineering methodologies as executable tools for Claude Code",
+  "owner": {
+    "name": "Clarent contributors"
+  },
+  "plugins": [
+    {
+      "name": "clarent-methods",
+      "source": "./plugins/claude-code",
+      "description": "Methodology skills with deterministic engines: ACH (competing hypotheses), TRIZ contradiction matrix, and more to come"
+    }
+  ]
+}

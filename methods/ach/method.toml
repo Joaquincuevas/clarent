@@ -1,0 +1,43 @@
+id = "ach"
+name = "Analysis of Competing Hypotheses"
+version = "0.1.0"
+family = "decision"
+status = "reference"          # spec | beta | stable | reference
+summary = "Score competing causes by inconsistency, find non-discriminating evidence, and pick the next most informative test."
+
+[python]
+module = "clarent_ach"        # importable package inside this folder; must expose register(subparsers) and main(argv)
+
+[surfaces]                    # what this method ships today (the doctor checks that each 'true' exists)
+cli = true
+skill = true
+agent = false
+hook = false
+mcp = false
+action = false
+
+# verification: read = opened and read | exists = confirmed to exist | blocked = exists, server blocks scripts | unverified = from memory
+[[sources]]
+title = "Heuer, Psychology of Intelligence Analysis (CIA/CSI, 1999)"
+url = "https://www.cia.gov/resources/csi/books-monographs/psychology-of-intelligence-analysis-2/"
+verification = "read"
+
+[[sources]]
+title = "Heuer, Psychology of Intelligence Analysis, full text (copy hosted by IALEIA): Chapter 8, Analysis of Competing Hypotheses, p. 95"
+url = "https://www.ialeia.org/docs/Psychology_of_Intelligence_Analysis.pdf"
+verification = "read"
+
+[[sources]]
+title = "UFMCS Red Team Handbook v5 (2011): ACH, p. 158; Key Assumptions Check, p. 151"
+url = "https://newandimproved.com/wp-content/uploads/2014/04/ufmcs_red_team_handbook_apr2011.pdf"
+verification = "read"
+
+[[sources]]
+title = "Heuer & Pherson, Structured Analytic Techniques for Intelligence Analysis (3rd ed.)"
+citation = "ISBN-10 150636893X (as listed in web search results; not opened)"
+verification = "exists"
+
+[novelty]
+checked_on = "2026-11-24"
+status = "exists-but-weak"    # none | exists-but-weak | exists-but-abandoned | well-covered
+evidence = "Burton/Analysis-of-Competing-Hypotheses (112 stars, last push 2012); prompt-only ACH in product-on-purpose/thinking-framework-skills; no deterministic engine found"

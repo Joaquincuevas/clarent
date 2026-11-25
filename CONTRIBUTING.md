@@ -31,7 +31,7 @@ Use `methods/ach/` as the reference layout. Skill descriptions must stay under 3
 
 ## Smaller contributions (good first issues)
 
-Open ones are listed under the [`good first issue` label](https://github.com/Joaquincuevas/clarent/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) (the repository is private for now, so the link works for collaborators only). Larger pieces of work, one issue per method that is specified but not yet implemented, carry [`new-method`](https://github.com/Joaquincuevas/clarent/issues?q=is%3Aissue+is%3Aopen+label%3Anew-method) and [`help wanted`](https://github.com/Joaquincuevas/clarent/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22). Comment on an issue to claim it. The drafts those issues were created from are in [`research/issues/`](research/issues/).
+Open ones are listed under the [`good first issue` label](https://github.com/Joaquincuevas/clarent/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22). Larger pieces of work, one issue per method that is specified but not yet implemented, carry [`new-method`](https://github.com/Joaquincuevas/clarent/issues?q=is%3Aissue+is%3Aopen+label%3Anew-method) and [`help wanted`](https://github.com/Joaquincuevas/clarent/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22). Comment on an issue to claim it. The drafts those issues were created from are in [`research/issues/`](research/issues/).
 
 - Add a **translation** of a method's messages (see `methods/ach/clarent_ach/i18n.py`).
 - Add a **worked example** from a real, public, closed bug (link the issue; no private data).

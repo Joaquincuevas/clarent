@@ -6,19 +6,19 @@
 
 | Hecho | Evidencia |
 |-------|-----------|
-| 2 métodos implementados de punta a punta: `ach` y `triz-matrix` | 23 + 38 tests, ejemplos en/es, fichas, skills, plugin generado con ambas |
+| 3 métodos implementados de punta a punta: `ach`, `redteam` (beta, 2026-11-25) y `triz-matrix` | 24 + 82 + 38 tests, ejemplos (`redteam` en/es y PR), fichas, skills, demos en `docs/demo/`, plugin generado con los tres |
 | Núcleo con registro y `doctor` | 16 tests; valida manifiesto, ficha, skill, fuentes |
 | Plugin (`clarent-methods`) y marketplace (`clarent`) válidos | `claude plugin validate` pasa en ambos |
-| CI, plantillas, CONTRIBUTING | escritos; **el CI aún no se ejecutó en GitHub** (no hay remoto) |
+| CI, plantillas, CONTRIBUTING | el repo está en GitHub (privado) y el CI corrió en verde el 2026-11-25; falta ver las plantillas de issues y PR en la interfaz (ver `launch-checklist.md`) |
 | Catálogo (63), novedad, ranking, specs, arquitectura, crecimiento | `research/`; novedad y ranking corregidos el 2026-11-24 (ver `novelty.md`) |
 
-Lo que **no** existe todavía: remoto en GitHub, evals, demo grabada, hooks/MCP/Actions, los otros 8 métodos del top 10 con especificación (más la plaza 10, aún sin especificar), tests de CI en Windows/Linux reales, y la verificación de las 29 celdas en disputa de la matriz TRIZ contra el libro.
+Lo que **no** existe todavía: evals, demo grabada (hay salidas reales en `docs/demo/`, no un GIF), hooks/MCP/Actions, los otros 8 métodos del top 10 con especificación (`spc`, `intent`, `rcf`, `kt`, `gate`, `fta`, `hazop` y `aar`), y la verificación de las 29 celdas en disputa de la matriz TRIZ contra el libro.
 
 ---
 
 ## v1 — MVP en 4 semanas → `v0.2.0` (beta cerrada)
 
-**Objetivo:** 3 métodos creíbles + un eval honesto + 5 personas externas que lo probaron. *No* es el lanzamiento público. Con `triz-matrix` ya implementada, el mínimo para lanzar es **`ach` + `triz-matrix` + `spc`**; `intent` pasa a ser lo primero que se recorta.
+**Objetivo:** 3 métodos creíbles + un eval honesto + 5 personas externas que lo probaron. *No* es el lanzamiento público. Con `triz-matrix` y `redteam` ya implementadas, el mínimo para lanzar es **`ach` + `redteam` + `triz-matrix` + `spc`**; `intent` pasa a ser lo primero que se recorta.
 
 | Semana | Entregables | Criterio de salida |
 |-------:|-------------|--------------------|
@@ -43,7 +43,7 @@ Condiciones y secuencia en `growth-plan.md` §5: repo público, post con un caso
 
 | Entregable | Nota |
 |------------|------|
-| `redteam` (subagente + lentes + `check` con verificación de citas literales) | mayor potencial de contribución: 1 lente = 1 archivo |
+| `redteam`: modo Team A / Team B, subagente de contexto aislado, Action con `check --fail-on`, eval en 10 diseños o PRs reales | el motor y el catálogo ya están (beta); el eval es lo que falta para pasar a `stable` |
 | `rcf` (clase de referencia desde git, cuantiles, libro de pronósticos) | demo fuerte; riesgos de datos documentados |
 | `intent` si se recortó | |
 | Servidor MCP mínimo para `ach` (extra `[mcp]`) | solo si hay demanda real en issues |
@@ -57,6 +57,7 @@ Condiciones y secuencia en `growth-plan.md` §5: repo público, post con un caso
 | **Pack Soviético** (identidad de marca; ver `ranking.md`) | `ariz`: ARIZ-85 con estado y compuertas (partes 1–9) sobre contradicciones de arquitectura, y Su-Field. La matriz de TRIZ ya está en v1 (`triz-matrix`); en v2 queda pendiente **comparar las 29 celdas en disputa con el libro** y **resolver con asesoría la licencia de los datos** (`DATA_LICENSE.md`) |
 | **Ingeniería** | `kt` (diferencial IS/IS-NOT sobre CI, con puente a ACH), `fta` (conjuntos mínimos de corte; reincorporada al top 10 el 2026-11-25) y `hazop` (palabras guía × parámetros de API/flujos de datos; entra al top 10 el 2026-11-25; especificación en `product-spec.md` §9) |
 | **Gobernanza de propuestas** | `gate` (Heilmeier) + Action que comenta el PR |
+| **Aprendizaje tras el evento** | `aar` (After Action Review desde `git log`, CI e incidentes, con `followup`; especificación en `product-spec.md` §10; plaza 10 por decisión del autor, 2026-11-25) |
 | **Aplazadas fuera del top 10** (decisión del autor, 2026-11-25) | `fmea` (Python vía `ast`) y `stpa` (la apuesta de mayor novedad; empezar por `--lite`). Se retoman después del bloque de Ingeniería; sus especificaciones siguen en `product-spec.md` |
 | **Plataforma** | router de métodos (Cynefin), `AGENTS.md` generado por método y pruebas reales en Cursor/Codex antes de afirmar compatibilidad, sitio de documentación, `SECURITY.md`, `CODE_OF_CONDUCT.md` |
 
@@ -64,7 +65,7 @@ Condiciones y secuencia en `growth-plan.md` §5: repo público, post con un caso
 
 | Bloque | Contenido |
 |--------|-----------|
-| **Cobertura** | siguientes por ranking: la plaza 10 si queda sin cubrir (AAR desde evidencia de git/CI o calibración, empatadas en 3.58), A3 (3.33 tras re-puntuar), Design Structure Matrix desde el grafo de imports, Delphi con varios agentes independientes, calibración (Brier) sobre el libro de pronósticos de `rcf` |
+| **Cobertura** | siguientes por ranking: A3 (3.33 tras re-puntuar), Design Structure Matrix desde el grafo de imports, Delphi con varios agentes independientes, calibración (Brier) sobre el libro de pronósticos de `rcf` |
 | **Ecosistema** | métodos de terceros vía *entry points* `clarent.methods` (hoy el descubrimiento es por carpeta); registro público de métodos con su estado de verificación y novedad |
 | **Calidad** | panel de evals por método con/sin skill; ficha con resultado visible |
 | **Estabilidad** | congelar contratos (`method.toml`, esquemas `clarent.<método>/N`, códigos de salida); política de versiones |

@@ -413,6 +413,34 @@
    "record": "https://openlibrary.org/works/OL25180171W",
    "isbn_sample": "9780429073793",
    "exact_title": true
+  },
+  {
+   "key": "klein-premortem-2008",
+   "status": "MATCH",
+   "doi": "10.1109/EMR.2008.4534313",
+   "title": "Performing a Project Premortem",
+   "year": 2008,
+   "authors": [
+    "Klein"
+   ],
+   "journal": "IEEE Engineering Management Review"
+  },
+  {
+   "key": "klein-sources-of-power",
+   "status": "MATCH",
+   "title": "Sources of power",
+   "authors": [
+    "Gary A. Klein"
+   ],
+   "first_publish_year": 1998,
+   "expected_year": 1998,
+   "record": "https://openlibrary.org/works/OL2731587W",
+   "isbn_sample": "0262112272",
+   "exact_title": true
   }
+ ],
+ "added_2026-11-25": [
+  "klein-premortem-2008",
+  "klein-sources-of-power"
  ]
 }

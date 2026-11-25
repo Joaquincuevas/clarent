@@ -57,6 +57,13 @@ class ParseTests(unittest.TestCase):
         with self.assertRaises(ACHError):
             parse(d)
 
+    def test_missing_required_field_is_a_clean_error(self):
+        # regression: t("missing_field", key=...) used to raise TypeError (the message key was not positional-only)
+        d = base(); del d["hypotheses"][0]["id"]
+        with self.assertRaises(ACHError) as cm:
+            parse(d)
+        self.assertIn("missing required field 'id'", str(cm.exception))
+
     def test_all_catch_all_rejected(self):
         d = base()
         for h in d["hypotheses"]:

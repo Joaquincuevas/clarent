@@ -98,7 +98,7 @@ Herramientas de grabación habituales: `asciinema` o `vhs` (⚠ no verifiqué su
 
 ## 7. Sistema de contribuciones
 
-- **Unidad contribuible pequeña:** una *lente* (redteam), una *regla* (spc), una *traducción*, un *ejemplo real*, una *verificación de fuente*. Cada una es un archivo y la revisa `clarent doctor` + CI, lo que filtra PRs de baja calidad (también los generados masivamente con IA).
+- **Unidad contribuible pequeña:** un *ejemplo real* de redteam, una *regla* (spc), una *traducción*, una *verificación de fuente*. Cada una es un archivo y la revisa `clarent doctor` + CI, lo que filtra PRs de baja calidad (también los generados masivamente con IA).
 - **Etiquetas:** `good first issue` (≤ 2 h, con archivo y criterio de aceptación escritos), `new-method`, `verify-source`, `needs-eval`, `help wanted`.
 - **Lista inicial de good first issues (concretos):**
   1. Traducir los mensajes de `clarent_ach` a pt-BR (copiar el bloque `es` de `i18n.py`).
@@ -106,7 +106,7 @@ Herramientas de grabación habituales: `asciinema` o `vhs` (⚠ no verifiqué su
   3. Verificar el capítulo de ACH en el PDF de Heuer y corregir `CARD.md` (hoy marcado ⚠).
   4. Verificar 5 fuentes `unverified` del catálogo y subirlas a `read`.
   5. Añadir `--format csv` al informe de `ach next`.
-  6. Escribir la lente `devils-advocacy` de `redteam` (cuando exista el esqueleto).
+  6. Añadir un ejemplo real de `redteam`: un diseño o PR público y sus hallazgos aceptados por el motor.
   7. Añadir test de propiedades (aleatorios con semilla) a `engine.score`.
   8. README en español.
 - **Hoja de ruta pública:** `research/roadmap.md` + un GitHub Project con las mismas columnas.

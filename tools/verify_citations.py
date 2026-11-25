@@ -24,6 +24,7 @@ DOIS = {
     "mellers-2014": ("10.1177/0956797614524255", 2014, "mellers"),
     "steward-1981": ("10.1109/TEM.1981.6448589", 1981, "steward"),
     "dalkey-helmer-1963": ("10.1287/mnsc.9.3.458", 1963, "dalkey"),
+    "klein-premortem-2008": ("10.1109/EMR.2008.4534313", 2008, "klein"),   # IEEE EMR reprint of the HBR (Sept 2007) article
 }
 BOOKS = {
     "perla-art-of-wargaming": ("The Art of Wargaming", "Perla", 1990),
@@ -52,6 +53,7 @@ BOOKS = {
     "shingo-zero-qc": ("Zero Quality Control", "Shingo", 1986),
     "heuer-pherson-sat": ("Structured Analytic Techniques for Intelligence Analysis", "Heuer", 2010),
     "altshuller-creativity": ("Creativity as an Exact Science", "Altshuller", 1984),
+    "klein-sources-of-power": ("Sources of Power", "Klein", 1998),
 }
 
 

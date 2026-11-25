@@ -1,0 +1,132 @@
+{
+  "schema": "clarent.redteam/1",
+  "title": "Notifications from a stream consumer (SYNTHETIC EXAMPLE)",
+  "root": ".",
+  "target": { "kind": "design", "files": ["design.md"] },
+  "assumptions": [
+    {
+      "id": "A1",
+      "text": "If Redis is down when the API publishes, the notification is not lost: it is sent later from the table.",
+      "quote": "if it is not, the notification stays in the table and will be picked up later",
+      "status": "contradicted",
+      "evidence": [
+        { "ref": "design.md:15", "observation": "Step 4 deletes the cron job, which is the only reader of the table, so nothing picks the row up later." }
+      ]
+    },
+    {
+      "id": "A2",
+      "text": "The provider's rate limit applies per consumer, so adding consumers adds capacity.",
+      "quote": "The email provider accepts at most one message per second per consumer",
+      "status": "unverified",
+      "check": "Read the provider's rate-limit documentation, then send a 50-message burst from two consumers sharing one sandbox account."
+    },
+    {
+      "id": "A3",
+      "text": "Duplicate notifications are rare, so consumers can skip idempotency.",
+      "quote": "Notifications are rarely duplicated, so consumers do not need to be idempotent",
+      "status": "unverified",
+      "check": "Count notification ids published more than once over the last 30 days (group the publish log by id, keep count > 1)."
+    },
+    {
+      "id": "A4",
+      "text": "Load stays under 200 notifications per minute.",
+      "quote": "Peak load will stay under 200 notifications per minute",
+      "status": "verified",
+      "evidence": [
+        {
+          "ref": "psql -c \"select max(n) from (select count(*) n from notifications group by date_trunc('minute', created_at)) m\"",
+          "observation": "peak of 118 per minute over the last 30 days (synthetic result for this example; it says nothing about campaigns)"
+        }
+      ]
+    },
+    {
+      "id": "A5",
+      "text": "Turning the flag off is a safe rollback.",
+      "quote": "The consumer pool ships behind a flag",
+      "status": "contradicted",
+      "evidence": [
+        { "ref": "design.md:26-27", "observation": "Once the flag is on for everyone the cron job and its code are removed and sent_at is dropped, so switching the flag off restores nothing." }
+      ]
+    },
+    {
+      "id": "A6",
+      "text": "A message acknowledged on read cannot be lost.",
+      "quote": "Each consumer acknowledges the message as soon as it is read",
+      "status": "unverified",
+      "check": "In staging, kill -9 a consumer between the read and the provider call, then count the notifications that were never sent."
+    }
+  ],
+  "attacks": [
+    {
+      "id": "X1",
+      "class": "failure-modes",
+      "assumption": "A1",
+      "quote": "the notification stays in the table and will be picked up later",
+      "attack": "If Redis is down when the API publishes, the row stays in the table but nothing reads it once the cron job is gone: those notifications are never sent and nobody is told.",
+      "impact": 4,
+      "plausibility": 3,
+      "check": "Stop Redis in staging, create 20 notifications, restart Redis and count how many are sent."
+    },
+    {
+      "id": "X2",
+      "class": "failure-modes",
+      "assumption": "A6",
+      "quote": "acknowledges the message as soon as it is read",
+      "attack": "A consumer that crashes after the read and before the provider answers loses the notification: acknowledging on read gives at-most-once delivery, and the row stays pending for ever.",
+      "impact": 4,
+      "plausibility": 4,
+      "check": "In staging, kill -9 a consumer between the read and the provider call; count the rows still pending after 10 minutes."
+    },
+    {
+      "id": "X3",
+      "class": "reversibility",
+      "assumption": "A5",
+      "quote": "the cron job and its code are removed",
+      "attack": "After the rollout there is no way back: the flag cannot bring back the cron job or the sent_at column, so a bad release can only be fixed by shipping another one while notifications are being lost.",
+      "impact": 5,
+      "plausibility": 3,
+      "check": "Apply the migration in staging, then try to revert to the previous release and send a notification."
+    },
+    {
+      "id": "X4",
+      "class": "dependency",
+      "assumption": "A2",
+      "quote": "accepts at most one message per second per consumer",
+      "attack": "If the provider's limit applies per account instead of per consumer, the 4 consumers share it, and throttled sends that were already acknowledged are dropped.",
+      "impact": 3,
+      "plausibility": 3,
+      "check": "Ask the provider (or read its docs) whether the limit is per API key or per connection."
+    },
+    {
+      "id": "X5",
+      "class": "abuse",
+      "assumption": "A3",
+      "quote": "publishes its id to a Redis Stream called `notify`",
+      "attack": "A client that repeats a request (a password-reset form, a retry loop) creates one notification per request; with no per-user limit the stream fills with duplicates and delays everyone, which is what the assumption says does not happen.",
+      "impact": 3,
+      "plausibility": 3,
+      "check": "Send 1,000 password-reset requests for one address in staging and measure the delay of an unrelated notification."
+    },
+    {
+      "id": "X6",
+      "class": "scale",
+      "assumption": "A4",
+      "quote": "Peak load will stay under 200 notifications per minute",
+      "attack": "A marketing blast of 50,000 notifications enters the stream at once; 4 consumers at one message per second need about 3.5 hours to drain it, and transactional emails wait behind it.",
+      "impact": 4,
+      "plausibility": 4,
+      "check": "Compute N / (consumers x rate) for the largest campaign of last quarter, then load-test a 50,000-message burst in staging."
+    },
+    {
+      "id": "X7",
+      "class": "key-assumptions",
+      "assumption": "A3",
+      "quote": "so consumers do not need to be idempotent",
+      "attack": "The API publishes inside the request, so any client or load-balancer retry publishes twice. Duplicates come from the publisher, not from the rarity of events, and a consumer that is not idempotent sends two emails.",
+      "impact": 2,
+      "plausibility": 4,
+      "check": "Count notification ids published more than once over the last 30 days."
+    }
+  ],
+  "skipped_classes": []
+}

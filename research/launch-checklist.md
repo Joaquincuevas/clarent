@@ -1,6 +1,6 @@
 # Lista de lanzamiento: primer push a GitHub
 
-> Estado (2026-11-25): **nada de esto se ha ejecutado.** No existe remoto, el CI nunca corrió en GitHub y el borrador a la Fundación Altshuller no se ha enviado. Los comandos están para que los ejecute el autor, uno por uno.
+> Estado (2026-11-25): el repositorio `Joaquincuevas/clarent` se creó **privado** y `main` se subió; el primer CI (`ci`) terminó en verde. **Siguen pendientes** las comprobaciones de la sección 2 que no se pueden ver sin la interfaz o sin hacerlo público (plantillas, `novelty-freshness`, instalación desde GitHub) y el envío, o no, del borrador a la Fundación Altshuller.
 
 ## 0. Antes del primer push
 

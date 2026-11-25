@@ -19,11 +19,11 @@
 | # | ID | Metodología | Familia | N | U | E | V | C | Σ | Ponderado | Estado en GitHub |
 |--:|----|-------------|---------|--:|--:|--:|--:|--:|--:|----------:|------------------|
 | 1 | D04 | ACH (Heuer) | Decision | 4 | 5 | 5 | 4 | 4 | 22 | **4.42** | existe pero debil |
-| 2 | M05 | Red Teaming (UFMCS) | Militar | 3 | 4 | 5 | 5 | 5 | 22 | **4.25** | existe pero debil |
-| 3 | L12 | SPC (control charts) | Lean | 4 | 4 | 4 | 5 | 4 | 21 | **4.17** | existe pero abandonado |
-| 4 | M07 | Commander's Intent | Militar | 4 | 5 | 4 | 4 | 3 | 20 | **4.08** | no existe |
-| 5 | X06 | Reference Class Forecasting | Extra | 4 | 4 | 4 | 5 | 3 | 20 | **4.0** | no existe |
-| 6 | E06 | Kepner-Tregoe (IS/IS-NOT) | Ingenieria | 3 | 5 | 4 | 4 | 3 | 19 | **3.83** | existe pero debil |
+| 2 | L12 | SPC (control charts) | Lean | 4 | 4 | 4 | 5 | 4 | 21 | **4.17** | existe pero abandonado |
+| 3 | M07 | Commander's Intent | Militar | 4 | 5 | 4 | 4 | 3 | 20 | **4.08** | no existe |
+| 4 | X06 | Reference Class Forecasting | Extra | 4 | 4 | 4 | 5 | 3 | 20 | **4.0** | no existe |
+| 5 | E06 | Kepner-Tregoe (IS/IS-NOT) | Ingenieria | 3 | 5 | 4 | 4 | 3 | 19 | **3.83** | existe pero debil |
+| 6 | M05 | Red Teaming (UFMCS) | Militar | 2 | 4 | 5 | 5 | 4 | 20 | **3.83** | existe pero debil |
 | 7 | D05 | Key Assumptions Check | Decision | 3 | 4 | 5 | 3 | 4 | 19 | **3.75** | existe pero debil |
 | 8 | X04 | Heilmeier Catechism | Extra | 3 | 4 | 5 | 3 | 4 | 19 | **3.75** | existe pero debil |
 | 9 | E02 | Fault Tree Analysis | Ingenieria | 4 | 4 | 3 | 4 | 3 | 18 | **3.67** | existe pero debil |
@@ -89,20 +89,20 @@ El ranking ordena **metodologías**; el producto se arma por **herramientas**. D
 - **D05 Key Assumptions Check → paso 0 de ACH.** Los supuestos son las hipótesis implícitas de partida; comparten el modelo de datos.
 - **M02 Mission Command → parte de Commander's Intent.** Mission Command es la doctrina; el contrato de intención es su implementación.
 
-**Regla de selección (revisada el 2026-11-25):** se toman las metodologías por puntaje ponderado, descontando las fusiones; el desempate es el del ranking (mayor N, luego mayor U, luego id). Dos exclusiones son **decisión del autor** y no dependen del puntaje: `fmea` y `stpa` pasan a v2, y `triz-matrix` queda como **método adicional fuera del ranking** (no ocupa plaza del top 10; está implementada y se publica con v0.1). Con eso, el top 10 de v1 queda así:
+**Regla de selección (revisada el 2026-11-25):** se toman las metodologías por puntaje ponderado, descontando las fusiones; el desempate es el del ranking (mayor N, luego mayor U, luego id). Dos exclusiones son **decisión del autor** y no dependen del puntaje: `fmea` y `stpa` pasan a v2, y `triz-matrix` queda como **método adicional fuera del ranking** (no ocupa plaza del top 10; está implementada y se publica con v0.1). Con eso, el top 10 de v1 queda así (ordenado por puntaje; el desempate es N, luego U, luego id):
 
 | # | Herramienta de Clarent | Metodología(s) | Ponderado | Por qué entra |
 |--:|------------------------|----------------|----------:|---------------|
-| 1 | `ach` — Hipótesis competidoras (+ KAC) | D04, D05 | 4.42 | Máxima utilidad (debugging a diario) y motor determinista real; ningún repo tiene puntaje de inconsistencia + próxima prueba + evidencia citada. **Referencia end-to-end implementada.** |
-| 2 | `redteam` — Agente adversario sobre diseños/PRs | M05 (+ X17 Team A/B) | 4.25 | Mayor puntaje de demo y contribución (cada técnica/persona es un archivo). Hueco: aplicar el repertorio UFMCS a un artefacto concreto. |
-| 3 | `spc` — Cartas de control para CI/DORA | L12 | 4.17 | Un gráfico se comparte solo; la herramienta previa está abandonada (2023) y sin CI. |
-| 4 | `intent` — Contrato de delegación (Commander's Intent) | M07, M02 | 4.08 | Se usa cada vez que delegas a un subagente; 0 repos. |
-| 5 | `rcf` — Estimar con tu propio historial (Reference Class) | X06 | 4.00 | "¿Cuánto tardará?" con distribución real; 0 repos OSS dev; muy demostrable. |
-| 6 | `kt` — IS/IS-NOT diferencial sobre corridas de CI | E06 | 3.83 | Convierte un método de prompt en un cálculo de distinciones; utilidad 5 (flakes). |
+| 1 | `ach` — Hipótesis competidoras (+ KAC) | D04, D05 | 4.42 | Máxima utilidad (debugging a diario) y motor determinista real; ningún repo tiene puntaje de inconsistencia + próxima prueba + evidencia citada. **Implementada (referencia).** |
+| 2 | `spc` — Cartas de control para CI/DORA | L12 | 4.17 | Un gráfico se comparte solo; la herramienta previa está abandonada (2023) y sin CI. |
+| 3 | `intent` — Contrato de delegación (Commander's Intent) | M07, M02 | 4.08 | Se usa cada vez que delegas a un subagente; 0 repos. |
+| 4 | `rcf` — Estimar con tu propio historial (Reference Class) | X06 | 4.00 | "¿Cuánto tardará?" con distribución real; 0 repos OSS dev; muy demostrable. Absorbe la calibración de D03 (`log` y `score`). |
+| 5 | `kt` — IS/IS-NOT diferencial sobre corridas de CI | E06 | 3.83 | Convierte un método de prompt en un cálculo de distinciones; utilidad 5 (flakes). |
+| 6 | `redteam` — Ataque a diseños y PRs con catálogo fijo | M05 (+ X17 Team A/B, pendiente) | 3.83 | **Implementada (beta) el 2026-11-25.** Bajó de 4.25 (puesto 2) a 3.83 al corregir la novedad (el espacio está más poblado de lo que se creía: ver `novelty.md`) y la contribución (el catálogo de clases es fijo). Su hueco: un motor que rechaza hallazgos que no cita literalmente el texto, con matriz de supuestos y estado. |
 | 7 | `gate` — Puerta de propuesta (Heilmeier) | X04 | 3.75 | Fácil, contribuible y completa el flujo PR/RFC. Menos novedad (3). |
 | 8 | `fta` — Árbol de fallas con conjuntos mínimos de corte | E02 | 3.67 | **Reincorporada por puntaje** (había cedido su plaza a `triz-matrix` el 2026-11-24). Novedad 4 por el ángulo de incidentes de software; existen herramientas de confiabilidad (`scram` 168★, C++, 2023). Es el método más riesgoso de implementar (E=3). |
 | 9 | `hazop` — Palabras guía sobre APIs y flujos de datos | X10 | 3.58 | **Entra por puntaje y por desempate** (N=4 frente a N=3 de los otros métodos con 3.58). Hueco confirmado con el re-escaneo del 2026-11-25: HAZOP existe en la industria de proceso; no hay nada para APIs ni flujos de datos de software. Especificación en `product-spec.md` §9. |
-| 10 | *(plaza abierta)* | D03 / M04 | 3.58 | Tras `fta` y `hazop`, el puntaje deja un empate exacto entre **D03 Superforecasting/calibración** y **M04 AAR** (3.58, N=3, U=4). Por id correspondería a D03, pero su núcleo (registrar pronósticos y medir calibración) ya está en `rcf` (`log` y `score`). **Recomendación, sin decidir:** AAR desde evidencia de git/CI. Ninguna de las dos tiene especificación todavía. |
+| 10 | `aar` — After Action Review desde git, CI e incidentes | M04 | 3.58 | **Decisión del autor (2026-11-25) sobre un empate exacto**: D03 y M04 tenían 3.58 con N=3 y U=4. Se elige M04 porque la calibración de D03 ya está en `rcf` (`log` y `score`). Hueco: AAR de equipos de software sobre evidencia de git/CI (`aar-loop`, 125★, es para sesiones de IA). Especificación en `product-spec.md` §10. |
 
 **Fuera del ranking:** `triz-matrix` — matriz de contradicciones de TRIZ con ejemplos de software (S01, 3.08, puesto 40 de 63). **Implementada** (38 tests, 1 218 de 1 248 celdas verificadas contra la tabla de 1973). Se mantiene por decisión del autor, por identidad y base conceptual y no por ventaja competitiva: el escaneo de novedad encontró al menos 8 repos pequeños con la matriz como skill (`novelty.md`), y su ventaja real es el dataset verificado celda a celda y el motor con tests. Como no compite por plaza, ya no desplaza a nadie.
 
@@ -115,6 +115,8 @@ El ranking ordena **metodologías**; el producto se arma por **herramientas**. D
 | `fta` (E02, 3.67) | v2 | **top 10, puesto 8** | Le corresponde por puntaje; solo había cedido su plaza a `triz-matrix`. |
 | `triz-matrix` (S01, 3.08) | puesto 10 del top 10 | **método adicional fuera del ranking** | Decisión del autor; no ocupa plaza. |
 | `hazop` (X10, 3.58) | candidato de v2 | **top 10, puesto 9** | Puntaje sin cambios; el re-escaneo con consultas cortas no encontró nada para APIs ni flujos de datos. |
+| `redteam` (M05) | 4.25 (novedad 3, contribución 5), puesto 2 | **3.83 (novedad 2, contribución 4), puesto 6; implementada** | Re-escaneo con consultas cortas (`tools/github_scan3.py redteam`): al menos un repo de abogado del diablo con auditoría de supuestos, pre-mortem y hallazgos con severidad (`aaddrick/contrarian`, 43★) y tres revisores adversariales de PR (`magpie` 180★, `claude-code-gauntlet`, `adv-review`) cuya verificación es otro paso de LLM. Ninguno tiene un motor que rechace por cita literal. La contribución baja porque el catálogo de clases es fijo en código (decisión de diseño), no un archivo por lente. |
+| `aar` (M04) | empatada en la plaza 10 con D03 (3.58) | **plaza 10, especificada** | Decisión del autor. D03 queda absorbida por `rcf`. |
 | A3 (L08) | 3.58, novedad 4 ("no existe") | **3.33, novedad 3 ("existe pero débil"), puesto 22** | Re-escaneo con consultas cortas (`tools/github_scan3.py`): al menos 6 repos de 0–5★ (editores y generadores de A3 con IA); ninguno orientado a desarrollo ni con motor, pero ya no son "0 resultados". Es la misma corrección que sufrió TRIZ. |
 
 ### Quién queda fuera y por qué
@@ -122,27 +124,27 @@ El ranking ordena **metodologías**; el producto se arma por **herramientas**. D
 | Metodología | Ponderado | Motivo |
 |-------------|----------:|--------|
 | **`fmea`** (E01), **`stpa`** (E04) | 3.58 / 3.50 | Pasan a v2 por decisión del autor (2026-11-25). `fmea` tiene el hueco de "FMEA de módulos de software con O y D tomados de git y cobertura" y `stpa` el de agentes/microservicios; ninguno está en el MVP. |
-| **Pre-mortem** (M06) | 3.33 | **Bien cubierto**: 3 skills dedicadas (59–88★) y 2 colecciones. Se puede incluir como *paso* dentro de `redteam`, sin tool propia. |
+| **Pre-mortem** (M06) | 3.33 | **Bien cubierto**: 3 skills dedicadas (59–88★) y 2 colecciones. Ya está como clase `failure-modes` de `redteam` (el Handbook de UFMCS lo incluye, pp. 138–140), sin tool propia. |
 | **A3** (L08) | 3.33 | Salió del top 12 al corregir la novedad (ver arriba). Sigue siendo candidato de v3; un ángulo posible es el A3 como reporte de incidente con evidencia citada. |
-| **AAR** (M04), **Superforecasting** (D03) | 3.58 | Empatan por la plaza 10 (ver tabla). La que no entre va a v3; la calibración de D03 llega igualmente con `rcf`. |
+| **Superforecasting / calibración** (D03) | 3.58 | Empató con M04 por la plaza 10 y perdió por decisión del autor: su núcleo (registrar pronósticos y medir calibración) ya está en `rcf`. |
 | **ARIZ-85** (S02) | 3.25 | Flujo largo con estado y compuertas (E=2). Primer bloque de v2 como "Pack Soviético" junto con Su-Field (ver `roadmap.md`). La matriz de TRIZ ya está en v1 como `triz-matrix`. |
 | **Wardley, PDCA, 5 Whys, OODA, Poka-yoke** | 2.50–3.17 | Bien cubiertos; no competir. |
 | **Tectología, OTSM, Control reflexivo** | 2.17–2.92 | Alto valor de marca/educativo, utilidad operativa difícil de demostrar. Útiles para el README ("de dónde viene"), no para el producto. |
 
 ## Robustez del ranking
 
-Re-puntué con otras ponderaciones y los puntajes vigentes (tras la corrección de A3). Se cuenta cuántas de las 9 herramientas con metodología asignada quedan entre las 12 primeras del ranking (`ach` e `intent` cuentan por su mejor metodología fusionada). Ponderaciones (N/U/E/V/C): *Base* 1.5/1.5/1/1/1; *Igual* 1/1/1/1/1; *Utilidad x3* 1/3/1/1/1; *Novedad x3* 3/1.5/1/1/1. Recalculado el 2026-11-25 con el desempate N → U → id (con él, el puesto de `stpa` en *Igual* sale 15 y no 17 como figuraba antes).
+Re-puntué con otras ponderaciones y los puntajes vigentes (tras las correcciones de A3 y de `redteam`). Se cuenta cuántas de las 10 herramientas quedan entre las 12 primeras del ranking (`ach` e `intent` cuentan por su mejor metodología fusionada). Ponderaciones (N/U/E/V/C): *Base* 1.5/1.5/1/1/1; *Igual* 1/1/1/1/1; *Utilidad x3* 1/3/1/1/1; *Novedad x3* 3/1.5/1/1/1. Recalculado el 2026-11-25 con el desempate N → U → id (con él, el puesto de `stpa` en *Igual* sale 15 y no 17 como figuraba antes).
 
-| Ponderación | Herramientas dentro de las 12 primeras | Fuera | `hazop` | `fta` | `triz-matrix` | `fmea` | `stpa` | A3 |
-|-------------|---------------------------------------:|-------|--------:|------:|--------------:|-------:|-------:|---:|
-| Base | 9 / 9 | — | 11 | 9 | 40 | 13 | 15 | 22 |
-| Igual para todos | 9 / 9 | — | 11 | 9 | 40 | 13 | 15 | 22 |
-| Utilidad x3 | 8 / 9 | `hazop` | 20 | 9 | 41 | 12 | 14 | 26 |
-| Novedad x3 | 8 / 9 | `gate` | 8 | 6 | 50 | 18 | 10 | 31 |
+| Ponderación | Herramientas dentro de las 12 primeras | Fuera | `redteam` | `hazop` | `aar` | `fta` | `triz-matrix` | `fmea` | `stpa` | A3 |
+|-------------|---------------------------------------:|-------|----------:|--------:|------:|------:|--------------:|-------:|-------:|---:|
+| Base | 9 / 10 | `aar` | 6 | 11 | 14 | 9 | 40 | 13 | 15 | 22 |
+| Igual para todos | 9 / 10 | `aar` | 5 | 11 | 14 | 9 | 40 | 13 | 15 | 22 |
+| Utilidad x3 | 8 / 10 | `hazop`, `aar` | 6 | 20 | 13 | 9 | 41 | 12 | 14 | 26 |
+| Novedad x3 | 8 / 10 | `redteam`, `aar` | 19 | 7 | 18 | 5 | 50 | 17 | 9 | 31 |
 
-(Las últimas seis columnas son el puesto entre las 63.)
+(Las últimas siete columnas son el puesto entre las 63.)
 
-Lectura: la selección **resiste** el cambio de ponderación salvo en un caso por escenario: `hazop` cae cuando la utilidad pesa triple (U=3) y `gate` cuando la novedad pesa triple (N=3). `hazop` es la plaza más frágil: entra por un desempate (3.58 con N=4). `stpa` sube hasta el puesto 10 cuando se premia la novedad, de modo que su paso a v2 es una decisión del autor y no una consecuencia del puntaje.
+Lectura: la selección **resiste** el cambio de ponderación en 8 de 10 herramientas. Las plazas frágiles son tres: `aar` (puesto 14 con los puntajes base: está dentro por una decisión del autor sobre un empate, no por holgura), `hazop` (cae si la utilidad pesa triple) y `redteam` (cae si la novedad pesa triple, porque tiene N=2). `stpa` sube hasta el puesto 9 cuando se premia la novedad, de modo que su paso a v2 es una decisión del autor y no una consecuencia del puntaje.
 
 ## Qué podría invalidar este ranking
 

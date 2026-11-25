@@ -1,0 +1,902 @@
+{
+ "scanned_at": "2026-11-25",
+ "results": {
+  "red team design": {
+   "total_count": 773,
+   "items": [
+    {
+     "repo": "simplerhacking/Evilginx3-Phishlets",
+     "stars": 764,
+     "pushed": "2025-05-27",
+     "archived": false,
+     "lang": null,
+     "desc": "This repository provides penetration testers and red teams with an extensive collection of dynamic phishing templates designed specifically for use wi"
+    },
+    {
+     "repo": "Yeeb1/SockTail",
+     "stars": 577,
+     "pushed": "2025-10-03",
+     "archived": false,
+     "lang": "Go",
+     "desc": "Lightweight binary that joins a device to a Tailscale network and exposes a local SOCKS5 proxy. Designed for red team operations and ephemeral access "
+    },
+    {
+     "repo": "d4rk007/RedGhost",
+     "stars": 542,
+     "pushed": "2021-04-14",
+     "archived": false,
+     "lang": "Shell",
+     "desc": "Linux post exploitation framework written in bash designed to assist red teams in persistence, reconnaissance, privilege escalation and leaving no tra"
+    },
+    {
+     "repo": "CanIPhish/Phishious",
+     "stars": 520,
+     "pushed": "2023-04-15",
+     "archived": false,
+     "lang": "C#",
+     "desc": "An open-source Secure Email Gateway (SEG) evaluation toolkit designed for red-teamers."
+    },
+    {
+     "repo": "TonyPhipps/Meerkat",
+     "stars": 480,
+     "pushed": "2024-11-15",
+     "archived": false,
+     "lang": "PowerShell",
+     "desc": "A collection of PowerShell modules designed for artifact gathering and reconnaisance of Windows-based endpoints."
+    },
+    {
+     "repo": "CervantesSec/cervantes",
+     "stars": 449,
+     "pushed": "2026-10-23",
+     "archived": false,
+     "lang": "C#",
+     "desc": "Cervantes is an open-source, collaborative platform designed specifically for pentesters and red teams. It serves as a comprehensive management tool, "
+    },
+    {
+     "repo": "chrisneagu/FTC-Skystone-Dark-Angels-Romania-2020",
+     "stars": 326,
+     "pushed": "2024-04-12",
+     "archived": false,
+     "lang": "Java",
+     "desc": "NOTICE This repository contains the public FTC SDK for the SKYSTONE (2019-2020) competition season. If you are looking for the current season's FTC SD"
+    },
+    {
+     "repo": "NetSPI/ESC",
+     "stars": 306,
+     "pushed": "2023-04-25",
+     "archived": false,
+     "lang": "C#",
+     "desc": "Evil SQL Client (ESC) is an interactive .NET SQL console client with enhanced SQL Server discovery, access, and data exfiltration features. While ESC "
+    }
+   ]
+  },
+  "red team skill": {
+   "total_count": 439,
+   "items": [
+    {
+     "repo": "elementalsouls/Claude-BugHunter",
+     "stars": 22850,
+     "pushed": "2026-11-25",
+     "archived": false,
+     "lang": "Python",
+     "desc": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 "
+    },
+    {
+     "repo": "Tencent/AI-Infra-Guard",
+     "stars": 7743,
+     "pushed": "2026-11-25",
+     "archived": false,
+     "lang": "Python",
+     "desc": "A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation."
+    },
+    {
+     "repo": "elementalsouls/Claude-OSINT",
+     "stars": 3146,
+     "pushed": "2026-10-20",
+     "archived": false,
+     "lang": "Python",
+     "desc": "8 Claude skills · 100+ recon capabilities · 80 secret-regex patterns · 80+ dorks · 9 read-only credential validators · 27 attack-path templates · ~10,"
+    },
+    {
+     "repo": "Zyrexnn/Cybermes",
+     "stars": 1069,
+     "pushed": "2026-11-24",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Autonomous Offensive Security, Bug Bounty & Red Teaming Agent Framework powered by Hermes Agent, specialized reasoning skills, and multi-model LLM orc"
+    },
+    {
+     "repo": "LumosLab-Innovation/OpenHunterAI",
+     "stars": 348,
+     "pushed": "2026-10-23",
+     "archived": false,
+     "lang": "TypeScript",
+     "desc": "Local-first AI red team for web, API, and LLM application security. Attacker-style reasoning, evidence-backed findings, and skills for AI coding agent"
+    },
+    {
+     "repo": "Sfedfcv/redesigned-pancake",
+     "stars": 281,
+     "pushed": "2021-05-16",
+     "archived": false,
+     "lang": null,
+     "desc": "Skip to content github / docs Code Issues 80 Pull requests 35 Discussions Actions Projects 2 Security Insights Merge branch 'main' into 1862-Add-Travi"
+    },
+    {
+     "repo": "Socialpranker/deepdive",
+     "stars": 258,
+     "pushed": "2026-11-22",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Deepdive skill for Claude Code — 12-phase research pipeline: plan-review gate, parallel sub-agent search, claims-ledger triangulation with dissent pro"
+    },
+    {
+     "repo": "ADScanPro/Claude-AD",
+     "stars": 226,
+     "pushed": "2026-08-24",
+     "archived": false,
+     "lang": null,
+     "desc": "Active Directory pentest methodology for Claude Code: skills, agents and slash commands for internal AD red-team work (Kerberoasting, ADCS ESC1-17, DC"
+    }
+   ]
+  },
+  "red team review": {
+   "total_count": 199,
+   "items": [
+    {
+     "repo": "chrisneagu/FTC-Skystone-Dark-Angels-Romania-2020",
+     "stars": 326,
+     "pushed": "2024-04-12",
+     "archived": false,
+     "lang": "Java",
+     "desc": "NOTICE This repository contains the public FTC SDK for the SKYSTONE (2019-2020) competition season. If you are looking for the current season's FTC SD"
+    },
+    {
+     "repo": "Sfedfcv/redesigned-pancake",
+     "stars": 281,
+     "pushed": "2021-05-16",
+     "archived": false,
+     "lang": null,
+     "desc": "Skip to content github / docs Code Issues 80 Pull requests 35 Discussions Actions Projects 2 Security Insights Merge branch 'main' into 1862-Add-Travi"
+    },
+    {
+     "repo": "Socialpranker/deepdive",
+     "stars": 258,
+     "pushed": "2026-11-22",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Deepdive skill for Claude Code — 12-phase research pipeline: plan-review gate, parallel sub-agent search, claims-ledger triangulation with dissent pro"
+    },
+    {
+     "repo": "Stanestane/game-design-skills-bundle",
+     "stars": 108,
+     "pushed": "2026-09-19",
+     "archived": false,
+     "lang": "Python",
+     "desc": "A public OpenClaw and ClawHub-ready bundle of game design skills for emotional direction, feature workflows, audits, FTUE, pitch decks, prototyping, a"
+    },
+    {
+     "repo": "xf686/Meet-Reviewer-2",
+     "stars": 53,
+     "pushed": "2026-06-23",
+     "archived": false,
+     "lang": null,
+     "desc": "  Meet Reviewer 2 before they meet you ！ A Claude Code skill that red-teams   your paper draft — a simulated peer-review panel + an evidence-grounded "
+    },
+    {
+     "repo": "zhjai/agent-arena",
+     "stars": 25,
+     "pushed": "2026-10-09",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Evidence-first multi-agent debate skill: get a second opinion by pitting Codex × Claude Code (or GLM/DeepSeek/Qwen) to independently review, red-team "
+    },
+    {
+     "repo": "Ap6pack/outrider-recon",
+     "stars": 16,
+     "pushed": "2026-09-12",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Claude-native, governed offensive-OSINT & external attack-surface platform for authorized red-team and bug-bounty. Multi-agent recon across web, ident"
+    },
+    {
+     "repo": "robertoecf/adversarial-review",
+     "stars": 12,
+     "pushed": "2026-09-30",
+     "archived": false,
+     "lang": "Shell",
+     "desc": "Review triad plugin for Claude Code: prompt optimization, adversarial red-team review, plan validation, and intelligent orchestration."
+    }
+   ]
+  },
+  "design review agent": {
+   "total_count": 1555,
+   "items": [
+    {
+     "repo": "pbakaus/impeccable",
+     "stars": 116846,
+     "pushed": "2026-11-25",
+     "archived": false,
+     "lang": "Rust",
+     "desc": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships."
+    },
+    {
+     "repo": "aklofas/kicad-happy",
+     "stars": 1762,
+     "pushed": "2026-11-24",
+     "archived": false,
+     "lang": "Python",
+     "desc": "AI coding agent skills for KiCad electronics design. Works with Claude Code and OpenAI Codex. Analyze schematics, review PCB layouts, EMC pre-complian"
+    },
+    {
+     "repo": "ksimback/looper",
+     "stars": 718,
+     "pushed": "2026-08-09",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Design visual, review-gated agent loops for Claude Code before you run them."
+    },
+    {
+     "repo": "WenyuChiou/ai-research-skills",
+     "stars": 692,
+     "pushed": "2026-11-25",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Universal SKILL.md catalog for research workflows: literature review, research design, project memory, manuscript writing, and cross-agent delegation "
+    },
+    {
+     "repo": "ShuaiMXu/happyhands",
+     "stars": 537,
+     "pushed": "2026-11-25",
+     "archived": false,
+     "lang": "JavaScript",
+     "desc": "Open-source, AI-assisted UI design review for coding agents. Inspect screenshots, scope code changes and compare results in a local workbench. Alpha."
+    },
+    {
+     "repo": "diego3g/craft",
+     "stars": 478,
+     "pushed": "2026-11-23",
+     "archived": false,
+     "lang": "JavaScript",
+     "desc": "Design skills for AI agents: /craft-setup writes your design brief, /craft designs screens with every state from your design system and reviews them. "
+    },
+    {
+     "repo": "DY-2026/GameDesignOS",
+     "stars": 462,
+     "pushed": "2026-08-17",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Local-first game design OS for AI agents: turn sessions into evidence, experiments, reviewable decisions, and durable project memory—Human Gates and r"
+    },
+    {
+     "repo": "skydashnet/material-design-3-ui-skill",
+     "stars": 424,
+     "pushed": "2026-09-30",
+     "archived": false,
+     "lang": "PowerShell",
+     "desc": "A reusable Agent Skill for designing, reviewing, and implementing UI/UX with Google Material Design 3, Material You, M3 Expressive, accessibility, ada"
+    }
+   ]
+  },
+  "devil's advocate": {
+   "total_count": 181,
+   "items": [
+    {
+     "repo": "kbhujbal/AlphaAnalyst-open-source-autonomous-equity-research-agent",
+     "stars": 53,
+     "pushed": "2026-11-13",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Enter a US stock ticker, get an analyst grade memo with DCF valuation, peer comparables, news sentiment, and earnings call tone analysis. Multi agent "
+    },
+    {
+     "repo": "aaddrick/contrarian",
+     "stars": 43,
+     "pushed": "2026-10-07",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Devil's advocate for coding agents. Stress-tests plans, architecture and decisions with a steel-man, an assumption audit and a pre-mortem, then gives "
+    },
+    {
+     "repo": "Hainrixz/abogado-del-diablo",
+     "stars": 43,
+     "pushed": "2026-10-25",
+     "archived": false,
+     "lang": null,
+     "desc": "Devil's advocate skill/plugin for Claude Code and Cowork: turns Claude against you to harshly critique an idea or whole project across 8 angles and re"
+    },
+    {
+     "repo": "maxkle1nz/war-room",
+     "stars": 6,
+     "pushed": "2026-03-15",
+     "archived": false,
+     "lang": "Shell",
+     "desc": "AI that argues back. Ships better. Multi-agent decisions with a built-in devil's advocate."
+    },
+    {
+     "repo": "fivetaku/devil",
+     "stars": 6,
+     "pushed": "2026-07-08",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Summon a devil's advocate — a merciless critic (GPT-5.5 Pro via your ChatGPT web session) that only hunts for ways your code fails. Meme edition of in"
+    },
+    {
+     "repo": "dormstern/forge",
+     "stars": 6,
+     "pushed": "2026-05-12",
+     "archived": false,
+     "lang": "Shell",
+     "desc": "Stop shipping features your AI agent invented. A Claude Code plugin that wraps your agentic-coding loop with three filters: Devil's Advocate before ev"
+    },
+    {
+     "repo": "egagofur/ai-engineering-loop",
+     "stars": 5,
+     "pushed": "2026-11-24",
+     "archived": false,
+     "lang": "JavaScript",
+     "desc": "Give your coding agent a goal and stop babysitting every command. Goal Contract, recorded verification, Devil’s Advocate, Judge, and human-approved de"
+    },
+    {
+     "repo": "AleBrito124356/mcp-devils-advocate",
+     "stars": 4,
+     "pushed": "2026-09-23",
+     "archived": false,
+     "lang": "Python",
+     "desc": "MCP server that stress-tests reasoning - devil's advocate, premortem analysis, assumption audits and steelmanning as enforced, structured protocols"
+    }
+   ]
+  },
+  "devils advocate skill": {
+   "total_count": 51,
+   "items": [
+    {
+     "repo": "tizzy916/humanities-writing-companion",
+     "stars": 504,
+     "pushed": "2026-09-22",
+     "archived": false,
+     "lang": "Python",
+     "desc": "End-to-end humanities writing assistant — an Agent Skill (open SKILL.md format). 11 modes from Socratic research-question sharpening through AI-use di"
+    },
+    {
+     "repo": "Hainrixz/abogado-del-diablo",
+     "stars": 43,
+     "pushed": "2026-10-25",
+     "archived": false,
+     "lang": null,
+     "desc": "Devil's advocate skill/plugin for Claude Code and Cowork: turns Claude against you to harshly critique an idea or whole project across 8 angles and re"
+    },
+    {
+     "repo": "orange2ai/devils-advocate-skill",
+     "stars": 33,
+     "pushed": "2026-05-18",
+     "archived": false,
+     "lang": null,
+     "desc": "AI 唯一正确的用法：让它泼你冷水，直到泼不出来为止。ColaOS Skill / AI Agent 魔鬼代言人模式。"
+    },
+    {
+     "repo": "arsenyajurist-sudo/devils-advocate-claude-skill",
+     "stars": 7,
+     "pushed": "2026-10-25",
+     "archived": false,
+     "lang": null,
+     "desc": "Claude skill for legal stress-testing — адвокат дьявола для правовой позиции"
+    },
+    {
+     "repo": "wtfzambo/devils-advocate",
+     "stars": 5,
+     "pushed": "2026-10-22",
+     "archived": false,
+     "lang": null,
+     "desc": "An agent skill for challenging ideas, testing assumptions, and exploring credible alternatives."
+    },
+    {
+     "repo": "buraksu42/business-idea-stress-tester",
+     "stars": 3,
+     "pushed": "2026-09-28",
+     "archived": false,
+     "lang": null,
+     "desc": "A Claude skill that stress-tests new business ideas through Socratic dialogue, deep research, and devil's-advocate critique — then ships a printable H"
+    },
+    {
+     "repo": "bidodev/devils-advocate-skill",
+     "stars": 2,
+     "pushed": "2026-02-11",
+     "archived": false,
+     "lang": null,
+     "desc": "A Claude Code skill that challenges decisions, plans, and code by systematically arguing the opposing side. Surfaces risks, pokes holes in assumptions"
+    },
+    {
+     "repo": "SpecialITWeapons/tribunal-claude-skill",
+     "stars": 2,
+     "pushed": "2026-07-18",
+     "archived": false,
+     "lang": null,
+     "desc": "Puts your ideas on trial before you build them: advocate vs critic, a judge rules, a devil's advocate attacks the verdict. A Claude Code skill that sp"
+    }
+   ]
+  },
+  "key assumptions": {
+   "total_count": 230,
+   "items": [
+    {
+     "repo": "huangmingche/first-principles-skill",
+     "stars": 22,
+     "pushed": "2026-10-18",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Clarify definitions, identify key assumptions, and rethink complex problems from first principles. 用第一性原理澄清定义、识别关键假设并重新审视复杂问题。"
+    },
+    {
+     "repo": "uvhw/Bitcoin-Foundation",
+     "stars": 22,
+     "pushed": "2022-02-14",
+     "archived": false,
+     "lang": "C++",
+     "desc": "Bitcoin: A Peer-to-Peer Electronic Cash System Satoshi Nakamoto satoshin@gmx.com www.bitcoin.org Abstract. A purely peer-to-peer version of electronic"
+    },
+    {
+     "repo": "jwolberg/Equity-Valuation-Model",
+     "stars": 20,
+     "pushed": "2019-09-26",
+     "archived": false,
+     "lang": null,
+     "desc": "This File provides a framework for valuation of equities. It includes financial statements, calculation of key ratios, WACC, Bond list, Competitive Su"
+    },
+    {
+     "repo": "SENATOROVAI/Normal-equation-solver-multiple-linear-regression-course",
+     "stars": 19,
+     "pushed": "2026-03-17",
+     "archived": false,
+     "lang": "Jupyter Notebook",
+     "desc": "Multiple Linear Regression (MLR) models the linear relationship between a continuous dependent variable and two or more independent (explanatory) vari"
+    },
+    {
+     "repo": "w32zhong/BTreeimplementation",
+     "stars": 11,
+     "pushed": "2015-05-10",
+     "archived": false,
+     "lang": "C",
+     "desc": "CSC 541 Assignment 4 B-Trees   Introduction The goals of this assignment are two-fold: To introduce you to searching data on disk using B-trees. To in"
+    },
+    {
+     "repo": "frankmalcolmkembery/GNU-GENERAL-PUBLIC-LICENSE-Version-3-29-June-2007-Copy",
+     "stars": 9,
+     "pushed": "2022-03-04",
+     "archived": false,
+     "lang": null,
+     "desc": "                    GNU GENERAL PUBLIC LICENSE                        Version 3, 29 June 2007   Copyright (C) 2007 Free Software Foundation, Inc. <htt"
+    },
+    {
+     "repo": "cZdrikjdm/ps5-dualsense-bt-fix",
+     "stars": 8,
+     "pushed": "2026-08-03",
+     "archived": false,
+     "lang": "Shell",
+     "desc": "Makes the DualSense work over the PS5's internal Bluetooth on ANY Linux distro — btmon-verified fixes for the phantom-hci1 double-bind and the BlueZ \""
+    },
+    {
+     "repo": "agussomacal/ROMHighContrast",
+     "stars": 8,
+     "pushed": "2024-08-01",
+     "archived": false,
+     "lang": "Jupyter Notebook",
+     "desc": "We consider a parametric elliptic PDE with a scalar piecewise constant diffusion coefficient taking arbitrary positive values  on fixed subdomains. Th"
+    }
+   ]
+  },
+  "assumptions check": {
+   "total_count": 609,
+   "items": [
+    {
+     "repo": "RobsonTigre/everyday-causal-skills",
+     "stars": 84,
+     "pushed": "2026-09-23",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Step-by-step causal inference — method selection, assumptions, and robustness checks"
+    },
+    {
+     "repo": "Aryia-Behroziuan/References",
+     "stars": 79,
+     "pushed": "2022-09-02",
+     "archived": false,
+     "lang": null,
+     "desc": " Poole, Mackworth & Goebel 1998, p. 1.  Russell & Norvig 2003, p. 55.  Definition of AI as the study of intelligent agents: Poole, Mackworth & Goebel "
+    },
+    {
+     "repo": "kudu-dynamics/blaze-platform",
+     "stars": 58,
+     "pushed": "2026-04-24",
+     "archived": false,
+     "lang": "Haskell",
+     "desc": "A framework for program analysis with a focus on modeling programmer assumptions, context- and path-sensitive analyses, and type checking."
+    },
+    {
+     "repo": "rempsyc/rempsyc",
+     "stars": 51,
+     "pushed": "2026-03-18",
+     "archived": false,
+     "lang": "R",
+     "desc": "Package of convenience functions to make your workflow faster and easier. Easily customizable plots (via ggplot2), nice APA tables exportable to Word "
+    },
+    {
+     "repo": "ParkerHwang/OpenSocrates",
+     "stars": 27,
+     "pushed": "2026-11-03",
+     "archived": false,
+     "lang": "Python",
+     "desc": "48 open reasoning methods for Claude, Codex and Antigravity. Check assumptions, compare options and revisit decisions. Instructions in 10 languages."
+    },
+    {
+     "repo": "uvhw/Bitcoin-Foundation",
+     "stars": 22,
+     "pushed": "2022-02-14",
+     "archived": false,
+     "lang": "C++",
+     "desc": "Bitcoin: A Peer-to-Peer Electronic Cash System Satoshi Nakamoto satoshin@gmx.com www.bitcoin.org Abstract. A purely peer-to-peer version of electronic"
+    },
+    {
+     "repo": "davidhund/retext-assuming",
+     "stars": 18,
+     "pushed": "2026-10-28",
+     "archived": false,
+     "lang": "JavaScript",
+     "desc": "Check for unhelpful ‘assuming’ phrases such as ‘just’, ‘simply’ or ‘obviously’ with retext"
+    },
+    {
+     "repo": "ungaaaabungaaa/autonomous-drone-mission-planning",
+     "stars": 17,
+     "pushed": "2026-10-28",
+     "archived": false,
+     "lang": "JavaScript",
+     "desc": "Offline polygon survey workbench with camera assumptions, complete route checks, and validated QGC WPL 110 exports. No vehicle connection or flight va"
+    }
+   ]
+  },
+  "premortem": {
+   "total_count": 208,
+   "items": [
+    {
+     "repo": "Hi1talib1World/Premortem",
+     "stars": 88,
+     "pushed": "2026-06-09",
+     "archived": false,
+     "lang": "HTML",
+     "desc": "Premortem"
+    },
+    {
+     "repo": "AndyShaman/premortem",
+     "stars": 61,
+     "pushed": "2026-05-09",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Premortem skill for Claude Code — finds the concrete ways a plan could fail before commitment. Multi-agent silent scan, mitigation triplets, history s"
+    },
+    {
+     "repo": "MADEVAL/Pre-Mortem-Skill",
+     "stars": 59,
+     "pushed": "2026-06-30",
+     "archived": false,
+     "lang": null,
+     "desc": "A structured failure-analysis workflow that assumes your plan already failed and works backward to find every reason why. Based on Gary Klein's premor"
+    },
+    {
+     "repo": "PabloNAX/premortem-skill",
+     "stars": 34,
+     "pushed": "2026-06-16",
+     "archived": false,
+     "lang": "Shell",
+     "desc": "Portable AI skill that runs a Klein-style premortem on your plan. Assumes it already failed, then explains how. Parallel agents per failure mode, HTML"
+    },
+    {
+     "repo": "b1rdmania/claude-premortem-skill",
+     "stars": 30,
+     "pushed": "2026-08-29",
+     "archived": false,
+     "lang": null,
+     "desc": "Claude Code skill: Klein-method premortem. Imagine the plan failed 6 months from now, work backward, find every reason why."
+    },
+    {
+     "repo": "reallygood83/sukgo",
+     "stars": 16,
+     "pushed": "2026-05-21",
+     "archived": false,
+     "lang": "Python",
+     "desc": "🧙 sukgo (숙고) — 결정의 기술 CLI. Claude Pro·ChatGPT Plus·Gemini를 한 자리에 모아 비교·종합·원탁토론으로 더 깊이 사고하게 도와주는 한국어 의사결정 도구."
+    },
+    {
+     "repo": "MrBinnacle/azimuth",
+     "stars": 9,
+     "pushed": "2026-11-12",
+     "archived": false,
+     "lang": "HTML",
+     "desc": "Decision-quality pre-commitment analysis. Hosted at azimuth-testbed.netlify.app — no install required. Claude Code skill for permanent workflow integr"
+    },
+    {
+     "repo": "patsa2561-art/mneme-ai",
+     "stars": 7,
+     "pushed": "2026-07-01",
+     "archived": false,
+     "lang": "TypeScript",
+     "desc": "the memory layer of your codebase. Knows the WHY, the WHAT, the WHERE-IT-BREAKS."
+    }
+   ]
+  },
+  "pre-mortem skill": {
+   "total_count": 68,
+   "items": [
+    {
+     "repo": "MADEVAL/Pre-Mortem-Skill",
+     "stars": 59,
+     "pushed": "2026-06-30",
+     "archived": false,
+     "lang": null,
+     "desc": "A structured failure-analysis workflow that assumes your plan already failed and works backward to find every reason why. Based on Gary Klein's premor"
+    },
+    {
+     "repo": "aniganti/pm-superpowers",
+     "stars": 49,
+     "pushed": "2026-10-20",
+     "archived": false,
+     "lang": "JavaScript",
+     "desc": "Find your product's moat in minutes. Product strategy skills (moats, VRIO, pre-mortem) for Claude Code and Cursor."
+    },
+    {
+     "repo": "Hainrixz/abogado-del-diablo",
+     "stars": 43,
+     "pushed": "2026-10-25",
+     "archived": false,
+     "lang": null,
+     "desc": "Devil's advocate skill/plugin for Claude Code and Cowork: turns Claude against you to harshly critique an idea or whole project across 8 angles and re"
+    },
+    {
+     "repo": "webleon/tech-earnings-deepdive-openclaw-skill",
+     "stars": 32,
+     "pushed": "2026-03-24",
+     "archived": false,
+     "lang": "Python",
+     "desc": "tech stock deep analysis system, based on the Day1Global framework, offering 16 modules of analysis, six major investment perspectives, and six valuat"
+    },
+    {
+     "repo": "execbbbr/project-kickoff-interrogation",
+     "stars": 9,
+     "pushed": "2026-06-07",
+     "archived": false,
+     "lang": null,
+     "desc": "A 9-step pre-mortem skill that interrogates you before you build. Grounded in 《置身钉内》(DingTalk ONE post-mortem). Works with Claude Code, Hermes Agent, "
+    },
+    {
+     "repo": "MrBinnacle/azimuth",
+     "stars": 9,
+     "pushed": "2026-11-12",
+     "archived": false,
+     "lang": "HTML",
+     "desc": "Decision-quality pre-commitment analysis. Hosted at azimuth-testbed.netlify.app — no install required. Claude Code skill for permanent workflow integr"
+    },
+    {
+     "repo": "carlkibler/agent-skills",
+     "stars": 6,
+     "pushed": "2026-10-28",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Reusable Claude Code skills — multi-agent pre-mortems, risk analysis, and more"
+    },
+    {
+     "repo": "SandhyaMadhusuthanan/Pre-Mortem-Investor",
+     "stars": 4,
+     "pushed": "2026-11-13",
+     "archived": false,
+     "lang": "Python",
+     "desc": "claude-skill artificial-intelligence investment-analysis financial-literacy decision-making risk-management pre-mortem python open-source"
+    }
+   ]
+  },
+  "ufmcs": {
+   "total_count": 13,
+   "items": [
+    {
+     "repo": "smita-prajapati1234/UFMC-5G-Waveform-MATLAB",
+     "stars": 2,
+     "pushed": "2026-09-26",
+     "archived": false,
+     "lang": "MATLAB",
+     "desc": "MATLAB-based implementation, simulation, and performance analysis of Universal Filtered Multi-Carrier (UFMC) waveform for 5G wireless communication sy"
+    },
+    {
+     "repo": "bieelpaiao/paprReductionUFMC",
+     "stars": 1,
+     "pushed": "2024-11-11",
+     "archived": false,
+     "lang": "MATLAB",
+     "desc": "Repositório para armazenar os dados de pesquisa do Projeto de Iniciação Científica \"HARDWARE ACELERADOR BASEADO EM FPGA PARA A ESTRUTURA DE REDE DO 5G"
+    },
+    {
+     "repo": "sendie61/FSCDU",
+     "stars": 0,
+     "pushed": "2015-11-23",
+     "archived": false,
+     "lang": "Java",
+     "desc": "An IOCP UFMC-Client"
+    },
+    {
+     "repo": "rednjzz/UFMC",
+     "stars": 0,
+     "pushed": "2016-06-23",
+     "archived": false,
+     "lang": null,
+     "desc": "Matlab code for UFMC"
+    },
+    {
+     "repo": "fifetischi/ufmcsf",
+     "stars": 0,
+     "pushed": "2026-08-23",
+     "archived": false,
+     "lang": null,
+     "desc": ""
+    },
+    {
+     "repo": "yootoba/ufmcsv",
+     "stars": 0,
+     "pushed": "2026-08-17",
+     "archived": false,
+     "lang": null,
+     "desc": ""
+    },
+    {
+     "repo": "kristincrepunko/ufmcsk",
+     "stars": 0,
+     "pushed": "2026-08-19",
+     "archived": false,
+     "lang": null,
+     "desc": ""
+    },
+    {
+     "repo": "veroniquegeorlette/UFMC_VLC",
+     "stars": 0,
+     "pushed": "2024-01-30",
+     "archived": false,
+     "lang": "MATLAB",
+     "desc": "This code enables one to simulate UFMC VLC compliant communication"
+    }
+   ]
+  },
+  "red team handbook": {
+   "total_count": 29,
+   "items": [
+    {
+     "repo": "0xsyr0/Awesome-Cybersecurity-Handbooks",
+     "stars": 4178,
+     "pushed": "2026-11-23",
+     "archived": false,
+     "lang": null,
+     "desc": "A huge chunk of my personal notes since I started playing CTFs and working as a Red Teamer."
+    },
+    {
+     "repo": "Shiva108/ai-llm-red-team-handbook",
+     "stars": 353,
+     "pushed": "2026-11-22",
+     "archived": false,
+     "lang": "Python",
+     "desc": "AI / LLM Red Team Field Manual & Consultant’s Handbook"
+    },
+    {
+     "repo": "w1j0y/penetration-testing-handbook",
+     "stars": 215,
+     "pushed": "2026-10-15",
+     "archived": false,
+     "lang": null,
+     "desc": "Comprehensive notes, cheatsheets, and practical techniques for penetration testing and red teaming."
+    },
+    {
+     "repo": "priyanshu-rawa/Cybersecurity-Handbook",
+     "stars": 69,
+     "pushed": "2026-11-03",
+     "archived": false,
+     "lang": "JavaScript",
+     "desc": "Cybersecurity handbook with 400+ notes, hands-on labs, cheat sheets, and an interactive knowledge graph — covering networking, Linux, cryptography, OW"
+    },
+    {
+     "repo": "SagarBiswas-MultiHAT/awesome-cybersecurity-paths",
+     "stars": 36,
+     "pushed": "2026-11-12",
+     "archived": false,
+     "lang": null,
+     "desc": "The complete cybersecurity career roadmap and handbook. 36 roles across pentesting, red teaming, bug bounty, SOC, incident response, digital forensics"
+    },
+    {
+     "repo": "rhobs/handbook",
+     "stars": 17,
+     "pushed": "2026-11-20",
+     "archived": false,
+     "lang": "Makefile",
+     "desc": "Public Red Hat Observability Group Handbook for Team Processes, Proposals and Documentations"
+    },
+    {
+     "repo": "ilyess-sellami/RedTeam-Handbook",
+     "stars": 4,
+     "pushed": "2025-12-25",
+     "archived": false,
+     "lang": null,
+     "desc": "RedTeam-Handbook – A complete Red Team, penetration testing, and offensive security handbook covering real‑world attack techniques, tools, and adversa"
+    },
+    {
+     "repo": "wkt21/OSINT-Red-Team-Handbook-",
+     "stars": 1,
+     "pushed": "2026-07-01",
+     "archived": false,
+     "lang": null,
+     "desc": "OSINT GUIDE"
+    }
+   ]
+  },
+  "pr review adversarial": {
+   "total_count": 176,
+   "items": [
+    {
+     "repo": "liliu-z/magpie",
+     "stars": 180,
+     "pushed": "2026-08-17",
+     "archived": false,
+     "lang": "TypeScript",
+     "desc": "Multi-AI adversarial PR review tool"
+    },
+    {
+     "repo": "cryskai/crysk",
+     "stars": 22,
+     "pushed": "2026-11-24",
+     "archived": false,
+     "lang": "TypeScript",
+     "desc": "Multi-agent PR review engine for Claude Code and OpenCode: parallel specialty hunters, an adversarial refuter that challenges every severe finding, an"
+    },
+    {
+     "repo": "MostAshraf/ai-sdlc-harness",
+     "stars": 21,
+     "pushed": "2026-11-11",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Governed multi-agent SDLC pipeline for Claude Code and Qwen Code — plan → adversarial plan review → proven-red TDD → security scan → PR, with tamper-e"
+    },
+    {
+     "repo": "liatrio-labs/claude-code-gauntlet",
+     "stars": 13,
+     "pushed": "2026-11-23",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Adversarial code review for Claude Code. Seven specialist agents review each GitHub PR, GitLab MR or local change for bugs, security, tests and cross-"
+    },
+    {
+     "repo": "Cashcoin123/Cashcoin123",
+     "stars": 8,
+     "pushed": "2026-10-05",
+     "archived": false,
+     "lang": null,
+     "desc": "# Application card: GitHub Copilot Chat  Learn how to use GitHub Copilot Chat responsibly by understanding its purposes, capabilities, and limitations"
+    },
+    {
+     "repo": "YahampathChandika/adv-review",
+     "stars": 6,
+     "pushed": "2026-11-10",
+     "archived": false,
+     "lang": "JavaScript",
+     "desc": "Adversarial PR review for Claude Code, Codex, Gemini and Copilot agents: every finding must survive a skeptic told to refute it."
+    },
+    {
+     "repo": "phspagiari/drydock",
+     "stars": 6,
+     "pushed": "2026-11-24",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Specs in, pull requests out — an agentic pipeline for Claude Code. Git is the queue, Markdown files are the rules, and adversarial review happens befo"
+    },
+    {
+     "repo": "hishamkaram/claude-codex-duo",
+     "stars": 5,
+     "pushed": "2026-09-12",
+     "archived": false,
+     "lang": "Shell",
+     "desc": "Claude Code + OpenAI Codex as an adversarial pair: blind two-model PR review and structured debate, with evidence on disk."
+    }
+   ]
+  }
+ }
+}

@@ -34,7 +34,8 @@ Use `methods/ach/` as the reference layout. Skill descriptions must stay under 3
 - Add a **translation** of a method's messages (see `methods/ach/clarent_ach/i18n.py`).
 - Add a **worked example** from a real, public, closed bug (link the issue; no private data).
 - **Verify a source** currently marked `unverified` in `research/catalog.md`, and upgrade its level with the passage you read.
-- Add a **lens** (for `redteam`) or a **rule** (for `spc`) — each one is a single file.
+- Add a **worked example** for `redteam`: a real, public design doc or PR (saved as files) with a `findings.json` whose quotes the engine accepts; or a **rule** (for `spc`, once it exists) — each one is a small set of files.
+- Challenge the **attack catalog** of `redteam` (`methods/redteam/clarent_redteam/catalog.py`): the six classes are fixed on purpose, so a proposed change starts with an issue showing a design where the six classes missed something that mattered.
 - Improve a **limitation**: found a case where a method misleads? Open an issue with the input that shows it.
 
 ## Commits and sign-off

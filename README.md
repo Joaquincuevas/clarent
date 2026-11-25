@@ -8,7 +8,7 @@
 
 Military doctrine, Toyota's shop floor, Soviet inventors' algorithms, NASA safety engineering: decades of method for finding root causes, attacking plans and estimating honestly. Clarent turns them into small, auditable tools for developers and their coding agents: Claude Code skills, a CLI, and (soon) hooks, MCP tools and GitHub Actions.
 
-> **Status: pre-release (v0.1).** Two methods are implemented end-to-end (`ach`, 23 tests; `triz-matrix`, 38 tests). Eight more are specified in [`research/product-spec.md`](research/product-spec.md); the rest of the plan is in [`research/roadmap.md`](research/roadmap.md). Nothing here claims to make your agent fix more bugs — see [What we do not claim](#what-we-do-not-claim).
+> **Status: pre-release (v0.1).** Three methods are implemented end-to-end (`ach`, 24 tests; `redteam`, 82; `triz-matrix`, 38). Eight more are specified in [`research/product-spec.md`](research/product-spec.md); the rest of the plan is in [`research/roadmap.md`](research/roadmap.md). Nothing here claims to make your agent fix more bugs — see [What we do not claim](#what-we-do-not-claim).
 
 ## Install
 
@@ -72,6 +72,52 @@ T2  priority=9.0  for=H1  against=-
     Changing the fixture from scope=session to scope=function removes the failures in 200 runs with '-n 4'
 ```
 
+### `redteam` — attack a design or a PR; the engine refuses what it cannot anchor
+
+A synthetic design doc moves notifications from a cron job to a stream consumer ([`design.md`](methods/redteam/examples/design-doc/design.md)). A model proposes assumptions and attacks as JSON, each quoting the passage it rests on; the engine checks them against the text:
+
+```console
+$ clarent redteam check methods/redteam/examples/design-doc/findings.json
+```
+
+Excerpt (the full report also has the assumption matrix, what to verify next, class coverage and warnings — [`docs/demo/redteam-check.md`](docs/demo/redteam-check.md)):
+
+```markdown
+## Top 3 attacks by impact
+
+| # | Attack | Class | Assumption | Risk | Where | How to check |
+|--:|---|---|---|---|---|---|
+| 1 | **X3** After the rollout there is no way back: the flag cannot bring back the cron job or the sent_at column, so a bad release can only be fixed by shipping another one while notifications are being lost. | Reversibility | A5 (contradicted) | 25 (S1) | `design.md:26` | Apply the migration in staging, then try to revert to the previous release and send a notification. |
+| 2 | **X1** If Redis is down when the API publishes, the row stays in the table but nothing reads it once the cron job is gone: those notifications are never sent and nobody is told. | Failure modes | A1 (contradicted) | 20 (S1) | `design.md:19` | Stop Redis in staging, create 20 notifications, restart Redis and count how many are sent. |
+| 3 | **X2** A consumer that crashes after the read and before the provider answers loses the notification: acknowledging on read gives at-most-once delivery, and the row stays pending for ever. | Failure modes | A6 (unverified) | 16 (S2) | `design.md:14` | In staging, kill -9 a consumer between the read and the provider call; count the rows still pending after 10 minutes. |
+```
+
+`Where` is the line of the design the attack quotes; `contradicted` means the assumption was checked and the evidence says it is false (here, `design.md:15` deletes the only reader of the table), which raises the plausibility of every attack that depends on it. X2 rests on an *unverified* assumption, so the report lists it first under "Verify next".
+
+The same design with findings the engine must refuse (an invented quote, "verified" with no evidence, a ref to a line that does not exist, a duplicate, an attack with no way to check it) exits 1 and says why:
+
+```console
+$ clarent redteam check methods/redteam/examples/design-doc/findings.rejected.json
+```
+
+```markdown
+## Rejected findings
+
+| Kind | ID | Reason |
+|---|---|---|
+| assumption | A3 | the quote does not appear in the target (compared literally, ignoring only whitespace) |
+| assumption | A4 | status 'verified' needs at least one evidence item with a ref and an observation |
+| assumption | A5 | evidence ref 'design.md:99' is not valid: line out of range (the file has 27 lines) |
+| attack | X3 | its assumption A3 was rejected |
+| attack | X4 | the quote has 5 characters; at least 12 are required to anchor a finding |
+| attack | X5 | duplicate of X2 (same class and assumption, near-identical text) |
+| attack | X6 | no 'check': say how to verify this attack (a command or a concrete question) |
+| attack | X7 | its assumption A4 was rejected |
+| attack | X8 | its assumption A5 was rejected |
+```
+
+The engine proves a finding is anchored and backed, not that it is right. It also works on PRs (description plus `gh pr diff`): [`docs/demo/redteam-pr.md`](docs/demo/redteam-pr.md).
+
 ### `triz-matrix` — a design trade-off, resolved against the 1973 table
 
 "Make `/search` faster without making the system harder to run":
@@ -105,6 +151,7 @@ The report goes on with a reminder that principles are prompts for ideas, not so
 
 ```text
 /clarent-methods:ach test_checkout_total fails ~1 in 8 CI runs
+/clarent-methods:redteam docs/adr-014-event-sourcing.md
 /clarent-methods:triz-matrix make /search faster without making it harder to run
 ```
 
@@ -115,8 +162,8 @@ The skills are manual-only (`disable-model-invocation`), so they cost no context
 | Method | Tool | Status |
 |--------|------|--------|
 | Analysis of Competing Hypotheses (Heuer, CIA) | `ach` | **implemented** (reference) |
+| Red Teaming (UFMCS) | `redteam` | **implemented** (beta) |
 | TRIZ contradiction matrix (Altshuller) | `triz-matrix` | **implemented** (beta); additional method, outside the top-10 ranking |
-| Red Teaming (UFMCS) | `redteam` | spec |
 | Statistical Process Control (Shewhart) on CI | `spc` | spec |
 | Commander's Intent / Mission Command | `intent` | spec |
 | Reference Class Forecasting | `rcf` | spec |
@@ -124,9 +171,10 @@ The skills are manual-only (`disable-model-invocation`), so they cost no context
 | Heilmeier Catechism | `gate` | spec |
 | Fault Tree Analysis | `fta` | spec |
 | HAZOP (guide words on APIs and data flows) | `hazop` | spec |
+| After Action Review (US Army TC 25-20) | `aar` | spec |
 | FMEA, STAMP / STPA | `fmea`, `stpa` | deferred to v2 |
 
-The tenth slot of the top 10 is still open (a tie between After Action Review and forecast calibration). The ranking is the author's judgment, not a measurement; scores, criteria and the corrections made along the way are in [`research/ranking.md`](research/ranking.md). 63 methods were catalogued, each source marked `read / exists / blocked / unverified`: [`research/`](research/).
+The ranking is the author's judgment, not a measurement; scores, criteria and the corrections made along the way are in [`research/ranking.md`](research/ranking.md). 63 methods were catalogued, each source marked `read / exists / blocked / unverified`: [`research/`](research/).
 
 ## What we do not claim
 
@@ -135,7 +183,8 @@ The tenth slot of the top 10 is still open (a tie between After Action Review an
 - That the catalog's sources are all verified. Each one carries its verification level.
 - That the TRIZ matrix data has a clean chain of title. Its licenses and gaps are written down in [`DATA_LICENSE.md`](methods/triz-matrix/clarent_triz/data/DATA_LICENSE.md); 29 of its 1 248 cells are contested between transcriptions, and you can supply your own matrix with `--data`.
 - That the demos are real incidents. The examples are synthetic and labelled so.
-- That the specified methods exist. `redteam`, `spc`, `intent`, `rcf`, `kt`, `gate`, `fta` and `hazop` are specifications; nothing is promised about when they ship.
+- That the specified methods exist. `spc`, `intent`, `rcf`, `kt`, `gate`, `fta`, `hazop` and `aar` are specifications; nothing is promised about when they ship.
+- That the red team's findings are correct. The engine rejects findings that are not quoted from the text or not backed by evidence; whether an attack is right is still a judgment. Three of its six attack classes (`scale`, `dependency`, `reversibility`) are Clarent's own and are not in the UFMCS handbook it draws on.
 - That it works in agents other than Claude Code. The plugin is validated with `claude plugin validate`; Cursor, Codex and others have not been tested.
 - That the ranking of methods is a measurement, or that its "no existing repo" findings are proof of absence: they are lower bounds from GitHub search.
 

@@ -1,0 +1,132 @@
+{
+  "schema": "clarent.redteam/1",
+  "title": "Notificaciones desde un consumidor de streams (EJEMPLO SINTÉTICO)",
+  "root": ".",
+  "target": { "kind": "design", "files": ["design.es.md"] },
+  "assumptions": [
+    {
+      "id": "A1",
+      "text": "Si Redis está caído cuando la API publica, la notificación no se pierde: se envía después desde la tabla.",
+      "quote": "si no lo está, la notificación queda en la tabla y se enviará más tarde",
+      "status": "contradicted",
+      "evidence": [
+        { "ref": "design.es.md:15", "observation": "El paso 4 elimina el cron, que es el único lector de la tabla, así que nada recoge la fila después." }
+      ]
+    },
+    {
+      "id": "A2",
+      "text": "El límite del proveedor se aplica por consumidor, así que añadir consumidores añade capacidad.",
+      "quote": "El proveedor de correo acepta como máximo un mensaje por segundo por consumidor",
+      "status": "unverified",
+      "check": "Leer la documentación de límites del proveedor y enviar una ráfaga de 50 mensajes desde dos consumidores que comparten una cuenta sandbox."
+    },
+    {
+      "id": "A3",
+      "text": "Las notificaciones duplicadas son raras, así que los consumidores pueden prescindir de la idempotencia.",
+      "quote": "Las notificaciones rara vez se duplican, así que los consumidores no necesitan ser idempotentes",
+      "status": "unverified",
+      "check": "Contar los ids de notificación publicados más de una vez en los últimos 30 días (agrupar el log de publicación por id, quedarse con count > 1)."
+    },
+    {
+      "id": "A4",
+      "text": "La carga se mantiene por debajo de 200 notificaciones por minuto.",
+      "quote": "La carga en hora punta seguirá por debajo de 200 notificaciones por minuto",
+      "status": "verified",
+      "evidence": [
+        {
+          "ref": "psql -c \"select max(n) from (select count(*) n from notifications group by date_trunc('minute', created_at)) m\"",
+          "observation": "máximo de 118 por minuto en los últimos 30 días (resultado sintético de este ejemplo; no dice nada sobre campañas)"
+        }
+      ]
+    },
+    {
+      "id": "A5",
+      "text": "Apagar el flag es un rollback seguro.",
+      "quote": "El grupo de consumidores se activa detrás de un flag",
+      "status": "contradicted",
+      "evidence": [
+        { "ref": "design.es.md:26-27", "observation": "Cuando el flag está activo para todos se elimina el cron y su código y se borra sent_at, así que apagar el flag no restaura nada." }
+      ]
+    },
+    {
+      "id": "A6",
+      "text": "Un mensaje confirmado al leerlo no puede perderse.",
+      "quote": "Cada consumidor confirma el mensaje (ack) apenas lo lee",
+      "status": "unverified",
+      "check": "En staging, matar con kill -9 a un consumidor entre la lectura y la llamada al proveedor y contar las notificaciones que nunca se enviaron."
+    }
+  ],
+  "attacks": [
+    {
+      "id": "X1",
+      "class": "failure-modes",
+      "assumption": "A1",
+      "quote": "la notificación queda en la tabla y se enviará más tarde",
+      "attack": "Si Redis está caído cuando la API publica, la fila queda en la tabla pero nada la lee cuando el cron desaparece: esas notificaciones no se envían nunca y nadie se entera.",
+      "impact": 4,
+      "plausibility": 3,
+      "check": "Detener Redis en staging, crear 20 notificaciones, reiniciar Redis y contar cuántas se envían."
+    },
+    {
+      "id": "X2",
+      "class": "failure-modes",
+      "assumption": "A6",
+      "quote": "confirma el mensaje (ack) apenas lo lee",
+      "attack": "Un consumidor que se cae después de leer y antes de que responda el proveedor pierde la notificación: confirmar al leer da entrega como máximo una vez, y la fila queda pendiente para siempre.",
+      "impact": 4,
+      "plausibility": 4,
+      "check": "En staging, matar con kill -9 a un consumidor entre la lectura y la llamada al proveedor; contar las filas aún pendientes tras 10 minutos."
+    },
+    {
+      "id": "X3",
+      "class": "reversibility",
+      "assumption": "A5",
+      "quote": "se elimina el cron y su código",
+      "attack": "Tras el despliegue no hay vuelta atrás: el flag no puede traer de vuelta el cron ni la columna sent_at, así que una mala versión solo se corrige publicando otra mientras se pierden notificaciones.",
+      "impact": 5,
+      "plausibility": 3,
+      "check": "Aplicar la migración en staging, intentar volver a la versión anterior y enviar una notificación."
+    },
+    {
+      "id": "X4",
+      "class": "dependency",
+      "assumption": "A2",
+      "quote": "acepta como máximo un mensaje por segundo por consumidor",
+      "attack": "Si el límite del proveedor se aplica por cuenta y no por consumidor, los 4 consumidores lo comparten, y los envíos limitados que ya se habían confirmado se descartan.",
+      "impact": 3,
+      "plausibility": 3,
+      "check": "Preguntar al proveedor (o leer su documentación) si el límite es por clave de API o por conexión."
+    },
+    {
+      "id": "X5",
+      "class": "abuse",
+      "assumption": "A3",
+      "quote": "publica su id en un Redis Stream llamado `notify`",
+      "attack": "Un cliente que repite una petición (un formulario de recuperación de contraseña, un bucle de reintentos) crea una notificación por petición; sin límite por usuario el stream se llena de duplicados y retrasa a todos, justo lo que el supuesto dice que no ocurre.",
+      "impact": 3,
+      "plausibility": 3,
+      "check": "Enviar 1.000 solicitudes de recuperación para una misma dirección en staging y medir el retraso de una notificación ajena."
+    },
+    {
+      "id": "X6",
+      "class": "scale",
+      "assumption": "A4",
+      "quote": "La carga en hora punta seguirá por debajo de 200 notificaciones por minuto",
+      "attack": "Una campaña de marketing de 50.000 notificaciones entra de golpe al stream; 4 consumidores a un mensaje por segundo tardan unas 3,5 horas en vaciarlo y los correos transaccionales esperan detrás.",
+      "impact": 4,
+      "plausibility": 4,
+      "check": "Calcular N / (consumidores x tasa) para la mayor campaña del trimestre pasado y probar una ráfaga de 50.000 mensajes en staging."
+    },
+    {
+      "id": "X7",
+      "class": "key-assumptions",
+      "assumption": "A3",
+      "quote": "así que los consumidores no necesitan ser idempotentes",
+      "attack": "La API publica dentro de la petición, así que cualquier reintento del cliente o del balanceador publica dos veces. Los duplicados vienen del publicador, no de la rareza de los eventos, y un consumidor no idempotente envía dos correos.",
+      "impact": 2,
+      "plausibility": 4,
+      "check": "Contar los ids de notificación publicados más de una vez en los últimos 30 días."
+    }
+  ],
+  "skipped_classes": []
+}

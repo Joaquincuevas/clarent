@@ -155,6 +155,6 @@ def get_lang() -> str:
     return _LANG
 
 
-def t(key: str, **kw) -> str:
+def t(key: str, /, **kw) -> str:
     s = M[_LANG][key]
     return s.format(**kw) if kw else s

@@ -1,0 +1,130 @@
+{
+  "schema": "clarent.redteam/1",
+  "title": "The same design, with findings the engine must refuse (SYNTHETIC EXAMPLE)",
+  "root": ".",
+  "target": { "kind": "design", "files": ["design.md"] },
+  "assumptions": [
+    {
+      "id": "A1",
+      "text": "If Redis is down when the API publishes, the notification is not lost: it is sent later from the table.",
+      "quote": "if it is not, the notification stays in the table and will be picked up later",
+      "status": "contradicted",
+      "evidence": [
+        { "ref": "design.md:15", "observation": "Step 4 deletes the cron job, which is the only reader of the table." }
+      ]
+    },
+    {
+      "id": "A2",
+      "text": "The provider's rate limit applies per consumer.",
+      "quote": "The email provider accepts at most one message per second per consumer",
+      "status": "unverified",
+      "check": "Read the provider's rate-limit documentation."
+    },
+    {
+      "id": "A3",
+      "text": "The stream never loses a message.",
+      "quote": "Redis Streams guarantee that no message is ever lost",
+      "status": "unverified",
+      "check": "Read the persistence settings of the Redis deployment."
+    },
+    {
+      "id": "A4",
+      "text": "Consumers keep up with the stream.",
+      "quote": "A pool of 4 consumers reads the stream through a consumer group",
+      "status": "verified"
+    },
+    {
+      "id": "A5",
+      "text": "The migration is reversible.",
+      "quote": "the old `notifications.sent_at` column is dropped in the next migration",
+      "status": "contradicted",
+      "evidence": [
+        { "ref": "design.md:99", "observation": "The rollout section says nothing about restoring the column." }
+      ]
+    }
+  ],
+  "attacks": [
+    {
+      "id": "X1",
+      "class": "failure-modes",
+      "assumption": "A1",
+      "quote": "the notification stays in the table and will be picked up later",
+      "attack": "If Redis is down when the API publishes, the row stays in the table but nothing reads it once the cron job is gone.",
+      "impact": 4,
+      "plausibility": 3,
+      "check": "Stop Redis in staging, create 20 notifications, restart Redis and count how many are sent."
+    },
+    {
+      "id": "X2",
+      "class": "dependency",
+      "assumption": "A2",
+      "quote": "accepts at most one message per second per consumer",
+      "attack": "If the provider's limit applies per account, the 4 consumers share it and throttled sends are dropped.",
+      "impact": 3,
+      "plausibility": 3,
+      "check": "Ask the provider whether the limit is per API key or per connection."
+    },
+    {
+      "id": "X3",
+      "class": "failure-modes",
+      "assumption": "A3",
+      "quote": "The stream loses messages when Redis restarts without persistence",
+      "attack": "A Redis restart without persistence empties the stream and every pending notification disappears.",
+      "impact": 4,
+      "plausibility": 3,
+      "check": "Restart Redis in staging with persistence off and count the pending messages."
+    },
+    {
+      "id": "X4",
+      "class": "scale",
+      "assumption": "A2",
+      "quote": "Redis",
+      "attack": "Redis becomes the bottleneck.",
+      "impact": 3,
+      "plausibility": 3,
+      "check": "Load-test it."
+    },
+    {
+      "id": "X5",
+      "class": "dependency",
+      "assumption": "A2",
+      "quote": "accepts at most one message per second per consumer",
+      "attack": "If the limit of the provider applies per account, the 4 consumers share it, and throttled sends are dropped.",
+      "impact": 3,
+      "plausibility": 3,
+      "check": "Ask the provider whether the limit is per API key or per connection."
+    },
+    {
+      "id": "X6",
+      "class": "abuse",
+      "assumption": "A1",
+      "quote": "publishes its id to a Redis Stream called `notify`",
+      "attack": "Nothing limits how many notifications one client can trigger, so one client can flood the stream.",
+      "impact": 3,
+      "plausibility": 3
+    },
+    {
+      "id": "X7",
+      "class": "scale",
+      "assumption": "A4",
+      "quote": "A pool of 4 consumers reads the stream through a consumer group",
+      "attack": "Four consumers cannot drain a campaign of 50,000 messages in useful time.",
+      "impact": 4,
+      "plausibility": 4,
+      "check": "Compute N / (consumers x rate) for the largest campaign of last quarter."
+    },
+    {
+      "id": "X8",
+      "class": "reversibility",
+      "assumption": "A5",
+      "quote": "the old `notifications.sent_at` column is dropped in the next migration",
+      "attack": "Once the column is dropped, reverting the release cannot restore the sent_at data.",
+      "impact": 5,
+      "plausibility": 3,
+      "check": "Apply the migration in staging and try to revert."
+    }
+  ],
+  "skipped_classes": [
+    { "class": "key-assumptions", "reason": "" }
+  ]
+}

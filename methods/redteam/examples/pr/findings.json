@@ -1,0 +1,114 @@
+{
+  "schema": "clarent.redteam/1",
+  "title": "Retry failed webhook deliveries (SYNTHETIC EXAMPLE)",
+  "root": ".",
+  "target": { "kind": "pr", "files": ["description.md", "change.diff"] },
+  "assumptions": [
+    {
+      "id": "P1",
+      "text": "A timeout is retried, as the description says.",
+      "quote": "fail with a 5xx or a timeout are now retried with exponential backoff",
+      "status": "contradicted",
+      "evidence": [
+        { "ref": "change.diff:15", "observation": "The only call is requests.post with timeout=5 and there is no try/except: a timeout raises and leaves deliver() instead of being retried." }
+      ]
+    },
+    {
+      "id": "P2",
+      "text": "The loop ends at some point.",
+      "quote": "loops until the endpoint answers with something other than a 5xx",
+      "status": "contradicted",
+      "evidence": [
+        { "ref": "change.diff:14", "observation": "The loop is `while True` with no maximum number of attempts, and the delay has no cap." }
+      ]
+    },
+    {
+      "id": "P3",
+      "text": "Customers' endpoints tolerate receiving the same event twice.",
+      "quote": "so customers stop losing events during their deploys",
+      "status": "unverified",
+      "check": "Look at one delivered request (body and headers): is there an event id or idempotency key a receiver can deduplicate on?"
+    },
+    {
+      "id": "P4",
+      "text": "Any answer below 500 is final and must not be retried.",
+      "quote": "if resp.status_code < 500:",
+      "status": "verified",
+      "evidence": [
+        { "ref": "change.diff:16", "observation": "Only status codes of 500 and above continue the loop; every lower code returns at once." }
+      ]
+    },
+    {
+      "id": "P5",
+      "text": "deliver() runs in a background worker, not in a request path or a shared pool.",
+      "quote": "time.sleep(delay)",
+      "status": "unverified",
+      "check": "git grep -n 'deliver(' -- '*.py' and read the callers: which thread or pool runs them?"
+    }
+  ],
+  "attacks": [
+    {
+      "id": "X1",
+      "class": "failure-modes",
+      "assumption": "P1",
+      "quote": "resp = requests.post(endpoint.url, json=payload, timeout=5) if resp.status_code < 500:",
+      "attack": "A timeout raises requests.Timeout and nothing catches it: the first slow endpoint aborts the delivery and the event is lost, although the description promises that timeouts are retried.",
+      "impact": 3,
+      "plausibility": 3,
+      "check": "Point deliver() at a server that sleeps 10 seconds and check that Timeout reaches the caller."
+    },
+    {
+      "id": "X2",
+      "class": "failure-modes",
+      "assumption": "P2",
+      "quote": "while True: resp = requests.post(endpoint.url",
+      "attack": "An endpoint that always answers 503 keeps its delivery in the loop for ever, and the delay doubles without a cap: by the 21st failure one sleep lasts about 12 days, so nothing is retried in any useful time.",
+      "impact": 3,
+      "plausibility": 4,
+      "check": "Run deliver() against a server that always answers 503 with time.sleep patched, and count the attempts and the delays."
+    },
+    {
+      "id": "X3",
+      "class": "abuse",
+      "assumption": "P5",
+      "quote": "time.sleep(delay)",
+      "attack": "Whoever can register a webhook URL can point it at an endpoint that always answers 503: every event for that customer holds a worker for ever, so one tenant starves the deliveries of all the others.",
+      "impact": 4,
+      "plausibility": 3,
+      "check": "Register a test endpoint that always answers 503, send 50 events and watch worker utilisation."
+    },
+    {
+      "id": "X4",
+      "class": "scale",
+      "assumption": "P5",
+      "quote": "time.sleep(delay)",
+      "attack": "Each retrying delivery blocks a worker for its whole backoff: when many customers deploy at the same time, the pool is full of sleeping deliveries and new events wait behind them.",
+      "impact": 3,
+      "plausibility": 3,
+      "check": "Simulate 200 endpoints answering 503 for 5 minutes and measure the queue time of a healthy endpoint."
+    },
+    {
+      "id": "X5",
+      "class": "dependency",
+      "assumption": "P3",
+      "quote": "so customers stop losing events during their deploys",
+      "attack": "Retrying a request that timed out can deliver the same event twice, and nothing in the diff adds an event id or idempotency key; receivers that are not idempotent will process it twice.",
+      "impact": 3,
+      "plausibility": 4,
+      "check": "Inspect a delivered payload and its headers for an event id."
+    },
+    {
+      "id": "X6",
+      "class": "key-assumptions",
+      "assumption": "P4",
+      "quote": "if resp.status_code < 500:",
+      "attack": "A 429 Too Many Requests or a 408 Request Timeout is a 4xx that means try again later, but the loop treats it as final and drops the event.",
+      "impact": 3,
+      "plausibility": 3,
+      "check": "Run deliver() against a server that answers 429 once and then 200, and check whether the second call happens."
+    }
+  ],
+  "skipped_classes": [
+    { "class": "reversibility", "reason": "Pure code change with no schema, queue or persisted state: reverting the commit restores the old behavior." }
+  ]
+}

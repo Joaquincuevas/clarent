@@ -1,0 +1,4 @@
+T1  priority=36.0  for=H5  against=H1
+    Reproducing serially with the same random order as the failure (pytest-randomly --randomly-seed=<seed of run #8812>) also fails
+T2  priority=9.0  for=H1  against=-
+    Changing the fixture from scope=session to scope=function removes the failures in 200 runs with '-n 4'

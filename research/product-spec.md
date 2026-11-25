@@ -1,23 +1,8 @@
-# Especificación de producto — top 10 de v1
+# Especificación de producto — top 10 de v1 (revisado el 2026-11-25)
 
 Principio rector: **cada herramienta = (1) un motor determinista que calcula o valida algo + (2) un envoltorio de agente que reúne evidencia y hace el juicio + (3) un reporte auditable.** El LLM propone y cita; el motor comprueba, puntúa y puede *rechazar*. Si una herramienta no puede rechazar nada de forma determinista, no entra a Clarent como herramienta (se queda como prompt en una colección).
 
-> Estado: `ach` (`methods/ach/`, 23 tests) y `triz-matrix` (`methods/triz-matrix/`, 38 tests) están **implementadas**. Las otras ocho son especificaciones; los algoritmos están descritos para ser implementables sin más investigación. Los esfuerzos son estimaciones mías para una persona.
-
-## 0. Convenciones comunes a todas las herramientas
-
-| Tema | Decisión |
-|------|----------|
-| **Datos de trabajo** | Un análisis = un archivo JSON versionado en `.clarent/<método>/<slug>.json` (se commitea o no, a elección del equipo). Campo `schema: "clarent.<método>/1"`. |
-| **Evidencia** | Todo hecho lleva `status: observed \| inferred` y `ref` (comando ejecutado, `archivo:línea`, extracto de log, URL de run). Un `observed` sin `ref` produce advertencia; con `--strict`, error. **Es la defensa contra alucinaciones del agente.** |
-| **Salida** | Markdown (para PR/issue/postmortem) y `--format json` (estable, con `schema`). Nunca probabilidades fingidas: cuando algo es un ranking se dice. |
-| **Códigos de salida** | `0` ok · `1` el análisis encontró algo accionable (p. ej. `--fail-on`) · `2` entrada inválida. |
-| **Superficies** | CLI (`clarent <método> …`) + Skill (`/clarent-methods:<método>`) + opcionalmente subagente, hook, MCP tool (`clarent_<método>_<acción>`) y GitHub Action. La CLI es la fuente de verdad; las demás la invocan. |
-| **Dependencias** | Núcleo en **stdlib** de Python ≥ 3.11. Extras opcionales (`[plot]`, `[mcp]`) por método. |
-| **Costo de contexto** | Cada skill descrita cuesta tokens en *todas* las sesiones (documentado por Claude Code). Descripciones ≤ 300 caracteres; los métodos se instalan como plugins separados + un bundle `clarent-all`. Skills de uso ocasional: `disable-model-invocation: true`. |
-| **Honestidad** | Cada reporte termina con una línea de limitaciones del método. Ninguna herramienta afirma "mejora la tasa de acierto" sin un eval publicado. |
-
----
+> Estado: `ach` (`methods/ach/`, 23 tests) y `triz-matrix` (`methods/triz-matrix/`, 38 tests; método adicional fuera del ranking) están **implementadas**. Las otras ocho del top 10 (`redteam`, `spc`, `intent`, `rcf`, `kt`, `gate`, `fta`, `hazop`) son especificaciones; la plaza 10 está abierta (ver §10). `fmea` y `stpa` pasaron a v2. Los esfuerzos son estimaciones mías para una persona.
 
 ## 1. `ach` — Hipótesis competidoras (+ Key Assumptions Check) · ✅ implementada
 
@@ -88,21 +73,7 @@ Principio rector: **cada herramienta = (1) un motor determinista que calcula o v
 | **Riesgos** | Tiempo de PR ≠ esfuerzo; squash/rebase distorsiona fechas; bots. Se documenta y se permite excluir autores/etiquetas. |
 | **Esfuerzo** | 1 semana. |
 
-## 6. `fmea` — FMEA de un módulo de software
-
-| | |
-|--|--|
-| **Para qué** | Lista priorizada de modos de falla de un módulo, con severidad, ocurrencia y detección **ancladas en datos del repo**. |
-| **Forma** | CLI `clarent fmea {scaffold,score}`; skill `/clarent-methods:fmea <ruta>`. |
-| **Input** | Ruta de módulo; opcional `coverage.xml`; historial de git. |
-| **Motor** | `scaffold` (v1 Python vía `ast`): enumera funciones públicas, llamadas externas (red, FS, BD, subprocess), manejo de errores. **Ocurrencia** ← número de commits tipo *fix* que tocaron el archivo (`git log`); **Detección** ← cobertura de las líneas de la función (si hay `coverage.xml`) o existencia de tests que la referencian; **Severidad** ← la asigna el agente/humano con una rúbrica de 4 niveles (obligatoria y citada). Prioridad por reglas propias (no se copia la tabla AIAG-VDA): Severidad máxima siempre alta; si no, S×O×D con corte documentado, y se **advierte** las limitaciones conocidas de RPN. |
-| **Output** | Tabla `modo de falla · efecto · causa · S · O · D · prioridad · acción recomendada · ref (archivo:línea)`, ordenada, en `.md` y `.csv`. |
-| **Ejemplo** | `/clarent-methods:fmea src/payments/` → 14 modos de falla; los 3 de prioridad alta son llamadas a la pasarela sin timeout y con baja cobertura, ligados a líneas. |
-| **Aceptación** | Test con módulo fixture: O y D se calculan de datos reales (git temporal, `coverage.xml` mínimo); modo de falla sin `ref` es rechazado. |
-| **Riesgos** | Cobertura de líneas no es detección real; el reporte lo dice. TypeScript en v1.1. |
-| **Esfuerzo** | 1.5 semanas. |
-
-## 7. `kt` — IS / IS-NOT diferencial sobre corridas de CI
+## 6. `kt` — IS / IS-NOT diferencial sobre corridas de CI
 
 | | |
 |--|--|
@@ -115,21 +86,7 @@ Principio rector: **cada herramienta = (1) un motor determinista que calcula o v
 | **Riesgos** | Confusores y colinealidad; se advierte que son *distinciones*, no causas. |
 | **Esfuerzo** | 1 semana. |
 
-## 8. `stpa` — Análisis de estructura de control (agentes y microservicios)
-
-| | |
-|--|--|
-| **Para qué** | Revisar un sistema por *interacciones inseguras*, no solo por fallas de componentes: p. ej. un agente que puede ejecutar acciones, un orquestador de despliegues, un autoscaler. |
-| **Forma** | CLI `clarent stpa {validate,uca,trace}`; skill `/clarent-methods:stpa`; render Mermaid. |
-| **Pasos** (según el *STPA Handbook*, 2018 ✅) | 1) pérdidas y peligros; 2) estructura de control; 3) acciones de control inseguras (UCA); 4) escenarios de pérdida. |
-| **Input** | `stpa.json`: `losses[]`, `hazards[]` (cada uno → pérdidas), `controllers[]`/`controlled_processes[]`, `control_actions[]` (de→a), `feedback[]`, `context_variables[]` por acción. |
-| **Motor** | (a) valida la estructura: controladores sin feedback, acciones huérfanas, procesos sin controlador; (b) **genera la tabla de cobertura de UCA**: acción × {no proporcionada, proporcionada, fuera de tiempo/orden, duración incorrecta (solo continuas)} × contexto → cada celda debe quedar `unsafe/safe/n-a`; celdas `unanalyzed` → exit 1; (c) trazabilidad: toda UCA enlaza a ≥ 1 peligro, y todo peligro a ≥ 1 pérdida; (d) esqueleto de escenarios de pérdida en las 2 categorías del Handbook. El agente propone; el motor exige completitud y trazabilidad. |
-| **Ejemplo** | `/clarent-methods:stpa deploy-controller.json` → 36 celdas UCA, 31 analizadas, 5 pendientes; UCA-7: "ordenar rollback *demasiado tarde* si el feedback de error-rate llega con 5 min de retraso". |
-| **Aceptación** | Test: UCA huérfana, ciclo sin feedback y celda sin analizar se detectan; Mermaid válido. |
-| **Riesgos** | Es el método más pesado; plantilla guiada y ejemplo canónico. Riesgo de burocracia: modo `--lite` solo pasos 2–3. |
-| **Esfuerzo** | 2 semanas (apuesta de mayor novedad). |
-
-## 9. `gate` — Puerta de propuesta (Catecismo de Heilmeier)
+## 7. `gate` — Puerta de propuesta (Catecismo de Heilmeier)
 
 | | |
 |--|--|
@@ -142,9 +99,50 @@ Principio rector: **cada herramienta = (1) un motor determinista que calcula o v
 | **Riesgos** | Heurísticas ruidosas → siempre muestran el motivo y permiten `<!-- gate: ignore Q6 reason -->`. |
 | **Esfuerzo** | 3–4 días. |
 
-## 10. `triz-matrix` — Matriz de contradicciones de TRIZ con ejemplos de software · ✅ implementada
+## 8. `fta` — Árbol de fallas desde incidentes, con conjuntos mínimos de corte
 
-> **Decisión del autor (2026-11-24):** ocupa el puesto de `fta`. No es novedosa (hay ≥ 8 repos pequeños con la matriz; ver `novelty.md`); su aporte es el dataset verificado y el motor con tests.
+| | |
+|--|--|
+| **Para qué** | Pasar de la línea de tiempo de un incidente a **qué combinaciones mínimas de fallos** provocan el evento tope; detectar puntos únicos de falla. |
+| **Forma** | CLI `clarent fta {validate,cutsets,render}`; skill `/clarent-methods:fta <incidente>`. |
+| **Input** | `tree.json`: evento tope; compuertas AND/OR; eventos básicos con `ref` (log, métrica, commit) y probabilidad opcional. |
+| **Motor** | Valida (acíclico, aridad, sin eventos sin desarrollar ocultos); calcula **conjuntos mínimos de corte** por expansión top-down con absorción (algoritmo clásico de FTA, p. ej. tipo MOCUS); lista **SPOF** (cortes de tamaño 1); si hay probabilidades, cota superior de min-cut y medida de importancia. Render Mermaid. |
+| **Referencia** | NASA *Fault Tree Handbook v1.1* ✅. |
+| **Ejemplo** | `/clarent-methods:fta INC-2210` → "evento tope: checkout 500; 3 conjuntos mínimos; SPOF: `config-server timeout` (sin caché)." |
+| **Aceptación** | Árboles de libro con cortes conocidos; propiedad: ningún corte es subconjunto de otro. |
+| **Riesgos** | El árbol lo construye el LLM: cada evento básico exige `ref`. |
+| **Esfuerzo** | 1 semana. |
+
+> Reincorporada al top 10 el 2026-11-25 por puntaje (3.67); había pasado a v2 el 2026-11-24 al ceder su plaza a `triz-matrix`.
+
+## 9. `hazop` — Palabras guía sobre APIs y flujos de datos
+
+> Estado: **solo especificación** (re-puntuada el 2026-11-25: 3.58, puesto 11 de 63; entra al top 10 por desempate de novedad). Los esfuerzos y los ejemplos son estimaciones mías, sin medir. Las palabras guía y su aplicabilidad a software son adaptación de Clarent: **no se han contrastado con la norma IEC 61882** (nivel `unverified`); verificarlas antes de publicar la ficha.
+
+| | |
+|--|--|
+| **Para qué** | Revisar sistemáticamente un diseño de API o un flujo de datos por **desviaciones** de su intención: aplicar cada palabra guía a cada parámetro de cada nodo y no dejar celdas sin examinar. Complementa a `redteam` (que ataca supuestos expresados en un documento): HAZOP recorre una **rejilla exhaustiva** que el motor puede comprobar. |
+| **Origen del método** | Revisión de procesos industriales con palabras guía (ICI, años 60; Kletz, *Hazop and Hazan*, 1983 ✅ catálogo X10). El catálogo anota que las fuentes discrepan sobre cuánto se debe a Kletz. |
+| **Forma** | CLI `clarent hazop {scaffold,validate,matrix,report}`; skill `/clarent-methods:hazop <openapi.json\|flujo>`; palabras guía como datos (`guidewords/<id>.json`), una por archivo. |
+| **Input** | `hazop.json` (`schema: "clarent.hazop/1"`): `nodes[]` (un endpoint, un tópico/cola, un paso de un pipeline o una llamada entre servicios), cada nodo con `intention` (qué debe ocurrir, en una frase) y `parameters[]` (`payload`, un campo concreto, `order`, `rate`, `latency`, `auth`, `idempotency`, `version`, …). Opcional: un OpenAPI **en JSON** para `scaffold` (YAML queda fuera para mantener la biblioteca estándar). |
+| **Palabras guía (por defecto)** | `no/none`, `more`, `less`, `as-well-as`, `part-of`, `reverse`, `other-than`, y de tiempo/orden `early`, `late`, `before`, `after`. Es la lista clásica de HAZOP **según mi lectura de fuentes secundarias**; no se abrió la norma. Un equipo puede añadir o quitar palabras con un archivo. |
+| **Motor determinista** | (a) `scaffold`: del OpenAPI genera nodos (operación = método + ruta) y parámetros (cada parámetro de ruta/consulta/cabecera, cada propiedad de primer nivel del cuerpo y de las respuestas) con la intención vacía; **no inventa causas ni consecuencias**. (b) `matrix`: producto nodo × parámetro × palabra guía; **cada celda debe resolverse** como `deviation` o `not-credible` (con motivo) o `n/a` (con motivo, según una tabla de aplicabilidad por tipo de parámetro que también es dato, p. ej. `reverse` no aplica a `latency`). Celdas `unanalyzed` → exit 1. (c) `validate`: toda `deviation` lleva ≥ 1 `cause` y ≥ 1 `consequence`; con severidad ≥ S2 exige `safeguard` o `action`; `safeguard.ref` de la forma `archivo:línea` debe existir en el repo; ids duplicados, nodos huérfanos y palabras guía desconocidas se rechazan. (d) `report`: tabla por nodo y lista de acciones abiertas ordenadas por severidad; con `--fail-on S1` exit 1. |
+| **Qué hace el agente** | Propone intención, desviaciones, causas y consecuencias con la **evidencia que encuentra en el código** (el handler, el esquema, los reintentos del cliente), citando `archivo:línea`. El motor no juzga si una desviación es creíble; exige que la rejilla esté completa y que lo afirmado tenga referencia. |
+| **Output** | `hazop.md` (una tabla por nodo: `parámetro · palabra guía · desviación · causas · consecuencias · salvaguardas · acción · severidad`) y `hazop.json`. |
+| **Ejemplo (hipotético; aún no implementado)** | `/clarent-methods:hazop openapi/orders.json` → 4 nodos, 9 parámetros, 90 celdas; 83 resueltas, 7 `unanalyzed` (exit 1). Una desviación: `POST /orders` · `idempotency-key` · `no` → "reintento del cliente crea un pedido duplicado" (S2) sin salvaguarda en `src/orders/create.py` → acción abierta. |
+| **Aceptación** | Fixture OpenAPI pequeño con rejilla completa y esperada (conteo exacto de celdas); celda sin resolver → exit 1; `safeguard.ref` inexistente → rechazo; `n/a` sin motivo → rechazo; palabra guía añadida por archivo aparece en la rejilla; reproducibilidad del orden. |
+| **Riesgos** | Explosión combinatoria (10 palabras × muchos parámetros) → `scaffold --params-per-node N`, tabla de aplicabilidad que marca `n/a` por defecto lo evidentemente inaplicable y agrupación por tipo; sesgo del LLM hacia desviaciones genéricas → exigir `ref` y causa concreta; la analogía de proceso industrial a software es **adaptación nuestra**, no una práctica estandarizada. |
+| **Esfuerzo** | 1 semana (estimación mía). Contribución típica: una palabra guía o una regla de aplicabilidad = un archivo. |
+
+## 10. Plaza abierta — AAR (M04) o calibración (D03)
+
+El puntaje deja un empate exacto (3.58, N=3, U=4) entre **After Action Review desde evidencia de git/CI** y **Superforecasting/calibración**. La segunda ya está cubierta por `rcf` (`log` y `score`). Recomendación sin decidir: AAR. **No hay especificación todavía**; escribirla es el paso previo a implementarla (ver `ranking.md`).
+
+---
+
+## Fuera del ranking: `triz-matrix` — Matriz de contradicciones de TRIZ con ejemplos de software · ✅ implementada
+
+> **Decisión del autor (2026-11-24, ajustada el 2026-11-25):** método adicional **fuera del ranking**; no ocupa plaza del top 10. No es novedosa (hay ≥ 8 repos pequeños con la matriz; ver `novelty.md`); su aporte es el dataset verificado y el motor con tests.
 
 | | |
 |--|--|
@@ -159,19 +157,37 @@ Principio rector: **cada herramienta = (1) un motor determinista que calcula o v
 | **Limitaciones** | La matriz es una heurística con erratas conocidas; 29 celdas en disputa; la cadena de titularidad previa a las transcripciones **no está establecida** (ver DATA_LICENSE.md); lecturas y ejemplos en software son adaptación de Clarent; no genera ni evalúa soluciones. |
 | **Pendiente** | Comparar las 29 celdas en disputa con el libro (Altshuller, *40 Principles*, Shulyak y Rodman, 1997); decidir la licencia de datos con asesoría; ARIZ-85 (v2). |
 
-## v2 (movida desde el puesto 10) — `fta` — Árbol de fallas desde incidentes, con conjuntos mínimos de corte
+## v2 — movidas desde el top 10 (decisión del autor, 2026-11-25)
+
+> `fmea` y `stpa` salen del top 10 de v1 y pasan a v2. Las especificaciones se conservan tal cual estaban, con la numeración de la versión anterior.
+
+### `fmea` — FMEA de un módulo de software
 
 | | |
 |--|--|
-| **Para qué** | Pasar de la línea de tiempo de un incidente a **qué combinaciones mínimas de fallos** provocan el evento tope; detectar puntos únicos de falla. |
-| **Forma** | CLI `clarent fta {validate,cutsets,render}`; skill `/clarent-methods:fta <incidente>`. |
-| **Input** | `tree.json`: evento tope; compuertas AND/OR; eventos básicos con `ref` (log, métrica, commit) y probabilidad opcional. |
-| **Motor** | Valida (acíclico, aridad, sin eventos sin desarrollar ocultos); calcula **conjuntos mínimos de corte** por expansión top-down con absorción (algoritmo clásico de FTA, p. ej. tipo MOCUS); lista **SPOF** (cortes de tamaño 1); si hay probabilidades, cota superior de min-cut y medida de importancia. Render Mermaid. |
-| **Referencia** | NASA *Fault Tree Handbook v1.1* ✅. |
-| **Ejemplo** | `/clarent-methods:fta INC-2210` → "evento tope: checkout 500; 3 conjuntos mínimos; SPOF: `config-server timeout` (sin caché)." |
-| **Aceptación** | Árboles de libro con cortes conocidos; propiedad: ningún corte es subconjunto de otro. |
-| **Riesgos** | El árbol lo construye el LLM: cada evento básico exige `ref`. |
-| **Esfuerzo** | 1 semana. |
+| **Para qué** | Lista priorizada de modos de falla de un módulo, con severidad, ocurrencia y detección **ancladas en datos del repo**. |
+| **Forma** | CLI `clarent fmea {scaffold,score}`; skill `/clarent-methods:fmea <ruta>`. |
+| **Input** | Ruta de módulo; opcional `coverage.xml`; historial de git. |
+| **Motor** | `scaffold` (v1 Python vía `ast`): enumera funciones públicas, llamadas externas (red, FS, BD, subprocess), manejo de errores. **Ocurrencia** ← número de commits tipo *fix* que tocaron el archivo (`git log`); **Detección** ← cobertura de las líneas de la función (si hay `coverage.xml`) o existencia de tests que la referencian; **Severidad** ← la asigna el agente/humano con una rúbrica de 4 niveles (obligatoria y citada). Prioridad por reglas propias (no se copia la tabla AIAG-VDA): Severidad máxima siempre alta; si no, S×O×D con corte documentado, y se **advierte** las limitaciones conocidas de RPN. |
+| **Output** | Tabla `modo de falla · efecto · causa · S · O · D · prioridad · acción recomendada · ref (archivo:línea)`, ordenada, en `.md` y `.csv`. |
+| **Ejemplo** | `/clarent-methods:fmea src/payments/` → 14 modos de falla; los 3 de prioridad alta son llamadas a la pasarela sin timeout y con baja cobertura, ligados a líneas. |
+| **Aceptación** | Test con módulo fixture: O y D se calculan de datos reales (git temporal, `coverage.xml` mínimo); modo de falla sin `ref` es rechazado. |
+| **Riesgos** | Cobertura de líneas no es detección real; el reporte lo dice. TypeScript en v1.1. |
+| **Esfuerzo** | 1.5 semanas. |
+
+### `stpa` — Análisis de estructura de control (agentes y microservicios)
+
+| | |
+|--|--|
+| **Para qué** | Revisar un sistema por *interacciones inseguras*, no solo por fallas de componentes: p. ej. un agente que puede ejecutar acciones, un orquestador de despliegues, un autoscaler. |
+| **Forma** | CLI `clarent stpa {validate,uca,trace}`; skill `/clarent-methods:stpa`; render Mermaid. |
+| **Pasos** (según el *STPA Handbook*, 2018 ✅) | 1) pérdidas y peligros; 2) estructura de control; 3) acciones de control inseguras (UCA); 4) escenarios de pérdida. |
+| **Input** | `stpa.json`: `losses[]`, `hazards[]` (cada uno → pérdidas), `controllers[]`/`controlled_processes[]`, `control_actions[]` (de→a), `feedback[]`, `context_variables[]` por acción. |
+| **Motor** | (a) valida la estructura: controladores sin feedback, acciones huérfanas, procesos sin controlador; (b) **genera la tabla de cobertura de UCA**: acción × {no proporcionada, proporcionada, fuera de tiempo/orden, duración incorrecta (solo continuas)} × contexto → cada celda debe quedar `unsafe/safe/n-a`; celdas `unanalyzed` → exit 1; (c) trazabilidad: toda UCA enlaza a ≥ 1 peligro, y todo peligro a ≥ 1 pérdida; (d) esqueleto de escenarios de pérdida en las 2 categorías del Handbook. El agente propone; el motor exige completitud y trazabilidad. |
+| **Ejemplo** | `/clarent-methods:stpa deploy-controller.json` → 36 celdas UCA, 31 analizadas, 5 pendientes; UCA-7: "ordenar rollback *demasiado tarde* si el feedback de error-rate llega con 5 min de retraso". |
+| **Aceptación** | Test: UCA huérfana, ciclo sin feedback y celda sin analizar se detectan; Mermaid válido. |
+| **Riesgos** | Es el método más pesado; plantilla guiada y ejemplo canónico. Riesgo de burocracia: modo `--lite` solo pasos 2–3. |
+| **Esfuerzo** | 2 semanas (apuesta de mayor novedad). |
 
 ---
 

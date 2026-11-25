@@ -17,7 +17,7 @@ L04,Lean,Kaizen,2,3,4,2,3,existe pero debil,solo repos genericos de 1-16*
 L05,Lean,Genchi Genbutsu,3,4,4,2,3,existe pero debil,no como skill; se subsume en disciplina de evidencia de ACH
 L06,Lean,5 Whys,2,4,5,2,2,bien cubierto,awesome-skills/5-whys-skill 66* + thinking-five-whys-plus
 L07,Lean,Ishikawa,3,3,4,3,3,existe pero debil,react-fishbone 9* solo libreria de dibujo
-L08,Lean,A3,4,3,4,3,4,no existe,0 resultados
+L08,Lean,A3,3,3,4,3,4,existe pero debil,0 resultados con consultas largas; re-escaneo 2026-11-25 con consultas cortas (tools/github_scan3.py): >=6 repos de 0-5* (editores fabriceb/a3-problem-solving-markdown-editor 5* y vscode-obsidian-a3-plugin 1*; generadores con IA manojsurapaneni/a3-architect 1* y manufacturing-ops-skills 2*; ChengYueCode/a3-report 0* como skill de agente); ninguno es dev-orientado con motor determinista. Novedad 4 -> 3
 L09,Lean,Hoshin Kanri,3,2,3,2,2,existe pero debil,cubierto de facto por OKR
 L10,Lean,SMED,4,3,3,3,3,no existe,sin repos dev; hueco = separar setup interno/externo del deploy
 L11,Lean,PDCA,1,3,5,2,2,bien cubierto,ww-w-ai/bkit-claude-code 606* + kenjudy 46*
@@ -52,7 +52,7 @@ X06,Extra,Reference Class Forecasting,4,4,4,5,3,no existe,0 repos 'estimar con h
 X07,Extra,Design Structure Matrix,4,4,3,3,3,existe pero debil,DSMEditor 44* es editor no analizador de imports
 X08,Extra,Axiomatic Design (Suh),4,2,3,2,2,existe pero debil,repos de 0-2*
 X09,Extra,Matriz de Pugh,3,3,5,2,3,existe pero debil,repos de 0-1*
-X10,Extra,HAZOP (guidewords),4,3,4,3,4,existe pero debil,sin uso en APIs/flujos de datos
+X10,Extra,HAZOP (guidewords),4,3,4,3,4,existe pero debil,re-escaneo 2026-11-25 (tools/github_scan3.py; 9 consultas cortas): HAZOP existe en industria de proceso (TUDoAD/preHAZOP 21* 2023; varios 0-16* con ML/LLM sobre P&ID o registros HAZOP); para APIs/flujos de datos: "hazop api" 1 resultado (otro dominio) "hazop guidewords" 0 "data flow hazop" 0; novedad 4 se mantiene
 X11,Extra,Bow-tie,4,3,3,3,3,existe pero debil,BowtieRisk.jl 3*
 X12,Extra,Robust Decision Making (RAND),4,2,2,2,2,no existe,solo cursos
 X13,Extra,Apollo Root Cause Analysis,3,3,4,2,3,existe pero debil,sin referente dev

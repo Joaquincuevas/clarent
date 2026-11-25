@@ -28,3 +28,5 @@ jobs:
           PYTHONPATH: src
       - name: Claude Code plugin is up to date
         run: python tools/build_plugin.py --check
+      - name: README demo outputs are up to date
+        run: python tools/gen_demo.py --check

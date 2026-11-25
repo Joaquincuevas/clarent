@@ -1,0 +1,450 @@
+{
+ "scanned_at": "2026-11-25",
+ "results": {
+  "a3 thinking": {
+   "total_count": 15,
+   "items": [
+    {
+     "repo": "ProjectZeroDays/Qwen3-42B-A3B-2507-Thinking-Abliterated-uncensored-TOTAL-RECALL-v2-Medium-MASTER-CODER-Q8_0-GGUF",
+     "stars": 12,
+     "pushed": "2026-02-19",
+     "archived": false,
+     "lang": null,
+     "desc": "A fully uncensored Large Language Model, meticulously fine-tuned for the advanced development of all offensive security applications, encompassing eve"
+    },
+    {
+     "repo": "jack-at-someai/hoshin-kanri-toolkit",
+     "stars": 2,
+     "pushed": "2026-02-07",
+     "archived": false,
+     "lang": "HTML",
+     "desc": "Interactive playground for Hoshin Kanri, X-Matrix, Kaizen, PDCA, A3 Thinking, Bowling Charts — strategy deployment methodologies"
+    },
+    {
+     "repo": "goseind/ReNate",
+     "stars": 1,
+     "pushed": "2022-04-20",
+     "archived": false,
+     "lang": "C++",
+     "desc": "Arduino Robot Project for the Design Thinking Project CBI A3"
+    },
+    {
+     "repo": "Joshi004/ModelService_Qwen3-Omni-30B-A3B-Thinking",
+     "stars": 1,
+     "pushed": "2025-11-28",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Service for running the Qwen3-Omni-30B-A3B-Thinking model using vLLM's built-in API server."
+    },
+    {
+     "repo": "mr-developer-88/A3-Rasulians-portfolio-collegeAssisgnment",
+     "stars": 1,
+     "pushed": "2026-01-22",
+     "archived": false,
+     "lang": "CSS",
+     "desc": "A3-Rasulians Portfolio represents more than a college task — it’s a practical example of turning an idea into execution. Built with HTML, CSS, and Jav"
+    },
+    {
+     "repo": "zulpgord/A3-Thinking",
+     "stars": 0,
+     "pushed": "2026-10-15",
+     "archived": false,
+     "lang": "HTML",
+     "desc": "PRP and metodology booster"
+    },
+    {
+     "repo": "Ana-Belen22/datathink-a3",
+     "stars": 0,
+     "pushed": "2023-10-24",
+     "archived": false,
+     "lang": null,
+     "desc": "Datalogical Thinking 2023 - Assignment 3 - Algorithm Design"
+    },
+    {
+     "repo": "zsxkib/cog-kimi-vl-a3b-thinking",
+     "stars": 0,
+     "pushed": "2025-04-17",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Cog'd \"moonshotai/Kimi-VL-A3B-Thinking\""
+    }
+   ]
+  },
+  "a3 problem solving": {
+   "total_count": 40,
+   "items": [
+    {
+     "repo": "fabriceb/a3-problem-solving-markdown-editor",
+     "stars": 5,
+     "pushed": "2025-03-10",
+     "archived": false,
+     "lang": "JavaScript",
+     "desc": "An editor for A3 problem-solving converting markdown and mermaid.js visualisations into an A3-looking document."
+    },
+    {
+     "repo": "ktczakutnyi/ScriptingAndProgramming-Applications-C867",
+     "stars": 5,
+     "pushed": "2021-08-12",
+     "archived": false,
+     "lang": "C++",
+     "desc": "WGU - Scripting and Programming - Applications – C867 COMPETENCIES 4048.2.1 : Introduction to Programming  The graduate applies fundamental programmin"
+    },
+    {
+     "repo": "lyhBshinde/smart-document-workbench",
+     "stars": 3,
+     "pushed": "2026-11-01",
+     "archived": false,
+     "lang": "HTML",
+     "desc": "A browser-based offline document workbench that provides secure PDF processing, image utilities, multilingual support, and A3 problem-solving report g"
+    },
+    {
+     "repo": "fredrikmalmberg/DD2380-Artificial-Intelligence-A3",
+     "stars": 2,
+     "pushed": "2020-11-03",
+     "archived": false,
+     "lang": null,
+     "desc": "Project done as part of the course Artificial Intelligence. The Overcooked game is framed as a PDDL optimisation using a temporal planner, TFD, to sol"
+    },
+    {
+     "repo": "smmasudrana/Problem-solving-A3",
+     "stars": 1,
+     "pushed": "2025-08-04",
+     "archived": false,
+     "lang": "JavaScript",
+     "desc": ""
+    },
+    {
+     "repo": "icechathuranga/problem-solving-handbook",
+     "stars": 1,
+     "pushed": "2026-11-20",
+     "archived": false,
+     "lang": "HTML",
+     "desc": "A self-study course in systematic problem solving — 5 Whys, fishbone, Pareto, PDCA, A3 — with a website and audio podcast."
+    },
+    {
+     "repo": "fabriceb/vscode-obsidian-a3-plugin",
+     "stars": 1,
+     "pushed": "2026-09-02",
+     "archived": false,
+     "lang": "TypeScript",
+     "desc": "Write your Lean problem-solving A3s in markdown, and view/print them as landscape A3s inside Obsidian or VSCode"
+    },
+    {
+     "repo": "csc201/A3HighSchoolLocker",
+     "stars": 1,
+     "pushed": "2014-05-27",
+     "archived": false,
+     "lang": "Java",
+     "desc": "A locker for a high school student has a locker number, a student name assigned to it, a number of books stored inside the locker, and also a combinat"
+    }
+   ]
+  },
+  "a3 report": {
+   "total_count": 119,
+   "items": [
+    {
+     "repo": "ktczakutnyi/ScriptingAndProgramming-Applications-C867",
+     "stars": 5,
+     "pushed": "2021-08-12",
+     "archived": false,
+     "lang": "C++",
+     "desc": "WGU - Scripting and Programming - Applications – C867 COMPETENCIES 4048.2.1 : Introduction to Programming  The graduate applies fundamental programmin"
+    },
+    {
+     "repo": "glennmckechnie/weewx-uradmon",
+     "stars": 4,
+     "pushed": "2024-02-12",
+     "archived": false,
+     "lang": "Python",
+     "desc": "This extension captures and stores the output from an A3 (and other) uradmonitor (https://www.uradmonitor.com) The Report will generate a seperate htm"
+    },
+    {
+     "repo": "testica/a3hrgo-sdk",
+     "stars": 3,
+     "pushed": "2023-05-01",
+     "archived": false,
+     "lang": "TypeScript",
+     "desc": "a3HRgo sdk to automatize your reports"
+    },
+    {
+     "repo": "lyhBshinde/smart-document-workbench",
+     "stars": 3,
+     "pushed": "2026-11-01",
+     "archived": false,
+     "lang": "HTML",
+     "desc": "A browser-based offline document workbench that provides secure PDF processing, image utilities, multilingual support, and A3 problem-solving report g"
+    },
+    {
+     "repo": "manojsurapaneni/manufacturing-ops-skills",
+     "stars": 2,
+     "pushed": "2026-05-26",
+     "archived": false,
+     "lang": null,
+     "desc": "AI tools that turn 2-hour Toyota A3 reports into 12-second drafts. Built by an ops director, for the people who actually run factories. Free and open-"
+    },
+    {
+     "repo": "jeyGaldefr1/a3s",
+     "stars": 1,
+     "pushed": "2025-10-29",
+     "archived": false,
+     "lang": null,
+     "desc": "a3s report"
+    },
+    {
+     "repo": "owidi-001/A3_brightspace-Covid-Data-analysis",
+     "stars": 1,
+     "pushed": "2021-11-14",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Python scripting with Covid data reports"
+    },
+    {
+     "repo": "manojsurapaneni/a3-architect",
+     "stars": 1,
+     "pushed": "2026-07-27",
+     "archived": false,
+     "lang": "TypeScript",
+     "desc": "Turn a problem statement into a structured Toyota-style A3 report"
+    }
+   ]
+  },
+  "toyota a3": {
+   "total_count": 6,
+   "items": [
+    {
+     "repo": "fabriceb/online-a3-editor",
+     "stars": 3,
+     "pushed": "2026-05-07",
+     "archived": false,
+     "lang": "HTML",
+     "desc": "An online editor for Toyota-style A3s"
+    },
+    {
+     "repo": "manojsurapaneni/manufacturing-ops-skills",
+     "stars": 2,
+     "pushed": "2026-05-26",
+     "archived": false,
+     "lang": null,
+     "desc": "AI tools that turn 2-hour Toyota A3 reports into 12-second drafts. Built by an ops director, for the people who actually run factories. Free and open-"
+    },
+    {
+     "repo": "manojsurapaneni/a3-architect",
+     "stars": 1,
+     "pushed": "2026-07-27",
+     "archived": false,
+     "lang": "TypeScript",
+     "desc": "Turn a problem statement into a structured Toyota-style A3 report"
+    },
+    {
+     "repo": "ozgurgovem/pps-hachi",
+     "stars": 0,
+     "pushed": "2026-10-01",
+     "archived": false,
+     "lang": "TypeScript",
+     "desc": "8-step Toyota PPS A3 report tool (Tauri v2 + React 19 + TS)"
+    },
+    {
+     "repo": "mt-inside/mka3",
+     "stars": 0,
+     "pushed": "2012-12-09",
+     "archived": false,
+     "lang": "C#",
+     "desc": "A simple set of scripts to generate Toyota-style A3 reports from XML data feeds"
+    },
+    {
+     "repo": "ChengYueCode/a3-report",
+     "stars": 0,
+     "pushed": "2026-07-31",
+     "archived": false,
+     "lang": "HTML",
+     "desc": "基于丰田A3方法论的AI Agent技能：教练式引导（5Why/OKR/SMART）+ 一页A3报告生成（Markdown/HTML/PPTX/Excel）"
+    }
+   ]
+  },
+  "hazop": {
+   "total_count": 143,
+   "items": [
+    {
+     "repo": "TUDoAD/preHAZOP",
+     "stars": 21,
+     "pushed": "2023-05-28",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Automated Safety Assesments in an early development stage based on standardized DEXPI P&IDs and DWSIM process simulation. "
+    },
+    {
+     "repo": "paopaololo/Safeguard-Category-Prediction-for-HAZOP-records",
+     "stars": 16,
+     "pushed": "2026-04-21",
+     "archived": false,
+     "lang": "Jupyter Notebook",
+     "desc": "Using Naives Bayes Classifier to predict Safeguard Categories in Industrial Risk Study, like HAZOP and LOPA."
+    },
+    {
+     "repo": "MelkorBalrog/AutoML",
+     "stars": 7,
+     "pushed": "2026-08-01",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Ultimate Autonomous Driving Systems Safety Engineering free tool which covers UL 4600, ISO/TR 5083, ISO 26262, ISO 21448, ISO 21434 and ISO/PAS 8800 q"
+    },
+    {
+     "repo": "LLM-Mutation/multiplex",
+     "stars": 6,
+     "pushed": "2026-11-25",
+     "archived": false,
+     "lang": "Python",
+     "desc": "🪲 A Modular LLM-based Mutation Framework"
+    },
+    {
+     "repo": "arian-esmkhani/risk-management-with-hazop",
+     "stars": 5,
+     "pushed": "2026-07-28",
+     "archived": false,
+     "lang": "Python",
+     "desc": "End-to-end industrial HAZOP monitoring system with synthetic sensor data generation, machine learning risk prediction, and real-time visualization. Fe"
+    },
+    {
+     "repo": "YangGSMZ/HAZOPAnalysisSystem",
+     "stars": 4,
+     "pushed": "2020-01-11",
+     "archived": false,
+     "lang": "C#",
+     "desc": "site analysis for oil and gas transmission process,based on c#"
+    },
+    {
+     "repo": "dmtrkxyz/HAZOP2RDF",
+     "stars": 3,
+     "pushed": "2021-07-25",
+     "archived": false,
+     "lang": "Python",
+     "desc": "HAZOP2RDF [2021], Projektierung von Automatisierungssystemen"
+    },
+    {
+     "repo": "PerryLink/dsh-hazplan-check",
+     "stars": 3,
+     "pushed": "2026-11-22",
+     "archived": false,
+     "lang": "TypeScript",
+     "desc": "给工艺安全/HAZOP 主席：核对 HAZOP（危险与可操作性分析）分析表的节点、偏差、原因、后果与建议措施是否齐备一致。 HAZOP worksheet element and deviation check."
+    }
+   ]
+  },
+  "hazop api": {
+   "total_count": 1,
+   "items": [
+    {
+     "repo": "lyullee/saga-py",
+     "stars": 0,
+     "pushed": "2026-11-11",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Python/FastAPI gas-safety knowledge assistant with document-grounded Korean/English chat, HAZOP retrieval, and digital-twin explanation APIs."
+    }
+   ]
+  },
+  "hazop software": {
+   "total_count": 1,
+   "items": [
+    {
+     "repo": "SafetyMP/Agentic-Process-Safety",
+     "stars": 0,
+     "pushed": "2026-11-22",
+     "archived": false,
+     "lang": "TypeScript",
+     "desc": "A research sandbox for studying how software agents coordinate and what can go wrong when they act. Explore hazard analysis, policy checks, and record"
+    }
+   ]
+  },
+  "hazop guidewords": {
+   "total_count": 0,
+   "items": []
+  },
+  "hazop llm": {
+   "total_count": 8,
+   "items": [
+    {
+     "repo": "LLM-Mutation/multiplex",
+     "stars": 6,
+     "pushed": "2026-11-25",
+     "archived": false,
+     "lang": "Python",
+     "desc": "🪲 A Modular LLM-based Mutation Framework"
+    },
+    {
+     "repo": "LukaML/HazopLlm",
+     "stars": 1,
+     "pushed": "2026-02-23",
+     "archived": false,
+     "lang": "Python",
+     "desc": "HAZOP and LLM"
+    },
+    {
+     "repo": "Apratim7104/Agentic-AI-Based-Automation-of-HAZOP-Process",
+     "stars": 1,
+     "pushed": "2026-10-04",
+     "archived": false,
+     "lang": "Python",
+     "desc": "Multi-agent AI framework for closed-loop HAZOP analysis in DWSIM. Autonomous LLM agents debate cross-discipline mitigations, identify hazards (IEC 618"
+    },
+    {
+     "repo": "yilubanhan123c-pixel/dk-sar",
+     "stars": 1,
+     "pushed": "2026-03-31",
+     "archived": false,
+     "lang": "Python",
+     "desc": "DK-SAR 多智能体 HAZOP 分析系统"
+    },
+    {
+     "repo": "LLM-Mutation/ease-2026-replication-package",
+     "stars": 1,
+     "pushed": "2026-07-31",
+     "archived": true,
+     "lang": "Java",
+     "desc": "Replication Package: Empirically Comparing Hazard-Guided LLM Mutation Techniques with Existing LLM- and Rule-Based Approaches"
+    },
+    {
+     "repo": "Jarmed2003/LLM_Hazop",
+     "stars": 0,
+     "pushed": "2025-11-05",
+     "archived": false,
+     "lang": "Python",
+     "desc": ""
+    },
+    {
+     "repo": "anshuman-dev/formal-safety-llm-hazop",
+     "stars": 0,
+     "pushed": "2026-05-04",
+     "archived": false,
+     "lang": "Python",
+     "desc": "SysML → Event-B formal safety-security analysis pipeline with LLM-assisted HAZOP. Python reimplementation of Poorhadi & Troubitsyna (SAFECOMP 2024), a"
+    },
+    {
+     "repo": "sfeirc/Engineering-Docs-RAG",
+     "stars": 0,
+     "pushed": "2026-08-14",
+     "archived": false,
+     "lang": "Python",
+     "desc": "From-scratch BM25 retrieval over engineering documents (datasheets, safety procedures, HAZOP excerpts), with a pluggable no-LLM extractive generator i"
+    }
+   ]
+  },
+  "guide words deviation": {
+   "total_count": 1,
+   "items": [
+    {
+     "repo": "Fastseo10/A-Definition-of-Technology---The-Scientific-Texts-That-Guide-Human-Activity",
+     "stars": 1,
+     "pushed": "2022-06-27",
+     "archived": false,
+     "lang": null,
+     "desc": "The advances in innovation will send people to Mars soon. Web of things, 5G, computerized reasoning, mechanized driving, etc and on, presumably nobody"
+    }
+   ]
+  },
+  "data flow hazop": {
+   "total_count": 0,
+   "items": []
+  }
+ }
+}

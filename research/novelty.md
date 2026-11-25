@@ -26,7 +26,7 @@
 
 ## Estado por metodología (resumen)
 
-De 63 metodologías puntuadas: **18 "no existe"**, **37 "existe pero débil"**, **7 "bien cubierto"**, **1 "existe pero abandonado"**. Tabla completa con puntajes en `ranking.md` y `research/data/scores.csv`.
+De 63 metodologías puntuadas (a 2026-11-25): **16 "no existe"**, **39 "existe pero débil"**, **7 "bien cubierto"**, **1 "existe pero abandonado"** (conteo directo de `scores.csv`; la cifra 18/37 de la versión anterior no estaba al día tras la corrección de TRIZ y la de A3). Tabla completa con puntajes en `ranking.md` y `research/data/scores.csv`.
 
 Criterio de la etiqueta:
 - **no existe**: 0 repos relevantes con ≥2 formulaciones de búsqueda y sin cobertura en las colecciones anteriores.
@@ -67,6 +67,14 @@ Criterio de la etiqueta:
 El primer escaneo (`github_scan.py`, `github_scan2.py`) usó consultas de varias palabras sin comillas, que GitHub interpreta con semántica AND y devolvieron **0 resultados** para "triz matrix python", "triz contradiction matrix json" y similares. Al repetir con consultas de una o dos palabras (`contradiction matrix`, `triz matrix`, `triz principles`, `40 inventive principles`) aparecieron al menos 8 repos con la matriz de TRIZ. La conclusión original ("existe pero débil: 24★ y 5★ + colecciones") **subestimaba la cobertura**; `scores.csv` se actualizó (novedad 3 → 2).
 
 Consecuencia metodológica: **los "0 resultados" de este documento son cotas inferiores**, no pruebas de ausencia. Antes del lanzamiento conviene repetir cada afirmación "no existe" con consultas de una o dos palabras y por topics.
+
+## Corrección del 2026-11-25 (A3 y HAZOP)
+
+Re-escaneo con consultas de una o dos palabras, que es el remedio que dejó la corrección de TRIZ: `tools/github_scan3.py`, datos crudos en `research/data/github-scan-a3-hazop.json` (11 consultas). Lo que cambia:
+
+- **A3**: antes "0 resultados" (consultas `A3 problem solving toyota`, `A3 thinking template`). Con consultas cortas aparecen al menos 6 repos de 0–5★: editores (`fabriceb/a3-problem-solving-markdown-editor` 5★, `fabriceb/vscode-obsidian-a3-plugin` 1★, `fabriceb/online-a3-editor` 3★) y generadores con IA (`manojsurapaneni/a3-architect` 1★, `manojsurapaneni/manufacturing-ops-skills` 2★, `ChengYueCode/a3-report` 0★, un skill de agente con coaching 5 Whys/OKR/SMART). Ninguno es un motor para desarrollo de software. Etiqueta: "no existe" → "existe pero débil"; novedad 4 → 3; ponderado 3.58 → 3.33 (puesto 22).
+- **HAZOP**: hay herramientas de industria de proceso (`TUDoAD/preHAZOP` 21★, último push 2023; repos de 0–16★ con ML/LLM sobre registros o P&ID). Para el ángulo de Clarent (palabras guía sobre APIs y flujos de datos de software): `hazop api` → 1 resultado de otro dominio, `hazop software` → 1 resultado (`SafetyMP/Agentic-Process-Safety`, 0★, sandbox de investigación; no lo abrí), `hazop guidewords` y `data flow hazop` → 0. Se mantiene "existe pero débil" y novedad 4.
+- Los "0 resultados" son, como en la corrección de TRIZ, **cotas inferiores**. No revisé GitLab, PyPI ni marketplaces.
 
 ## Límites de este análisis (léelo antes de citarlo)
 

@@ -6,3 +6,6 @@ dist/
 .venv/
 .clarent/
 .coverage
+
+# Private correspondence (kept outside the repo)
+research/outreach/

@@ -1,6 +1,6 @@
 # Roadmap
 
-> Supuesto de capacidad: **una persona a ~25–30 h/semana** (estudiante con otras obligaciones). Con 10–12 h/semana, duplica todos los plazos y recorta `intent` del MVP. Los esfuerzos vienen de `product-spec.md` (estimaciones mías, sin medir).
+> Supuesto de capacidad: **una persona a ~25–30 h/semana** (un mantenedor, part-time). Con 10–12 h/semana, duplica todos los plazos y recorta `intent` del MVP. Los esfuerzos vienen de `product-spec.md` (estimaciones mías, sin medir).
 
 ## Estado de partida (hoy)
 

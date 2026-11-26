@@ -1,6 +1,7 @@
 # Clarent
 
 [![ci](https://github.com/Joaquincuevas/clarent/actions/workflows/ci.yml/badge.svg)](https://github.com/Joaquincuevas/clarent/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/clarent-methods.svg)](https://pypi.org/project/clarent-methods/)
 [![license: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![python: >=3.11](https://img.shields.io/badge/python-%E2%89%A53.11-blue.svg)](pyproject.toml)
 
@@ -13,7 +14,8 @@ Military doctrine, Toyota's shop floor, Soviet inventors' algorithms, NASA safet
 ## Install
 
 ```bash
-pip install git+https://github.com/Joaquincuevas/clarent          # the `clarent` CLI; Python >= 3.11, no dependencies
+pip install clarent-methods                                        # the `clarent` CLI; Python >= 3.11, no dependencies
+# or the development version:  pip install git+https://github.com/Joaquincuevas/clarent
 ```
 
 ```text

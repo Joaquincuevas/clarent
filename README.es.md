@@ -1,4 +1,4 @@
-# Clarent <!-- id: title -->
+# Clarent<!-- id: title -->
 
 [English](https://github.com/Joaquincuevas/clarent/blob/main/README.md) | Español
 
@@ -13,7 +13,7 @@
 
 **Métodos clásicos de decisión, optimización e ingeniería, como herramientas que calculan, no prompts que suenan inteligentes.**
 
-## ¿Qué es Clarent? <!-- id: what-is -->
+## ¿Qué es Clarent?<!-- id: what-is -->
 
 Las personas y los agentes de IA tienden a anclarse en la primera hipótesis plausible. Existen métodos probados (CIA, ejército, Toyota, NASA, TRIZ soviético), pero viven en manuales.
 Clarent los convierte en comandos que calculan (un motor determinista, sin ningún LLM), no en prompts:
@@ -28,7 +28,7 @@ La diferencia: la IA propone; el motor puntúa, valida y rechaza lo que no tenga
 
 > **Estado: pre-lanzamiento (v0.1).** Hay tres métodos implementados de punta a punta (`ach`, 24 pruebas; `redteam`, 82; `triz-matrix`, 38). Otros ocho están especificados en [`research/product-spec.md`](research/product-spec.md); el resto del plan está en [`research/roadmap.md`](research/roadmap.md). Nada de lo que hay aquí afirma que tu agente corregirá más errores; véase [Lo que no afirmamos](#lo-que-no-afirmamos).
 
-## Instalación <!-- id: install -->
+## Instalación<!-- id: install -->
 
 ```bash
 pip install clarent-methods                                        # el CLI `clarent`; Python >= 3.11, sin dependencias
@@ -40,7 +40,7 @@ pip install clarent-methods                                        # el CLI `cla
 /plugin install clarent-methods@clarent                            # ...e instala las skills
 ```
 
-## ¿Por qué otro repositorio de métodos? <!-- id: why -->
+## ¿Por qué otro repositorio de métodos?<!-- id: why -->
 
 Doctrina militar, el taller de Toyota, los algoritmos de los inventores soviéticos, la ingeniería de seguridad de la NASA: décadas de método para encontrar causas raíz, atacar planes y estimar con honestidad. Clarent los convierte en herramientas pequeñas y auditables para desarrolladores y sus agentes de programación: skills de Claude Code, un CLI y (pronto) hooks, herramientas MCP y GitHub Actions.
 
@@ -50,11 +50,11 @@ Ya existen colecciones de "marcos de pensamiento como prompts" (la más grande q
 - todo hecho observado necesita un `ref` (el comando, el `archivo:línea` o el registro que lo produjo);
 - los informes dicen lo que son: una puntuación ACH es un *ranking de inconsistencias*, nunca una probabilidad.
 
-## Demostración <!-- id: demo -->
+## Demostración<!-- id: demo -->
 
 Todo lo que sigue es la salida real del comando mostrado, sobre los ejemplos sintéticos incluidos en [`methods/`](methods/). Los archivos de [`docs/demo/`](docs/demo/) contienen las salidas completas y se regeneran con `python tools/gen_demo.py` (el CI falla si se desincronizan).
 
-### `ach` — depurar con hipótesis en competencia <!-- id: demo-ach -->
+### `ach` — depurar con hipótesis en competencia<!-- id: demo-ach -->
 
 Una prueba, `test_checkout_total`, falla más o menos 1 de cada 8 ejecuciones en el CI. Cinco causas rivales y una comodín, cinco piezas de evidencia, cada una evaluada contra *todas* las hipótesis:
 
@@ -93,7 +93,7 @@ T2  priority=9.0  for=H1  against=-
     Changing the fixture from scope=session to scope=function removes the failures in 200 runs with '-n 4'
 ```
 
-### `redteam` — atacar un diseño o un PR; el motor rechaza lo que no puede anclar <!-- id: demo-redteam -->
+### `redteam` — atacar un diseño o un PR; el motor rechaza lo que no puede anclar<!-- id: demo-redteam -->
 
 Un documento de diseño sintético mueve las notificaciones de un cron job a un consumidor de streams ([`design.md`](methods/redteam/examples/design-doc/design.md)). Un modelo propone supuestos y ataques como JSON, cada uno citando el pasaje en el que se apoya; el motor los contrasta con el texto:
 
@@ -139,7 +139,7 @@ $ clarent redteam check methods/redteam/examples/design-doc/findings.rejected.js
 
 El motor demuestra que un hallazgo está anclado y respaldado, no que sea correcto. También funciona con PRs (descripción más `gh pr diff`): [`docs/demo/redteam-pr.md`](docs/demo/redteam-pr.md).
 
-### `triz-matrix` — un compromiso de diseño, resuelto contra la tabla de 1973 <!-- id: demo-triz -->
+### `triz-matrix` — un compromiso de diseño, resuelto contra la tabla de 1973<!-- id: demo-triz -->
 
 "Hacer `/search` más rápido sin hacer el sistema más difícil de operar":
 
@@ -168,7 +168,7 @@ $ clarent triz-matrix lookup latency "Device complexity"
 
 El informe continúa con un recordatorio de que los principios son estímulos para generar ideas, no soluciones, y con la celda inversa. `triz-matrix analyze methods/triz-matrix/examples/search-api.json` hace lo mismo para varias contradicciones a la vez y ordena los principios que se repiten ([`docs/demo/triz-analyze.md`](docs/demo/triz-analyze.md)). Los nombres ambiguos se rechazan listando los candidatos, nunca se adivinan.
 
-### En Claude Code <!-- id: claude-code -->
+### En Claude Code<!-- id: claude-code -->
 
 ```text
 /clarent-methods:ach test_checkout_total fails ~1 in 8 CI runs
@@ -178,7 +178,7 @@ El informe continúa con un recordatorio de que los principios son estímulos pa
 
 Las skills son solo manuales (`disable-model-invocation`), así que no consumen contexto hasta que las invocas. `ach` hace que el agente liste primero las causas rivales, reúna evidencia ejecutando comandos, evalúe cada elemento contra *todas* las hipótesis y vuelva a puntuar hasta que sobreviva una explicación o el diagnóstico se declare sin resolver.
 
-## Métodos <!-- id: methods -->
+## Métodos<!-- id: methods -->
 
 | Método | Herramienta | Estado |
 |--------|------|--------|
@@ -197,7 +197,7 @@ Las skills son solo manuales (`disable-model-invocation`), así que no consumen 
 
 El ranking es juicio del autor, no una medición; las puntuaciones, los criterios y las correcciones hechas en el camino están en [`research/ranking.md`](research/ranking.md). Se catalogaron 63 métodos, cada fuente marcada como `read / exists / blocked / unverified`: [`research/`](research/).
 
-## Lo que no afirmamos <!-- id: no-claims -->
+## Lo que no afirmamos<!-- id: no-claims -->
 
 - Que una skill haga que un agente resuelva más tareas. gstack (uno de los repos más grandes de este espacio) publica en su README un resultado nulo en su propio benchmark de corrección de errores; publicaremos el nuestro, sea nulo o no.
 - Que los números sean de Heuer, de Shewhart o de Goldratt. Cuando una constante es nuestra (pesos, umbrales), la ficha del método lo dice.
@@ -209,10 +209,10 @@ El ranking es juicio del autor, no una medición; las puntuaciones, los criterio
 - Que funcione en agentes distintos de Claude Code. El plugin está validado con `claude plugin validate`; Cursor, Codex y otros no se han probado.
 - Que el ranking de métodos sea una medición, ni que sus hallazgos de "no existe un repo equivalente" sean prueba de ausencia: son cotas inferiores obtenidas de búsquedas en GitHub.
 
-## Contribuir <!-- id: contributing -->
+## Contribuir<!-- id: contributing -->
 
 Un método nuevo es una carpeta, una ficha, un motor, pruebas y un ejemplo. Empieza por [`CONTRIBUTING.md`](CONTRIBUTING.md); `clarent doctor` te dice qué falta.
 
-## Licencia <!-- id: license -->
+## Licencia<!-- id: license -->
 
 Apache-2.0. Véase [`LICENSE`](LICENSE).

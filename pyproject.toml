@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "clarent-methods"        # 'clarent' on PyPI is an unrelated abandoned 2014 package
-version = "0.1.0"
+version = "0.1.1"
 description = "Classic decision, optimization and engineering methodologies as executable developer tools."
 readme = "README.md"
 requires-python = ">=3.11"

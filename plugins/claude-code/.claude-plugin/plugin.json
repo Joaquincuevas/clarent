@@ -1,6 +1,6 @@
 {
   "name": "clarent-methods",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Classic decision and engineering methodologies as executable tools: ach, redteam, triz-matrix",
   "author": {
     "name": "Clarent contributors"

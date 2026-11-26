@@ -1,39 +1,24 @@
 # Lista de lanzamiento: primer push a GitHub
 
-> Estado (2026-11-25): el repositorio `Joaquincuevas/clarent` se creó **privado** y `main` se subió; el primer CI (`ci`) terminó en verde. **Siguen pendientes** las comprobaciones de la sección 2 que no se pueden ver sin la interfaz o sin hacerlo público (plantillas, `novelty-freshness`, instalación desde GitHub) y el envío, o no, del borrador a la Fundación Altshuller.
+> Estado (2026-11-26): el repositorio `Joaquincuevas/clarent` es **público**, `clarent-methods` 0.1.0 está en PyPI (Trusted Publishing), el CI y `novelty-freshness` pasan en verde y la instalación (PyPI, `git+https` y el marketplace de Claude Code) se verificó sin credenciales. Quedan pendientes los ítems sin marcar de la sección 2 que requieren la interfaz de GitHub (plantillas de issue/PR, alertas) y el lanzamiento (`research/launch/`).
 
 ## 0. Antes del primer push
 
-- [ ] Leer `research/outreach/altshuller-foundation.md` y decidir si se envía **antes** de hacer público el repositorio. La matriz incluida (`methods/triz-matrix/clarent_triz/data/matrix.json`) tiene una cadena de titularidad sin establecer (`DATA_LICENSE.md`); por eso los comandos de abajo crean el repo **privado**.
 - [ ] `git status` limpio y `git log --format=full -3` con tu identidad como `Author` y `Commit`, sin `Co-Authored-By`.
 - [ ] `gh auth status` muestra la cuenta `Joaquincuevas`.
 
-## 1. Crear el repositorio y subir (privado)
+## 1. Crear el repositorio y subir (referencia histórica)
 
 ```bash
 cd ~/clarent
 
-gh repo create Joaquincuevas/clarent --private --source . --remote origin \
+gh repo create Joaquincuevas/clarent --source . --remote origin --public \
   --description "Classic decision, optimization and engineering methods as tools that compute, not prompts that sound smart."
 
 git push -u origin main
 ```
 
-Opcional, una vez creado (etiquetas para que lo encuentren):
-
-```bash
-gh repo edit Joaquincuevas/clarent \
-  --add-topic claude-code --add-topic agent-skills --add-topic root-cause-analysis \
-  --add-topic triz --add-topic decision-making
-```
-
-Para hacerlo público **más adelante** (después de la respuesta de la Fundación y de revisar la lista de abajo):
-
-```bash
-gh repo edit Joaquincuevas/clarent --visibility public --accept-visibility-change-consequences
-```
-
-> Con el repo privado, `pip install git+https://github.com/Joaquincuevas/clarent` y `/plugin marketplace add Joaquincuevas/clarent` solo funcionan con tus credenciales de GitHub. Las instrucciones del README son para el repo público.
+Topics aplicados: `claude-code`, `ai-agents`, `developer-tools`, `triz`, `root-cause-analysis`, `decision-making`, `python`, `cli`.
 
 ## 2. Qué revisar en GitHub después del primer push
 

@@ -5,6 +5,10 @@
 [![license: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![python: >=3.11](https://img.shields.io/badge/python-%E2%89%A53.11-blue.svg)](pyproject.toml)
 
+![clarent ach scoring the flaky-test example, then listing the next tests to run](https://raw.githubusercontent.com/Joaquincuevas/clarent/main/docs/demo/ach.gif)
+
+<sub>Real output of `clarent ach` on the synthetic flaky-test example; only typing speed and pauses are staged ([`docs/demo/make_ach_gif.py`](docs/demo/make_ach_gif.py) regenerates it).</sub>
+
 **Classic decision, optimization and engineering methods — as tools that compute, not prompts that sound smart.**
 
 Military doctrine, Toyota's shop floor, Soviet inventors' algorithms, NASA safety engineering: decades of method for finding root causes, attacking plans and estimating honestly. Clarent turns them into small, auditable tools for developers and their coding agents: Claude Code skills, a CLI, and (soon) hooks, MCP tools and GitHub Actions.

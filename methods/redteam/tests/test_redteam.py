@@ -461,6 +461,11 @@ class ExampleTests(unittest.TestCase):
         self.assertEqual(es.rejections, [])
         self.assertEqual([(a.id, a.risk) for a in es.attacks], [(a.id, a.risk) for a in self.analyze_file(DESIGN).attacks])
 
+    def test_spanish_pr_example_gives_the_same_ranking(self):
+        es = self.analyze_file(EX / "pr" / "findings.es.json")
+        self.assertEqual(es.rejections, [])
+        self.assertEqual([(a.id, a.risk) for a in es.attacks], [(a.id, a.risk) for a in self.analyze_file(PR).attacks])
+
     def test_pr_example_golden(self):
         res = self.analyze_file(PR)
         self.assertEqual(res.rejections, [])

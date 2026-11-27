@@ -1,0 +1,132 @@
+{
+  "schema": "clarent.redteam/1",
+  "title": "Reintentar las entregas de webhooks fallidas (EJEMPLO SINTÉTICO)",
+  "root": ".",
+  "target": {
+    "kind": "pr",
+    "files": [
+      "description.es.md",
+      "change.diff"
+    ]
+  },
+  "assumptions": [
+    {
+      "id": "P1",
+      "text": "Se reintenta un timeout, como dice la descripción.",
+      "quote": "fallan con un 5xx o un timeout se reintentan ahora con retroceso exponencial",
+      "status": "contradicted",
+      "evidence": [
+        {
+          "ref": "change.diff:15",
+          "observation": "La única llamada es requests.post con timeout=5 y no hay try/except: un timeout lanza una excepción y sale de deliver() en lugar de reintentarse."
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "text": "El bucle termina en algún momento.",
+      "quote": "se repite hasta que el endpoint responde con algo distinto de un 5xx",
+      "status": "contradicted",
+      "evidence": [
+        {
+          "ref": "change.diff:14",
+          "observation": "El bucle es `while True` sin número máximo de intentos y el retraso no tiene límite."
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "text": "Los endpoints de los clientes toleran recibir el mismo evento dos veces.",
+      "quote": "para que los clientes dejen de perder eventos durante sus despliegues",
+      "status": "unverified",
+      "check": "Revisar una petición entregada (cuerpo y cabeceras): ¿hay un id de evento o una clave de idempotencia que el receptor pueda usar para deduplicar?"
+    },
+    {
+      "id": "P4",
+      "text": "Cualquier respuesta por debajo de 500 es definitiva y no debe reintentarse.",
+      "quote": "if resp.status_code < 500:",
+      "status": "verified",
+      "evidence": [
+        {
+          "ref": "change.diff:16",
+          "observation": "Solo los códigos de 500 en adelante continúan el bucle; cualquier código menor devuelve el resultado de inmediato."
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "text": "deliver() se ejecuta en un worker en segundo plano, no en una ruta de petición ni en un pool compartido.",
+      "quote": "time.sleep(delay)",
+      "status": "unverified",
+      "check": "git grep -n 'deliver(' -- '*.py' y leer los llamadores: ¿qué hilo o pool los ejecuta?"
+    }
+  ],
+  "attacks": [
+    {
+      "id": "X1",
+      "class": "failure-modes",
+      "assumption": "P1",
+      "quote": "resp = requests.post(endpoint.url, json=payload, timeout=5) if resp.status_code < 500:",
+      "attack": "Un timeout lanza requests.Timeout y nada lo captura: el primer endpoint lento aborta la entrega y se pierde el evento, aunque la descripción promete que los timeouts se reintentan.",
+      "impact": 3,
+      "plausibility": 3,
+      "check": "Apuntar deliver() a un servidor que duerme 10 segundos y comprobar que Timeout llega al llamador."
+    },
+    {
+      "id": "X2",
+      "class": "failure-modes",
+      "assumption": "P2",
+      "quote": "while True: resp = requests.post(endpoint.url",
+      "attack": "Un endpoint que siempre responde 503 mantiene su entrega en el bucle para siempre y el retraso se duplica sin límite: en el intento 21 un sleep dura unos 12 días, así que no se reintenta en un tiempo útil.",
+      "impact": 3,
+      "plausibility": 4,
+      "check": "Ejecutar deliver() contra un servidor que siempre responde 503 con time.sleep parcheado, y contar los intentos y los retrasos."
+    },
+    {
+      "id": "X3",
+      "class": "abuse",
+      "assumption": "P5",
+      "quote": "time.sleep(delay)",
+      "attack": "Quien puede registrar una URL de webhook puede apuntarla a un endpoint que siempre responde 503: cada evento de ese cliente retiene un worker para siempre, por lo que un inquilino agota las entregas de los demás.",
+      "impact": 4,
+      "plausibility": 3,
+      "check": "Registrar un endpoint de prueba que siempre responda 503, enviar 50 eventos y observar el uso de los workers."
+    },
+    {
+      "id": "X4",
+      "class": "scale",
+      "assumption": "P5",
+      "quote": "time.sleep(delay)",
+      "attack": "Cada entrega en reintento bloquea un worker durante todo su retroceso: cuando muchos clientes despliegan a la vez, el pool se llena de entregas dormidas y los eventos nuevos esperan detrás.",
+      "impact": 3,
+      "plausibility": 3,
+      "check": "Simular 200 endpoints que responden 503 durante 5 minutos y medir el tiempo de cola de un endpoint sano."
+    },
+    {
+      "id": "X5",
+      "class": "dependency",
+      "assumption": "P3",
+      "quote": "para que los clientes dejen de perder eventos durante sus despliegues",
+      "attack": "Reintentar una petición que agotó el tiempo de espera puede entregar el mismo evento dos veces, y el diff no añade ningún id de evento ni clave de idempotencia; los receptores no idempotentes lo procesarán dos veces.",
+      "impact": 3,
+      "plausibility": 4,
+      "check": "Inspeccionar una carga entregada y sus cabeceras en busca de un id de evento."
+    },
+    {
+      "id": "X6",
+      "class": "key-assumptions",
+      "assumption": "P4",
+      "quote": "if resp.status_code < 500:",
+      "attack": "Un 429 Too Many Requests o un 408 Request Timeout son 4xx que significan «inténtalo más tarde», pero el bucle los trata como definitivos y pierde el evento.",
+      "impact": 3,
+      "plausibility": 3,
+      "check": "Ejecutar deliver() contra un servidor que responde 429 una vez y después 200, y comprobar si se realiza la segunda llamada."
+    }
+  ],
+  "skipped_classes": [
+    {
+      "class": "reversibility",
+      "reason": "Cambio de código puro, sin esquema, cola ni estado persistente: revertir el commit restaura el comportamiento anterior."
+    }
+  ]
+}
